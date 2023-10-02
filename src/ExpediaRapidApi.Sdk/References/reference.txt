@@ -1,0 +1,2 @@
+﻿https://developers.expediagroup.com/docs/rapid/lodging/content/content-reference-lists
+https://a.travel-assets.com/documentation-hubs/docs/v1.1.256/rapid/lodging/content/assets/Content_Reference_Lists_3.json

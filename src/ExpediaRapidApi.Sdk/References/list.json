@@ -1,0 +1,8025 @@
+﻿{
+  "categories": {
+    "0": {
+      "id": "0",
+      "name": "Property"
+    },
+    "1": {
+      "id": "1",
+      "name": "Hotel"
+    },
+    "2": {
+      "id": "2",
+      "name": "Motel"
+    },
+    "3": {
+      "id": "3",
+      "name": "Resort"
+    },
+    "4": {
+      "id": "4",
+      "name": "Inn"
+    },
+    "5": {
+      "id": "5",
+      "name": "Bed & breakfast"
+    },
+    "6": {
+      "id": "6",
+      "name": "Guesthouse"
+    },
+    "7": {
+      "id": "7",
+      "name": "Condo"
+    },
+    "8": {
+      "id": "8",
+      "name": "All-inclusive property"
+    },
+    "9": {
+      "id": "9",
+      "name": "Cabin"
+    },
+    "10": {
+      "id": "10",
+      "name": "Chalet"
+    },
+    "11": {
+      "id": "11",
+      "name": "Cottage"
+    },
+    "12": {
+      "id": "12",
+      "name": "Hostel/Backpacker accommodation"
+    },
+    "13": {
+      "id": "13",
+      "name": "Ranch"
+    },
+    "14": {
+      "id": "14",
+      "name": "Villa"
+    },
+    "15": {
+      "id": "15",
+      "name": "Lodge"
+    },
+    "16": {
+      "id": "16",
+      "name": "Apartment"
+    },
+    "17": {
+      "id": "17",
+      "name": "Private vacation home"
+    },
+    "18": {
+      "id": "18",
+      "name": "Houseboat"
+    },
+    "20": {
+      "id": "20",
+      "name": "Ryokan"
+    },
+    "21": {
+      "id": "21",
+      "name": "Tree house property"
+    },
+    "22": {
+      "id": "22",
+      "name": "Aparthotel"
+    },
+    "23": {
+      "id": "23",
+      "name": "Condominium resort"
+    },
+    "24": {
+      "id": "24",
+      "name": "Campsite"
+    },
+    "25": {
+      "id": "25",
+      "name": "Riad"
+    },
+    "26": {
+      "id": "26",
+      "name": "Hostal"
+    },
+    "29": {
+      "id": "29",
+      "name": "Country house"
+    },
+    "30": {
+      "id": "30",
+      "name": "Pension"
+    },
+    "31": {
+      "id": "31",
+      "name": "Pousada (Portugal)"
+    },
+    "32": {
+      "id": "32",
+      "name": "Pousada (Brazil)"
+    },
+    "33": {
+      "id": "33",
+      "name": "Residence"
+    },
+    "34": {
+      "id": "34",
+      "name": "Townhouse"
+    },
+    "36": {
+      "id": "36",
+      "name": "Castle"
+    },
+    "37": {
+      "id": "37",
+      "name": "Safari/Tentalow"
+    },
+    "39": {
+      "id": "39",
+      "name": "Palace"
+    },
+    "40": {
+      "id": "40",
+      "name": "Agritourism property"
+    },
+    "41": {
+      "id": "41",
+      "name": "Cruise"
+    },
+    "42": {
+      "id": "42",
+      "name": "Holiday park"
+    },
+    "43": {
+      "id": "43",
+      "name": "Capsule hotel"
+    },
+    "44": {
+      "id": "44",
+      "name": "Mobile home"
+    }
+  },
+  "amenities_rooms": {
+    "1": {
+      "id": "1",
+      "name": "Air conditioning",
+      "has_value": false
+    },
+    "20": {
+      "id": "20",
+      "name": "Room service (limited hours)",
+      "has_value": false
+    },
+    "22": {
+      "id": "22",
+      "name": "Smoking permitted",
+      "has_value": false
+    },
+    "26": {
+      "id": "26",
+      "name": "Television",
+      "has_value": false
+    },
+    "121": {
+      "id": "121",
+      "name": "Wheelchair accessible",
+      "has_value": false
+    },
+    "123": {
+      "id": "123",
+      "name": "Cable/satellite TV service",
+      "has_value": false
+    },
+    "126": {
+      "id": "126",
+      "name": "Alarm clock",
+      "has_value": false
+    },
+    "128": {
+      "id": "128",
+      "name": "Free newspaper",
+      "has_value": false
+    },
+    "130": {
+      "id": "130",
+      "name": "Refrigerator",
+      "has_value": false
+    },
+    "131": {
+      "id": "131",
+      "name": "Minibar",
+      "has_value": false
+    },
+    "132": {
+      "id": "132",
+      "name": "Coffee/tea maker",
+      "has_value": false
+    },
+    "133": {
+      "id": "133",
+      "name": "Daily housekeeping",
+      "has_value": false
+    },
+    "135": {
+      "id": "135",
+      "name": "Hypo-allergenic bedding available",
+      "has_value": false
+    },
+    "136": {
+      "id": "136",
+      "name": "Phone",
+      "has_value": false
+    },
+    "138": {
+      "id": "138",
+      "name": "Dial-up internet access",
+      "has_value": false
+    },
+    "139": {
+      "id": "139",
+      "name": "Free local calls",
+      "has_value": false
+    },
+    "141": {
+      "id": "141",
+      "name": "Private bathroom",
+      "has_value": false
+    },
+    "142": {
+      "id": "142",
+      "name": "Bathrobes",
+      "has_value": false
+    },
+    "143": {
+      "id": "143",
+      "name": "Free toiletries",
+      "has_value": false
+    },
+    "144": {
+      "id": "144",
+      "name": "Hair dryer",
+      "has_value": false
+    },
+    "145": {
+      "id": "145",
+      "name": "Iron/ironing board",
+      "has_value": false
+    },
+    "146": {
+      "id": "146",
+      "name": "In-room safe",
+      "has_value": false
+    },
+    "147": {
+      "id": "147",
+      "name": "Fireplace",
+      "has_value": false
+    },
+    "148": {
+      "id": "148",
+      "name": "Jetted bathtub",
+      "has_value": false
+    },
+    "312": {
+      "id": "312",
+      "name": "Kitchenette",
+      "has_value": false
+    },
+    "318": {
+      "id": "318",
+      "name": "Balcony",
+      "has_value": false
+    },
+    "319": {
+      "id": "319",
+      "name": "Deck",
+      "has_value": false
+    },
+    "322": {
+      "id": "322",
+      "name": "Yard",
+      "has_value": false
+    },
+    "331": {
+      "id": "331",
+      "name": "Ceiling fan",
+      "has_value": false
+    },
+    "340": {
+      "id": "340",
+      "name": "Washer/dryer",
+      "has_value": false
+    },
+    "388": {
+      "id": "388",
+      "name": "Lanai",
+      "has_value": false
+    },
+    "399": {
+      "id": "399",
+      "name": "Espresso maker",
+      "has_value": false
+    },
+    "2015": {
+      "id": "2015",
+      "name": "Room service (24 hours)",
+      "has_value": false
+    },
+    "2025": {
+      "id": "2025",
+      "name": "Designer toiletries",
+      "has_value": false
+    },
+    "2026": {
+      "id": "2026",
+      "name": "Desk",
+      "has_value": false
+    },
+    "2028": {
+      "id": "2028",
+      "name": "Video-game console",
+      "has_value": false
+    },
+    "2030": {
+      "id": "2030",
+      "name": "In-room climate control (air conditioning)",
+      "has_value": false
+    },
+    "2031": {
+      "id": "2031",
+      "name": "Free weekday newspaper",
+      "has_value": false
+    },
+    "2032": {
+      "id": "2032",
+      "name": "Patio",
+      "has_value": false
+    },
+    "2034": {
+      "id": "2034",
+      "name": "Premium bedding",
+      "has_value": false
+    },
+    "2035": {
+      "id": "2035",
+      "name": "Second bathroom",
+      "has_value": false
+    },
+    "2036": {
+      "id": "2036",
+      "name": "Shared bathroom",
+      "has_value": false
+    },
+    "2037": {
+      "id": "2037",
+      "name": "Separate sitting area",
+      "has_value": false
+    },
+    "2038": {
+      "id": "2038",
+      "name": "Sofa bed",
+      "has_value": false
+    },
+    "2039": {
+      "id": "2039",
+      "name": "Pay movies",
+      "has_value": false
+    },
+    "2044": {
+      "id": "2044",
+      "name": "Rollaway/extra beds available",
+      "has_value": false
+    },
+    "2045": {
+      "id": "2045",
+      "name": "Cribs/infant beds available",
+      "has_value": false
+    },
+    "2046": {
+      "id": "2046",
+      "name": "High-speed internet access",
+      "has_value": false
+    },
+    "2053": {
+      "id": "2053",
+      "name": "Room service",
+      "has_value": false
+    },
+    "2054": {
+      "id": "2054",
+      "name": "Soundproofed rooms",
+      "has_value": false
+    },
+    "2055": {
+      "id": "2055",
+      "name": "Iron/ironing board (on request)",
+      "has_value": false
+    },
+    "2056": {
+      "id": "2056",
+      "name": "Turndown service",
+      "has_value": false
+    },
+    "2057": {
+      "id": "2057",
+      "name": "Free bottled water",
+      "has_value": false
+    },
+    "2058": {
+      "id": "2058",
+      "name": "Microwave",
+      "has_value": false
+    },
+    "2059": {
+      "id": "2059",
+      "name": "Cookware, dishware, and utensils",
+      "has_value": false
+    },
+    "2081": {
+      "id": "2081",
+      "name": "Premium TV channels",
+      "has_value": false
+    },
+    "2086": {
+      "id": "2086",
+      "name": "DVD player",
+      "has_value": false
+    },
+    "2100": {
+      "id": "2100",
+      "name": "Wireless internet access",
+      "has_value": false
+    },
+    "2130": {
+      "id": "2130",
+      "name": "Microwave (on request)",
+      "has_value": false
+    },
+    "2148": {
+      "id": "2148",
+      "name": "Access via exterior corridors",
+      "has_value": false
+    },
+    "2149": {
+      "id": "2149",
+      "name": "Bidet",
+      "has_value": false
+    },
+    "2150": {
+      "id": "2150",
+      "name": "Blackout drapes/curtains",
+      "has_value": false
+    },
+    "2151": {
+      "id": "2151",
+      "name": "In-room childcare (surcharge)",
+      "has_value": false
+    },
+    "2156": {
+      "id": "2156",
+      "name": "Internet access (complimentary)",
+      "has_value": false
+    },
+    "2157": {
+      "id": "2157",
+      "name": "Internet access (surcharge)",
+      "has_value": false
+    },
+    "2158": {
+      "id": "2158",
+      "name": "Kitchen",
+      "has_value": false
+    },
+    "2160": {
+      "id": "2160",
+      "name": "In-room massage available",
+      "has_value": false
+    },
+    "2162": {
+      "id": "2162",
+      "name": "Slippers",
+      "has_value": false
+    },
+    "2166": {
+      "id": "2166",
+      "name": "Shower only",
+      "has_value": false
+    },
+    "2168": {
+      "id": "2168",
+      "name": "Bathtub only",
+      "has_value": false
+    },
+    "2170": {
+      "id": "2170",
+      "name": "Separate bathtub and shower",
+      "has_value": false
+    },
+    "2180": {
+      "id": "2180",
+      "name": "Hair dryer (on request)",
+      "has_value": false
+    },
+    "2181": {
+      "id": "2181",
+      "name": "Refrigerator (on request)",
+      "has_value": false
+    },
+    "2183": {
+      "id": "2183",
+      "name": "Shower/tub combination",
+      "has_value": false
+    },
+    "2370": {
+      "id": "2370",
+      "name": "Separate dining area",
+      "has_value": false
+    },
+    "2371": {
+      "id": "2371",
+      "name": "Shared bathroom with sink in room",
+      "has_value": false
+    },
+    "2378": {
+      "id": "2378",
+      "name": "Dishwasher",
+      "has_value": false
+    },
+    "2379": {
+      "id": "2379",
+      "name": "Full-sized refrigerator/freezer",
+      "has_value": false
+    },
+    "2381": {
+      "id": "2381",
+      "name": "Stovetop",
+      "has_value": false
+    },
+    "2389": {
+      "id": "2389",
+      "name": "In-room safe (laptop compatible)",
+      "has_value": false
+    },
+    "2396": {
+      "id": "2396",
+      "name": "Satellite TV service",
+      "has_value": false
+    },
+    "2397": {
+      "id": "2397",
+      "name": "Digital TV service",
+      "has_value": false
+    },
+    "2398": {
+      "id": "2398",
+      "name": "Cable TV service",
+      "has_value": false
+    },
+    "2399": {
+      "id": "2399",
+      "name": "Flat-panel TV",
+      "has_value": false
+    },
+    "2402": {
+      "id": "2402",
+      "name": "HDTV",
+      "has_value": false
+    },
+    "2403": {
+      "id": "2403",
+      "name": "Free WiFi",
+      "has_value": false
+    },
+    "2404": {
+      "id": "2404",
+      "name": "WiFi (surcharge)",
+      "has_value": false
+    },
+    "2405": {
+      "id": "2405",
+      "name": "Free wired internet",
+      "has_value": false
+    },
+    "2406": {
+      "id": "2406",
+      "name": "Wired internet access (surcharge)",
+      "has_value": false
+    },
+    "2407": {
+      "id": "2407",
+      "name": "Free dial-up internet access",
+      "has_value": false
+    },
+    "2408": {
+      "id": "2408",
+      "name": "Dial-up Internet access (surcharge)",
+      "has_value": false
+    },
+    "2559": {
+      "id": "2559",
+      "name": "Down comforter",
+      "has_value": false
+    },
+    "2561": {
+      "id": "2561",
+      "name": "Egyptian-cotton sheets",
+      "has_value": false
+    },
+    "2563": {
+      "id": "2563",
+      "name": "First-run movies",
+      "has_value": false
+    },
+    "2565": {
+      "id": "2565",
+      "name": "Frette Italian sheets",
+      "has_value": false
+    },
+    "2567": {
+      "id": "2567",
+      "name": "Individually furnished",
+      "has_value": false
+    },
+    "2568": {
+      "id": "2568",
+      "name": "Individually decorated",
+      "has_value": false
+    },
+    "2569": {
+      "id": "2569",
+      "name": "Memory foam mattress",
+      "has_value": false
+    },
+    "2570": {
+      "id": "2570",
+      "name": "On Command video",
+      "has_value": false
+    },
+    "2571": {
+      "id": "2571",
+      "name": "Pillowtop mattress",
+      "has_value": false
+    },
+    "2572": {
+      "id": "2572",
+      "name": "Pillow menu",
+      "has_value": false
+    },
+    "2573": {
+      "id": "2573",
+      "name": "Sleep Number by Select Comfort mattress",
+      "has_value": false
+    },
+    "2575": {
+      "id": "2575",
+      "name": "LCD TV",
+      "has_value": false
+    },
+    "2576": {
+      "id": "2576",
+      "name": "Plasma TV",
+      "has_value": false
+    },
+    "2577": {
+      "id": "2577",
+      "name": "Tempur-Pedic mattress",
+      "has_value": false
+    },
+    "2579": {
+      "id": "2579",
+      "name": "TV size: ",
+      "has_value": true
+    },
+    "2580": {
+      "id": "2580",
+      "name": "TV size measurement: ",
+      "has_value": true
+    },
+    "2789": {
+      "id": "2789",
+      "name": "Room size (square feet) - ",
+      "has_value": true
+    },
+    "2790": {
+      "id": "2790",
+      "name": "Room size (square meters) - ",
+      "has_value": true
+    },
+    "2806": {
+      "id": "2806",
+      "name": "MP3 docking station",
+      "has_value": false
+    },
+    "2807": {
+      "id": "2807",
+      "name": "iPod docking station",
+      "has_value": false
+    },
+    "2837": {
+      "id": "2837",
+      "name": "Room type does not include complimentary access to all property facilities",
+      "has_value": false
+    },
+    "2854": {
+      "id": "2854",
+      "name": "Partially open bathroom",
+      "has_value": false
+    },
+    "2859": {
+      "id": "2859",
+      "name": "Private pool",
+      "has_value": false
+    },
+    "2860": {
+      "id": "2860",
+      "name": "Private plunge pool",
+      "has_value": false
+    },
+    "3267": {
+      "id": "3267",
+      "name": "No windows",
+      "has_value": false
+    },
+    "3501": {
+      "id": "3501",
+      "name": "Deep soaking bathtub",
+      "has_value": false
+    },
+    "3502": {
+      "id": "3502",
+      "name": "Rainfall showerhead",
+      "has_value": false
+    },
+    "3616": {
+      "id": "3616",
+      "name": "Weekly housekeeping provided",
+      "has_value": false
+    },
+    "3726": {
+      "id": "3726",
+      "name": "Private bathroom (not in room)",
+      "has_value": false
+    },
+    "3779": {
+      "id": "3779",
+      "name": "Furnished balcony",
+      "has_value": false
+    },
+    "3856": {
+      "id": "3856",
+      "name": "In-room computer",
+      "has_value": false
+    },
+    "3857": {
+      "id": "3857",
+      "name": "Number of living rooms",
+      "has_value": false
+    },
+    "3858": {
+      "id": "3858",
+      "name": "Bathtub or shower",
+      "has_value": false
+    },
+    "3859": {
+      "id": "3859",
+      "name": "Private spa tub",
+      "has_value": false
+    },
+    "3911": {
+      "id": "3911",
+      "name": "Sofa bed size - ",
+      "has_value": true
+    },
+    "3923": {
+      "id": "3923",
+      "name": "Free long-distance calls",
+      "has_value": false
+    },
+    "3924": {
+      "id": "3924",
+      "name": "Free international calls",
+      "has_value": false
+    },
+    "3981": {
+      "id": "3981",
+      "name": "Pets allowed",
+      "has_value": false
+    },
+    "3982": {
+      "id": "3982",
+      "name": "Room and bed type depend on availability check-in",
+      "has_value": false
+    },
+    "3984": {
+      "id": "3984",
+      "name": "Housekeeping - weekdays only",
+      "has_value": false
+    },
+    "3985": {
+      "id": "3985",
+      "name": "Housekeeping - weekends only",
+      "has_value": false
+    },
+    "4008": {
+      "id": "4008",
+      "name": "Housekeeping - once per stay",
+      "has_value": false
+    },
+    "4090": {
+      "id": "4090",
+      "name": "Pet-friendly room",
+      "has_value": false
+    },
+    "4118": {
+      "id": "4118",
+      "name": "Balcony or patio",
+      "has_value": false
+    },
+    "4293": {
+      "id": "4293",
+      "name": "Shared accommodation",
+      "has_value": false
+    },
+    "4296": {
+      "id": "4296",
+      "name": "Furnished balcony or patio",
+      "has_value": false
+    },
+    "4297": {
+      "id": "4297",
+      "name": "Furnished lanai",
+      "has_value": false
+    },
+    "4298": {
+      "id": "4298",
+      "name": "Furnished patio",
+      "has_value": false
+    },
+    "4420": {
+      "id": "4420",
+      "name": "Connecting/adjoining rooms available",
+      "has_value": false
+    },
+    "4642": {
+      "id": "4642",
+      "name": "No rollaway/extra beds",
+      "has_value": false
+    },
+    "4643": {
+      "id": "4643",
+      "name": "No cribs (infant beds)",
+      "has_value": false
+    },
+    "4945": {
+      "id": "4945",
+      "name": "In-room playpen",
+      "has_value": false
+    },
+    "4947": {
+      "id": "4947",
+      "name": "Hydromassage showerhead",
+      "has_value": false
+    },
+    "4950": {
+      "id": "4950",
+      "name": "Cribs/infant beds (surcharge)",
+      "has_value": false
+    },
+    "4951": {
+      "id": "4951",
+      "name": "Free cribs/infant beds",
+      "has_value": false
+    },
+    "4954": {
+      "id": "4954",
+      "name": "Separate bedroom",
+      "has_value": false
+    },
+    "5013": {
+      "id": "5013",
+      "name": "Spring water bathtub",
+      "has_value": false
+    },
+    "5040": {
+      "id": "5040",
+      "name": "Executive level room",
+      "has_value": false
+    },
+    "5045": {
+      "id": "5045",
+      "name": "Club level room",
+      "has_value": false
+    },
+    "5093": {
+      "id": "5093",
+      "name": "Shared/communal kitchen access",
+      "has_value": false
+    },
+    "5105": {
+      "id": "5105",
+      "name": "iPad",
+      "has_value": false
+    },
+    "5106": {
+      "id": "5106",
+      "name": "Tablet computer",
+      "has_value": false
+    },
+    "5118": {
+      "id": "5118",
+      "name": "Noise-free rooms not guaranteed",
+      "has_value": false
+    },
+    "5178": {
+      "id": "5178",
+      "name": "Day bed",
+      "has_value": false
+    },
+    "6142": {
+      "id": "6142",
+      "name": "Minibar (stocked, free items)",
+      "has_value": false
+    },
+    "6143": {
+      "id": "6143",
+      "name": "Minibar (stocked, some free items)",
+      "has_value": false
+    },
+    "6147": {
+      "id": "6147",
+      "name": "LED TV",
+      "has_value": false
+    },
+    "6176": {
+      "id": "6176",
+      "name": "Non-Smoking",
+      "has_value": false
+    },
+    "6212": {
+      "id": "6212",
+      "name": "Smoking",
+      "has_value": false
+    },
+    "6213": {
+      "id": "6213",
+      "name": "Smoking and Non-Smoking",
+      "has_value": false
+    },
+    "1073742599": {
+      "id": "1073742599",
+      "name": "Allergy friendly",
+      "has_value": false
+    },
+    "1073742600": {
+      "id": "1073742600",
+      "name": "Business lounge access",
+      "has_value": false
+    },
+    "1073742601": {
+      "id": "1073742601",
+      "name": "Concierge service",
+      "has_value": false
+    },
+    "1073742602": {
+      "id": "1073742602",
+      "name": "Sauna",
+      "has_value": false
+    },
+    "1073742603": {
+      "id": "1073742603",
+      "name": "Terrace",
+      "has_value": false
+    },
+    "1073742604": {
+      "id": "1073742604",
+      "name": "Connecting rooms available",
+      "has_value": false
+    },
+    "1073742676": {
+      "id": "1073742676",
+      "name": "Limited housekeeping",
+      "has_value": false
+    },
+    "1073742719": {
+      "id": "1073742719",
+      "name": "Private or shared bathroom",
+      "has_value": false
+    },
+    "1073742764": {
+      "id": "1073742764",
+      "name": "Air conditioning (surcharge)",
+      "has_value": false
+    },
+    "1073742770": {
+      "id": "1073742770",
+      "name": "Housekeeping (surcharge)",
+      "has_value": false
+    },
+    "1073742773": {
+      "id": "1073742773",
+      "name": "Microwave (surcharge)",
+      "has_value": false
+    },
+    "1073742774": {
+      "id": "1073742774",
+      "name": "Refrigerator (surcharge)",
+      "has_value": false
+    },
+    "1073742775": {
+      "id": "1073742775",
+      "name": "In-room safe (surcharge)",
+      "has_value": false
+    },
+    "1073742776": {
+      "id": "1073742776",
+      "name": "Television (surcharge)",
+      "has_value": false
+    },
+    "1073742815": {
+      "id": "1073742815",
+      "name": "Rollaway/extra beds (free)",
+      "has_value": false
+    },
+    "1073742816": {
+      "id": "1073742816",
+      "name": "Rollaway/extra beds (surcharge)",
+      "has_value": false
+    },
+    "1073742865": {
+      "id": "1073742865",
+      "name": "Towels/sheets (surcharge)",
+      "has_value": false
+    },
+    "1073742876": {
+      "id": "1073742876",
+      "name": "Smart cable or satellite TV service",
+      "has_value": false
+    },
+    "1073742908": {
+      "id": "1073742908",
+      "name": "Internet access",
+      "has_value": false
+    },
+    "1073743284": {
+      "id": "1073743284",
+      "name": "Heating",
+      "has_value": false
+    },
+    "1073743285": {
+      "id": "1073743285",
+      "name": "In-room climate control (heating)",
+      "has_value": false
+    },
+    "1073743289": {
+      "id": "1073743289",
+      "name": "Electric kettle",
+      "has_value": false
+    },
+    "1073743291": {
+      "id": "1073743291",
+      "name": "Oven",
+      "has_value": false
+    },
+    "1073743293": {
+      "id": "1073743293",
+      "name": "Portable fan",
+      "has_value": false
+    },
+    "1073743311": {
+      "id": "1073743311",
+      "name": "Washing machine",
+      "has_value": false
+    },
+    "1073743312": {
+      "id": "1073743312",
+      "name": "Dryer",
+      "has_value": false
+    },
+    "1073743316": {
+      "id": "1073743316",
+      "name": "Rice cooker",
+      "has_value": false
+    },
+    "1073743370": {
+      "id": "1073743370",
+      "name": "Towels provided",
+      "has_value": false
+    },
+    "1073743371": {
+      "id": "1073743371",
+      "name": "Bedsheets provided",
+      "has_value": false
+    },
+    "1073743372": {
+      "id": "1073743372",
+      "name": "Highchair",
+      "has_value": false
+    },
+    "1073743373": {
+      "id": "1073743373",
+      "name": "Toaster",
+      "has_value": false
+    },
+    "1073743396": {
+      "id": "1073743396",
+      "name": "Free WiFi (limited) time - ",
+      "has_value": true
+    },
+    "1073743397": {
+      "id": "1073743397",
+      "name": "Free WiFi (limited) duration - ",
+      "has_value": true
+    },
+    "1073743398": {
+      "id": "1073743398",
+      "name": "Free WiFi (limited) device count - ",
+      "has_value": true
+    },
+    "1073743399": {
+      "id": "1073743399",
+      "name": "Limited WiFi (surcharge) device count - ",
+      "has_value": true
+    },
+    "1073743406": {
+      "id": "1073743406",
+      "name": "No housekeeping",
+      "has_value": false
+    },
+    "1073743409": {
+      "id": "1073743409",
+      "name": "In-room dining only",
+      "has_value": false
+    },
+    "1073743413": {
+      "id": "1073743413",
+      "name": "Limited time for free WiFi - ",
+      "has_value": true
+    },
+    "1073743560": {
+      "id": "1073743560",
+      "name": "Bathroom grab bars",
+      "has_value": false
+    },
+    "1073743569": {
+      "id": "1073743569",
+      "name": "Smart TV",
+      "has_value": false
+    },
+    "1073743571": {
+      "id": "1073743571",
+      "name": "Netflix",
+      "has_value": false
+    },
+    "1073743880": {
+      "id": "1073743880",
+      "name": "Fan",
+      "has_value": false
+    },
+    "1073743882": {
+      "id": "1073743882",
+      "name": "Toilet with electronic bidet",
+      "has_value": false
+    },
+    "1073743918": {
+      "id": "1073743918",
+      "name": "Number of beds - ",
+      "has_value": true
+    },
+    "1073743926": {
+      "id": "1073743926",
+      "name": "Housekeeping on request",
+      "has_value": false
+    },
+    "1073743928": {
+      "id": "1073743928",
+      "name": "Towels not available",
+      "has_value": false
+    },
+    "1073743948": {
+      "id": "1073743948",
+      "name": "Free tea bags/instant coffee",
+      "has_value": false
+    },
+    "1073743957": {
+      "id": "1073743957",
+      "name": "Outdoor bathroom",
+      "has_value": false
+    },
+    "1073743958": {
+      "id": "1073743958",
+      "name": "Outdoor shower",
+      "has_value": false
+    },
+    "1073744077": {
+      "id": "1073744077",
+      "name": "Champagne service",
+      "has_value": false
+    },
+    "1073744185": {
+      "id": "1073744185",
+      "name": "Blender",
+      "has_value": false
+    },
+    "1073744186": {
+      "id": "1073744186",
+      "name": "Coffee grinder",
+      "has_value": false
+    },
+    "1073744187": {
+      "id": "1073744187",
+      "name": "Griddle",
+      "has_value": false
+    },
+    "1073744188": {
+      "id": "1073744188",
+      "name": "Mixer",
+      "has_value": false
+    },
+    "1073744189": {
+      "id": "1073744189",
+      "name": "Spices",
+      "has_value": false
+    },
+    "1073744190": {
+      "id": "1073744190",
+      "name": "Toaster oven",
+      "has_value": false
+    },
+    "1073744191": {
+      "id": "1073744191",
+      "name": "Waffle maker",
+      "has_value": false
+    },
+    "1073744192": {
+      "id": "1073744192",
+      "name": "Cleaning supplies",
+      "has_value": false
+    },
+    "1073744201": {
+      "id": "1073744201",
+      "name": "Soap",
+      "has_value": false
+    },
+    "1073744202": {
+      "id": "1073744202",
+      "name": "Shampoo",
+      "has_value": false
+    },
+    "1073744203": {
+      "id": "1073744203",
+      "name": "Toilet paper",
+      "has_value": false
+    },
+    "1073744213": {
+      "id": "1073744213",
+      "name": "Chef",
+      "has_value": false
+    },
+    "1073744214": {
+      "id": "1073744214",
+      "name": "Local maps",
+      "has_value": false
+    },
+    "1073744215": {
+      "id": "1073744215",
+      "name": "Window screens",
+      "has_value": false
+    },
+    "1073744216": {
+      "id": "1073744216",
+      "name": "Guidebooks or recommendations",
+      "has_value": false
+    },
+    "1073744217": {
+      "id": "1073744217",
+      "name": "Electrical adapters/chargers",
+      "has_value": false
+    },
+    "1073744218": {
+      "id": "1073744218",
+      "name": "Laundry detergent",
+      "has_value": false
+    },
+    "1073744219": {
+      "id": "1073744219",
+      "name": "Children's dinnerware",
+      "has_value": false
+    },
+    "1073744220": {
+      "id": "1073744220",
+      "name": "Baby bath",
+      "has_value": false
+    },
+    "1073744221": {
+      "id": "1073744221",
+      "name": "Baby monitor",
+      "has_value": false
+    },
+    "1073744222": {
+      "id": "1073744222",
+      "name": "Changing table",
+      "has_value": false
+    },
+    "1073744223": {
+      "id": "1073744223",
+      "name": "Art supplies",
+      "has_value": false
+    },
+    "1073744224": {
+      "id": "1073744224",
+      "name": "Children's books",
+      "has_value": false
+    },
+    "1073744225": {
+      "id": "1073744225",
+      "name": "Musical instruments",
+      "has_value": false
+    },
+    "1073744227": {
+      "id": "1073744227",
+      "name": "CD player",
+      "has_value": false
+    },
+    "1073744228": {
+      "id": "1073744228",
+      "name": "Hulu",
+      "has_value": false
+    },
+    "1073744229": {
+      "id": "1073744229",
+      "name": "Streaming services",
+      "has_value": false
+    },
+    "1073744237": {
+      "id": "1073744237",
+      "name": "Laptop-friendly workspace",
+      "has_value": false
+    },
+    "1073744239": {
+      "id": "1073744239",
+      "name": "Composting",
+      "has_value": false
+    },
+    "1073744240": {
+      "id": "1073744240",
+      "name": "Eco-friendly cleaning products provided",
+      "has_value": false
+    },
+    "1073744241": {
+      "id": "1073744241",
+      "name": "Eco-friendly toiletries",
+      "has_value": false
+    },
+    "1073744242": {
+      "id": "1073744242",
+      "name": "LED light bulbs",
+      "has_value": false
+    },
+    "1073744243": {
+      "id": "1073744243",
+      "name": "Recycling",
+      "has_value": false
+    },
+    "1073744244": {
+      "id": "1073744244",
+      "name": "Reusable coffee/tea filters",
+      "has_value": false
+    },
+    "1073744246": {
+      "id": "1073744246",
+      "name": "Composting",
+      "has_value": false
+    },
+    "1073744247": {
+      "id": "1073744247",
+      "name": "Eco-friendly cleaning products",
+      "has_value": false
+    },
+    "1073744248": {
+      "id": "1073744248",
+      "name": "Eco-friendly toiletries",
+      "has_value": false
+    },
+    "1073744249": {
+      "id": "1073744249",
+      "name": "LED light bulbs",
+      "has_value": false
+    },
+    "1073744250": {
+      "id": "1073744250",
+      "name": "Recycling",
+      "has_value": false
+    },
+    "1073744251": {
+      "id": "1073744251",
+      "name": "Reusable coffee/tea filters",
+      "has_value": false
+    },
+    "1073744282": {
+      "id": "1073744282",
+      "name": "Child-size bathrobes",
+      "has_value": false
+    },
+    "1073744283": {
+      "id": "1073744283",
+      "name": "Child-size slippers",
+      "has_value": false
+    },
+    "1073744284": {
+      "id": "1073744284",
+      "name": "Free extra futon",
+      "has_value": false
+    },
+    "1073744306": {
+      "id": "1073744306",
+      "name": "Tatami (woven mat) floors",
+      "has_value": false
+    },
+    "1073744307": {
+      "id": "1073744307",
+      "name": "Geta (wooden sandals)",
+      "has_value": false
+    },
+    "1073744308": {
+      "id": "1073744308",
+      "name": "Tokonoma (alcove)",
+      "has_value": false
+    },
+    "1073744309": {
+      "id": "1073744309",
+      "name": "Fusuma (room partition)",
+      "has_value": false
+    },
+    "1073744315": {
+      "id": "1073744315",
+      "name": "Data speed - ",
+      "has_value": true
+    },
+    "1073744319": {
+      "id": "1073744319",
+      "name": "Limited data",
+      "has_value": false
+    },
+    "1073744321": {
+      "id": "1073744321",
+      "name": "Limited free calls",
+      "has_value": false
+    },
+    "1073744323": {
+      "id": "1073744323",
+      "name": "Unlimited data",
+      "has_value": false
+    },
+    "1073744325": {
+      "id": "1073744325",
+      "name": "Unlimited free calls",
+      "has_value": false
+    },
+    "1073744327": {
+      "id": "1073744327",
+      "name": "Smartphone",
+      "has_value": false
+    },
+    "1073744329": {
+      "id": "1073744329",
+      "name": "Indoor private bath (no mineral springs)",
+      "has_value": false
+    },
+    "1073744330": {
+      "id": "1073744330",
+      "name": "Indoor private mineral hot springs (Japanese-style onsen)",
+      "has_value": false
+    },
+    "1073744331": {
+      "id": "1073744331",
+      "name": "Outdoor private bath (no mineral springs)",
+      "has_value": false
+    },
+    "1073744332": {
+      "id": "1073744332",
+      "name": "Outdoor private mineral hot springs (Japanese-style onsen)",
+      "has_value": false
+    },
+    "1073744337": {
+      "id": "1073744337",
+      "name": "Extra futon (surcharge)",
+      "has_value": false
+    },
+    "1073744380": {
+      "id": "1073744380",
+      "name": "Paper towels",
+      "has_value": false
+    },
+    "1073744382": {
+      "id": "1073744382",
+      "name": "Restaurant dining guide",
+      "has_value": false
+    },
+    "1073744431": {
+      "id": "1073744431",
+      "name": "Deck or patio",
+      "has_value": false
+    },
+    "1073744433": {
+      "id": "1073744433",
+      "name": "DVR",
+      "has_value": false
+    },
+    "1073744435": {
+      "id": "1073744435",
+      "name": "Freezer",
+      "has_value": false
+    },
+    "1073744437": {
+      "id": "1073744437",
+      "name": "Ice maker",
+      "has_value": false
+    },
+    "1073744439": {
+      "id": "1073744439",
+      "name": "Lobster/crab pot",
+      "has_value": false
+    },
+    "1073744441": {
+      "id": "1073744441",
+      "name": "Porch or lanai",
+      "has_value": false
+    },
+    "1073744443": {
+      "id": "1073744443",
+      "name": "Mini-fridge",
+      "has_value": false
+    },
+    "1073744445": {
+      "id": "1073744445",
+      "name": "Video games",
+      "has_value": false
+    },
+    "1073744447": {
+      "id": "1073744447",
+      "name": "Wet bar",
+      "has_value": false
+    },
+    "1073744519": {
+      "id": "1073744519",
+      "name": "Car available for guests to use",
+      "has_value": false
+    },
+    "1073744558": {
+      "id": "1073744558",
+      "name": "All-in-one washer and dryer",
+      "has_value": false
+    },
+    "1073744573": {
+      "id": "1073744573",
+      "name": "Heated floor",
+      "has_value": false
+    },
+    "1073744574": {
+      "id": "1073744574",
+      "name": "Heated floors",
+      "has_value": false
+    },
+    "1073744622": {
+      "id": "1073744622",
+      "name": "Cleaning supplies (surcharge)",
+      "has_value": false
+    },
+    "1073744647": {
+      "id": "1073744647",
+      "name": "Braille signage",
+      "has_value": false
+    },
+    "1073744649": {
+      "id": "1073744649",
+      "name": "Visual doorbell/knocker notification",
+      "has_value": false
+    },
+    "1073744651": {
+      "id": "1073744651",
+      "name": "Hand-held showerhead",
+      "has_value": false
+    },
+    "1073744653": {
+      "id": "1073744653",
+      "name": "Closed captioned TV",
+      "has_value": false
+    },
+    "1073744655": {
+      "id": "1073744655",
+      "name": "Wheelchair-accessible bathroom vanity",
+      "has_value": false
+    },
+    "1073744657": {
+      "id": "1073744657",
+      "name": "Portable bathtub seat",
+      "has_value": false
+    },
+    "1073744658": {
+      "id": "1073744658",
+      "name": "Portable shower seat",
+      "has_value": false
+    },
+    "1073744660": {
+      "id": "1073744660",
+      "name": "Raised toilet seat",
+      "has_value": false
+    },
+    "1073744661": {
+      "id": "1073744661",
+      "name": "Lowered electrical outlets in bathroom",
+      "has_value": false
+    },
+    "1073744663": {
+      "id": "1073744663",
+      "name": "Lowered peephole/view port in door",
+      "has_value": false
+    },
+    "1073744665": {
+      "id": "1073744665",
+      "name": "Lowered locks/deadbolt",
+      "has_value": false
+    },
+    "1073744667": {
+      "id": "1073744667",
+      "name": "Low-height counters/sink",
+      "has_value": false
+    },
+    "1073744669": {
+      "id": "1073744669",
+      "name": "Low-height desk",
+      "has_value": false
+    },
+    "1073744671": {
+      "id": "1073744671",
+      "name": "Low-height bed",
+      "has_value": false
+    },
+    "1073744673": {
+      "id": "1073744673",
+      "name": "Height-adjustable showerhead",
+      "has_value": false
+    },
+    "1073744675": {
+      "id": "1073744675",
+      "name": "Grab bar - near toilet",
+      "has_value": false
+    },
+    "1073744677": {
+      "id": "1073744677",
+      "name": "Grab bar - in bathtub",
+      "has_value": false
+    },
+    "1073744679": {
+      "id": "1073744679",
+      "name": "Grab bar - in shower",
+      "has_value": false
+    },
+    "1073744681": {
+      "id": "1073744681",
+      "name": "Bathroom emergency pull cord",
+      "has_value": false
+    },
+    "1073744683": {
+      "id": "1073744683",
+      "name": "Roll-in shower",
+      "has_value": false
+    },
+    "1073744684": {
+      "id": "1073744684",
+      "name": "Transfer shower",
+      "has_value": false
+    },
+    "1073744685": {
+      "id": "1073744685",
+      "name": "Accessible bathtub",
+      "has_value": false
+    },
+    "1073744686": {
+      "id": "1073744686",
+      "name": "Visual fire alarm",
+      "has_value": false
+    },
+    "1073744687": {
+      "id": "1073744687",
+      "name": "Doorbell/telephone notification",
+      "has_value": false
+    },
+    "1073744688": {
+      "id": "1073744688",
+      "name": "Vibrating pillow alarm",
+      "has_value": false
+    },
+    "1073744689": {
+      "id": "1073744689",
+      "name": "Lever door handles",
+      "has_value": false
+    },
+    "1073744690": {
+      "id": "1073744690",
+      "name": "Wheelchair-width doorways",
+      "has_value": false
+    },
+    "1073744691": {
+      "id": "1073744691",
+      "name": "Telephone accessibility kit",
+      "has_value": false
+    },
+    "1073744694": {
+      "id": "1073744694",
+      "name": "Carbon monoxide detector",
+      "has_value": false
+    },
+    "1073744699": {
+      "id": "1073744699",
+      "name": "Outdoor lighting",
+      "has_value": false
+    },
+    "1073744706": {
+      "id": "1073744706",
+      "name": "Wardrobe or closet",
+      "has_value": false
+    },
+    "1073744708": {
+      "id": "1073744708",
+      "name": "Treadmill",
+      "has_value": false
+    },
+    "1073744709": {
+      "id": "1073744709",
+      "name": "Stationary bike",
+      "has_value": false
+    },
+    "1073744710": {
+      "id": "1073744710",
+      "name": "Rowing machine",
+      "has_value": false
+    },
+    "1073744711": {
+      "id": "1073744711",
+      "name": "Elliptical machine",
+      "has_value": false
+    },
+    "1073744712": {
+      "id": "1073744712",
+      "name": "Free weights",
+      "has_value": false
+    },
+    "1073744713": {
+      "id": "1073744713",
+      "name": "Free weights (on request)",
+      "has_value": false
+    },
+    "1073744714": {
+      "id": "1073744714",
+      "name": "Streaming fitness classes",
+      "has_value": false
+    },
+    "1073744715": {
+      "id": "1073744715",
+      "name": "Streaming fitness classes (on request)",
+      "has_value": false
+    },
+    "1073744716": {
+      "id": "1073744716",
+      "name": "Workout apparel",
+      "has_value": false
+    },
+    "1073744717": {
+      "id": "1073744717",
+      "name": "Workout apparel (on request)",
+      "has_value": false
+    },
+    "1073744718": {
+      "id": "1073744718",
+      "name": "Other workout equipment",
+      "has_value": false
+    },
+    "1073744719": {
+      "id": "1073744719",
+      "name": "Other workout equipment (on request)",
+      "has_value": false
+    },
+    "1073744764": {
+      "id": "1073744764",
+      "name": "Toothbrush and toothpaste available",
+      "has_value": false
+    },
+    "1073744765": {
+      "id": "1073744765",
+      "name": "Toothbrush and toothpaste available on request",
+      "has_value": false
+    },
+    "1073744766": {
+      "id": "1073744766",
+      "name": "Toothbrush and toothpaste not available",
+      "has_value": false
+    },
+    "1073744784": {
+      "id": "1073744784",
+      "name": "Private spa tub (indoor)",
+      "has_value": false
+    },
+    "1073744785": {
+      "id": "1073744785",
+      "name": "Private spa tub (outdoor)",
+      "has_value": false
+    },
+    "1073744786": {
+      "id": "1073744786",
+      "name": "Private spa tub (rooftop)",
+      "has_value": false
+    },
+    "1073744800": {
+      "id": "1073744800",
+      "name": "Location - below ground",
+      "has_value": false
+    },
+    "1073744801": {
+      "id": "1073744801",
+      "name": "Location - ground floor",
+      "has_value": false
+    },
+    "1073744802": {
+      "id": "1073744802",
+      "name": "Location - top floor",
+      "has_value": false
+    },
+    "1073744826": {
+      "id": "1073744826",
+      "name": "Number of days between towel changes: ",
+      "has_value": true
+    },
+    "1073744828": {
+      "id": "1073744828",
+      "name": "Change of towels (on request)",
+      "has_value": false
+    },
+    "1073744829": {
+      "id": "1073744829",
+      "name": "Number of days between bed sheet changes: ",
+      "has_value": true
+    },
+    "1073744831": {
+      "id": "1073744831",
+      "name": "Change of bed sheets (on request)",
+      "has_value": false
+    },
+    "1073744893": {
+      "id": "1073744893",
+      "name": "Smart speaker",
+      "has_value": false
+    },
+    "1073744900": {
+      "id": "1073744900",
+      "name": "Mobile key entry",
+      "has_value": false
+    },
+    "1073744912": {
+      "id": "1073744912",
+      "name": "Ceiling hoist",
+      "has_value": false
+    },
+    "1073745067": {
+      "id": "1073745067",
+      "name": "Bed sheets not available",
+      "has_value": false
+    },
+    "1073745165": {
+      "id": "1073745165",
+      "name": "Computer monitor",
+      "has_value": false
+    },
+    "1073745166": {
+      "id": "1073745166",
+      "name": "Desk chair",
+      "has_value": false
+    },
+    "1073745167": {
+      "id": "1073745167",
+      "name": "Dining table",
+      "has_value": false
+    },
+    "1073745168": {
+      "id": "1073745168",
+      "name": "Fence around pool",
+      "has_value": false
+    },
+    "1073745169": {
+      "id": "1073745169",
+      "name": "Fence around yard",
+      "has_value": false
+    },
+    "1073745170": {
+      "id": "1073745170",
+      "name": "Kitchen island",
+      "has_value": false
+    },
+    "1073745171": {
+      "id": "1073745171",
+      "name": "Meal delivery service available",
+      "has_value": false
+    },
+    "1073745172": {
+      "id": "1073745172",
+      "name": "Office",
+      "has_value": false
+    },
+    "1073745173": {
+      "id": "1073745173",
+      "name": "Printer",
+      "has_value": false
+    },
+    "1073745174": {
+      "id": "1073745174",
+      "name": "Travel crib",
+      "has_value": false
+    },
+    "1073745175": {
+      "id": "1073745175",
+      "name": "WiFi speed - ",
+      "has_value": true
+    },
+    "1073745177": {
+      "id": "1073745177",
+      "name": "Cabinet locks",
+      "has_value": false
+    },
+    "1073745191": {
+      "id": "1073745191",
+      "name": "Outdoor play area",
+      "has_value": false
+    },
+    "1073745294": {
+      "id": "1073745294",
+      "name": "Energy-saving features in guest rooms",
+      "has_value": false
+    },
+    "1073745358": {
+      "id": "1073745358",
+      "name": "Fixed shower seat",
+      "has_value": false
+    },
+    "1073745360": {
+      "id": "1073745360",
+      "name": "Magnifying mirror",
+      "has_value": false
+    },
+    "1073745362": {
+      "id": "1073745362",
+      "name": "Smooth flooring in room",
+      "has_value": false
+    },
+    "1073745363": {
+      "id": "1073745363",
+      "name": "Thin carpet in room",
+      "has_value": false
+    },
+    "1073745364": {
+      "id": "1073745364",
+      "name": "High pile carpet in room",
+      "has_value": false
+    },
+    "1073745365": {
+      "id": "1073745365",
+      "name": "Tile flooring in room",
+      "has_value": false
+    },
+    "1073745366": {
+      "id": "1073745366",
+      "name": "Area rug/s in room",
+      "has_value": false
+    },
+    "1073745367": {
+      "id": "1073745367",
+      "name": "Hardwood flooring in room",
+      "has_value": false
+    },
+    "1073745374": {
+      "id": "1073745374",
+      "name": "Toilet grab bar height (inches) - ",
+      "has_value": true
+    },
+    "1073745375": {
+      "id": "1073745375",
+      "name": "Toilet grab bar height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745376": {
+      "id": "1073745376",
+      "name": "Bathtub grab bar height (inches) - ",
+      "has_value": true
+    },
+    "1073745377": {
+      "id": "1073745377",
+      "name": "Bathtub grab bar height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745378": {
+      "id": "1073745378",
+      "name": "Shower grab bar height (inches) - ",
+      "has_value": true
+    },
+    "1073745379": {
+      "id": "1073745379",
+      "name": "Shower grab bar height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745380": {
+      "id": "1073745380",
+      "name": "Raised toilet seat height (inches) - ",
+      "has_value": true
+    },
+    "1073745381": {
+      "id": "1073745381",
+      "name": "Raised toilet seat height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745382": {
+      "id": "1073745382",
+      "name": "Low counters/sink height (inches) - ",
+      "has_value": true
+    },
+    "1073745383": {
+      "id": "1073745383",
+      "name": "Low counters/sink height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745384": {
+      "id": "1073745384",
+      "name": "Doorway wheelchair width (inches) - ",
+      "has_value": true
+    },
+    "1073745385": {
+      "id": "1073745385",
+      "name": "Doorway wheelchair width (centimeters) - ",
+      "has_value": true
+    },
+    "1073745386": {
+      "id": "1073745386",
+      "name": "Accessible vanity height (inches) - ",
+      "has_value": true
+    },
+    "1073745387": {
+      "id": "1073745387",
+      "name": "Accessible vanity height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745388": {
+      "id": "1073745388",
+      "name": "Low bed height (inches) - ",
+      "has_value": true
+    },
+    "1073745389": {
+      "id": "1073745389",
+      "name": "Low bed height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745390": {
+      "id": "1073745390",
+      "name": "Low desk height (inches) - ",
+      "has_value": true
+    },
+    "1073745391": {
+      "id": "1073745391",
+      "name": "Low desk height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745392": {
+      "id": "1073745392",
+      "name": "Roll-in shower width (inches) - ",
+      "has_value": true
+    },
+    "1073745393": {
+      "id": "1073745393",
+      "name": "Roll-in shower width (centimeters) - ",
+      "has_value": true
+    }
+  },
+  "amenities_property": {
+    "6": {
+      "id": "6",
+      "name": "Babysitting or childcare",
+      "has_value": false
+    },
+    "8": {
+      "id": "8",
+      "name": "Elevator",
+      "has_value": false
+    },
+    "9": {
+      "id": "9",
+      "name": "Fitness facilities",
+      "has_value": false
+    },
+    "10": {
+      "id": "10",
+      "name": "Free airport transportation",
+      "has_value": false
+    },
+    "27": {
+      "id": "27",
+      "name": "Wheelchair accessible",
+      "has_value": false
+    },
+    "38": {
+      "id": "38",
+      "name": "Supervised childcare/activities",
+      "has_value": false
+    },
+    "40": {
+      "id": "40",
+      "name": "Hair salon",
+      "has_value": false
+    },
+    "41": {
+      "id": "41",
+      "name": "ATM/banking",
+      "has_value": false
+    },
+    "43": {
+      "id": "43",
+      "name": "Concierge services",
+      "has_value": false
+    },
+    "44": {
+      "id": "44",
+      "name": "Gift shops or newsstand",
+      "has_value": false
+    },
+    "45": {
+      "id": "45",
+      "name": "Shopping on site",
+      "has_value": false
+    },
+    "56": {
+      "id": "56",
+      "name": "Airport transportation (surcharge)",
+      "has_value": false
+    },
+    "81": {
+      "id": "81",
+      "name": "Conference space",
+      "has_value": false
+    },
+    "102": {
+      "id": "102",
+      "name": "Golfing nearby",
+      "has_value": false
+    },
+    "103": {
+      "id": "103",
+      "name": "Snorkeling nearby",
+      "has_value": false
+    },
+    "106": {
+      "id": "106",
+      "name": "Surfing/bodyboarding nearby",
+      "has_value": false
+    },
+    "110": {
+      "id": "110",
+      "name": "Downhill skiing nearby",
+      "has_value": false
+    },
+    "111": {
+      "id": "111",
+      "name": "Cross-country skiing nearby",
+      "has_value": false
+    },
+    "115": {
+      "id": "115",
+      "name": "Bicycle rentals nearby",
+      "has_value": false
+    },
+    "200": {
+      "id": "200",
+      "name": "Business services",
+      "has_value": false
+    },
+    "317": {
+      "id": "317",
+      "name": "Fireplace in lobby",
+      "has_value": false
+    },
+    "321": {
+      "id": "321",
+      "name": "Barbecue grill(s)",
+      "has_value": false
+    },
+    "324": {
+      "id": "324",
+      "name": "Coffee/tea in common areas",
+      "has_value": false
+    },
+    "333": {
+      "id": "333",
+      "name": "Internet access in public areas - surcharge",
+      "has_value": false
+    },
+    "347": {
+      "id": "347",
+      "name": "Hiking/biking trails nearby",
+      "has_value": false
+    },
+    "349": {
+      "id": "349",
+      "name": "Kayaking nearby",
+      "has_value": false
+    },
+    "350": {
+      "id": "350",
+      "name": "Sailing nearby",
+      "has_value": false
+    },
+    "351": {
+      "id": "351",
+      "name": "Scuba diving nearby",
+      "has_value": false
+    },
+    "354": {
+      "id": "354",
+      "name": "Ski storage",
+      "has_value": false
+    },
+    "356": {
+      "id": "356",
+      "name": "Water skiing nearby",
+      "has_value": false
+    },
+    "361": {
+      "id": "361",
+      "name": "Breakfast available (surcharge)",
+      "has_value": false
+    },
+    "369": {
+      "id": "369",
+      "name": "Laundry facilities",
+      "has_value": false
+    },
+    "372": {
+      "id": "372",
+      "name": "Television in common areas",
+      "has_value": false
+    },
+    "375": {
+      "id": "375",
+      "name": "Arcade/game room",
+      "has_value": false
+    },
+    "378": {
+      "id": "378",
+      "name": "Garden",
+      "has_value": false
+    },
+    "381": {
+      "id": "381",
+      "name": "Personal motorized watercraft on site",
+      "has_value": false
+    },
+    "383": {
+      "id": "383",
+      "name": "Scooter/moped rentals nearby",
+      "has_value": false
+    },
+    "385": {
+      "id": "385",
+      "name": "Library",
+      "has_value": false
+    },
+    "401": {
+      "id": "401",
+      "name": "Wood stove",
+      "has_value": false
+    },
+    "403": {
+      "id": "403",
+      "name": "Rafting nearby",
+      "has_value": false
+    },
+    "2001": {
+      "id": "2001",
+      "name": "Free breakfast",
+      "has_value": false
+    },
+    "2008": {
+      "id": "2008",
+      "name": "Health club",
+      "has_value": false
+    },
+    "2010": {
+      "id": "2010",
+      "name": "Nightclub",
+      "has_value": false
+    },
+    "2014": {
+      "id": "2014",
+      "name": "Children's pool",
+      "has_value": false
+    },
+    "2016": {
+      "id": "2016",
+      "name": "Safe-deposit box at front desk",
+      "has_value": false
+    },
+    "2017": {
+      "id": "2017",
+      "name": "Spa services on site",
+      "has_value": false
+    },
+    "2043": {
+      "id": "2043",
+      "name": "Multilingual staff",
+      "has_value": false
+    },
+    "2047": {
+      "id": "2047",
+      "name": "Free newspapers in lobby",
+      "has_value": false
+    },
+    "2048": {
+      "id": "2048",
+      "name": "Free use of nearby fitness center",
+      "has_value": false
+    },
+    "2049": {
+      "id": "2049",
+      "name": "Picnic area",
+      "has_value": false
+    },
+    "2063": {
+      "id": "2063",
+      "name": "24-hour front desk",
+      "has_value": false
+    },
+    "2064": {
+      "id": "2064",
+      "name": "Front desk (limited hours)",
+      "has_value": false
+    },
+    "2065": {
+      "id": "2065",
+      "name": "Business center",
+      "has_value": false
+    },
+    "2066": {
+      "id": "2066",
+      "name": "Porter/bellhop",
+      "has_value": false
+    },
+    "2067": {
+      "id": "2067",
+      "name": "Express check-out",
+      "has_value": false
+    },
+    "2070": {
+      "id": "2070",
+      "name": "Dry cleaning/laundry service",
+      "has_value": false
+    },
+    "2072": {
+      "id": "2072",
+      "name": "Limo or town car service available",
+      "has_value": false
+    },
+    "2074": {
+      "id": "2074",
+      "name": "Swimming pool",
+      "has_value": false
+    },
+    "2080": {
+      "id": "2080",
+      "name": "On private beach",
+      "has_value": false
+    },
+    "2082": {
+      "id": "2082",
+      "name": "Ski-in/ski-out access",
+      "has_value": false
+    },
+    "2087": {
+      "id": "2087",
+      "name": "Parasailing nearby",
+      "has_value": false
+    },
+    "2089": {
+      "id": "2089",
+      "name": "Snowmobiling nearby",
+      "has_value": false
+    },
+    "2090": {
+      "id": "2090",
+      "name": "Mountain biking nearby",
+      "has_value": false
+    },
+    "2092": {
+      "id": "2092",
+      "name": "Snowshoeing nearby",
+      "has_value": false
+    },
+    "2093": {
+      "id": "2093",
+      "name": "Skydiving nearby",
+      "has_value": false
+    },
+    "2094": {
+      "id": "2094",
+      "name": "Windsurfing nearby",
+      "has_value": false
+    },
+    "2101": {
+      "id": "2101",
+      "name": "Internet access - wireless",
+      "has_value": false
+    },
+    "2112": {
+      "id": "2112",
+      "name": "Casino",
+      "has_value": false
+    },
+    "2123": {
+      "id": "2123",
+      "name": "Full-service spa",
+      "has_value": false
+    },
+    "2125": {
+      "id": "2125",
+      "name": "Internet access in public areas - high speed",
+      "has_value": false
+    },
+    "2128": {
+      "id": "2128",
+      "name": "Marina on site",
+      "has_value": false
+    },
+    "2129": {
+      "id": "2129",
+      "name": "Spa treatment room(s)",
+      "has_value": false
+    },
+    "2131": {
+      "id": "2131",
+      "name": "Meeting rooms",
+      "has_value": false
+    },
+    "2134": {
+      "id": "2134",
+      "name": "Steam room",
+      "has_value": false
+    },
+    "2135": {
+      "id": "2135",
+      "name": "Sauna",
+      "has_value": false
+    },
+    "2136": {
+      "id": "2136",
+      "name": "Ski shuttle",
+      "has_value": false
+    },
+    "2137": {
+      "id": "2137",
+      "name": "Smoke-free property",
+      "has_value": false
+    },
+    "2138": {
+      "id": "2138",
+      "name": "Outdoor seasonal pool",
+      "has_value": false
+    },
+    "2146": {
+      "id": "2146",
+      "name": "Snowboarding nearby",
+      "has_value": false
+    },
+    "2167": {
+      "id": "2167",
+      "name": "Wedding services",
+      "has_value": false
+    },
+    "2177": {
+      "id": "2177",
+      "name": "Express check-in",
+      "has_value": false
+    },
+    "2178": {
+      "id": "2178",
+      "name": "Use of nearby fitness center (discount)",
+      "has_value": false
+    },
+    "2186": {
+      "id": "2186",
+      "name": "Children's club",
+      "has_value": false
+    },
+    "2189": {
+      "id": "2189",
+      "name": "Expedia Local Expert concierge",
+      "has_value": false
+    },
+    "2349": {
+      "id": "2349",
+      "name": "Designated smoking areas",
+      "has_value": false
+    },
+    "2352": {
+      "id": "2352",
+      "name": "Pool umbrellas",
+      "has_value": false
+    },
+    "2353": {
+      "id": "2353",
+      "name": "Airport transportation",
+      "has_value": false
+    },
+    "2357": {
+      "id": "2357",
+      "name": "Ecotours nearby",
+      "has_value": false
+    },
+    "2360": {
+      "id": "2360",
+      "name": "Ski lessons available nearby",
+      "has_value": false
+    },
+    "2362": {
+      "id": "2362",
+      "name": "Ski equipment rental shops nearby",
+      "has_value": false
+    },
+    "2364": {
+      "id": "2364",
+      "name": "Golf lessons available nearby",
+      "has_value": false
+    },
+    "2385": {
+      "id": "2385",
+      "name": "Billiards or pool table",
+      "has_value": false
+    },
+    "2386": {
+      "id": "2386",
+      "name": "Grocery/convenience store",
+      "has_value": false
+    },
+    "2387": {
+      "id": "2387",
+      "name": "Tours/ticket assistance",
+      "has_value": false
+    },
+    "2390": {
+      "id": "2390",
+      "name": "Free WiFi",
+      "has_value": false
+    },
+    "2391": {
+      "id": "2391",
+      "name": "WiFi (surcharge)",
+      "has_value": false
+    },
+    "2392": {
+      "id": "2392",
+      "name": "Free wired internet",
+      "has_value": false
+    },
+    "2393": {
+      "id": "2393",
+      "name": "Wired internet access - surcharge",
+      "has_value": false
+    },
+    "2416": {
+      "id": "2416",
+      "name": "Free train station pickup",
+      "has_value": false
+    },
+    "2419": {
+      "id": "2419",
+      "name": "Wheelchair accessible path of travel",
+      "has_value": false
+    },
+    "2420": {
+      "id": "2420",
+      "name": "Accessible bathroom (in select rooms)",
+      "has_value": false
+    },
+    "2421": {
+      "id": "2421",
+      "name": "Roll-in shower (in select rooms)",
+      "has_value": false
+    },
+    "2422": {
+      "id": "2422",
+      "name": "Wheelchair accessible parking",
+      "has_value": false
+    },
+    "2423": {
+      "id": "2423",
+      "name": "In-room accessibility (in select rooms)",
+      "has_value": false
+    },
+    "2424": {
+      "id": "2424",
+      "name": "Assistive listening devices available",
+      "has_value": false
+    },
+    "2425": {
+      "id": "2425",
+      "name": "Braille or raised signage",
+      "has_value": false
+    },
+    "2528": {
+      "id": "2528",
+      "name": "Free area shuttle",
+      "has_value": false
+    },
+    "2529": {
+      "id": "2529",
+      "name": "Area shuttle (surcharge)",
+      "has_value": false
+    },
+    "2537": {
+      "id": "2537",
+      "name": "Number of restaurants - ",
+      "has_value": true
+    },
+    "2538": {
+      "id": "2538",
+      "name": "24-hour business center",
+      "has_value": false
+    },
+    "2539": {
+      "id": "2539",
+      "name": "Conference space size (feet) - ",
+      "has_value": true
+    },
+    "2592": {
+      "id": "2592",
+      "name": "Conference space size (meters) - ",
+      "has_value": true
+    },
+    "2593": {
+      "id": "2593",
+      "name": "Number of meeting rooms - ",
+      "has_value": true
+    },
+    "2594": {
+      "id": "2594",
+      "name": "Free reception",
+      "has_value": false
+    },
+    "2617": {
+      "id": "2617",
+      "name": "Golf course on site",
+      "has_value": false
+    },
+    "2618": {
+      "id": "2618",
+      "name": "Tennis on site",
+      "has_value": false
+    },
+    "2783": {
+      "id": "2783",
+      "name": "RV, bus, truck parking",
+      "has_value": false
+    },
+    "2798": {
+      "id": "2798",
+      "name": "Long-term parking",
+      "has_value": false
+    },
+    "2817": {
+      "id": "2817",
+      "name": "Lazy river",
+      "has_value": false
+    },
+    "2818": {
+      "id": "2818",
+      "name": "Waterslide",
+      "has_value": false
+    },
+    "2819": {
+      "id": "2819",
+      "name": "Water park",
+      "has_value": false
+    },
+    "2820": {
+      "id": "2820",
+      "name": "Number of indoor pools - ",
+      "has_value": true
+    },
+    "2821": {
+      "id": "2821",
+      "name": "Number of outdoor pools - ",
+      "has_value": true
+    },
+    "2822": {
+      "id": "2822",
+      "name": "Number of spa tubs - ",
+      "has_value": true
+    },
+    "2942": {
+      "id": "2942",
+      "name": "Free casino shuttle",
+      "has_value": false
+    },
+    "2943": {
+      "id": "2943",
+      "name": "Casino shuttle (surcharge)",
+      "has_value": false
+    },
+    "2944": {
+      "id": "2944",
+      "name": "Free cruise terminal shuttle",
+      "has_value": false
+    },
+    "2945": {
+      "id": "2945",
+      "name": "Cruise terminal shuttle (surcharge)",
+      "has_value": false
+    },
+    "2946": {
+      "id": "2946",
+      "name": "Free ferry terminal shuttle",
+      "has_value": false
+    },
+    "2947": {
+      "id": "2947",
+      "name": "Ferry terminal shuttle (surcharge)",
+      "has_value": false
+    },
+    "2948": {
+      "id": "2948",
+      "name": "Free shopping center shuttle",
+      "has_value": false
+    },
+    "2949": {
+      "id": "2949",
+      "name": "Shopping center shuttle (surcharge)",
+      "has_value": false
+    },
+    "2950": {
+      "id": "2950",
+      "name": "Free theme park shuttle",
+      "has_value": false
+    },
+    "2951": {
+      "id": "2951",
+      "name": "Theme park shuttle (surcharge)",
+      "has_value": false
+    },
+    "3269": {
+      "id": "3269",
+      "name": "Designated smoking areas (fines apply)",
+      "has_value": false
+    },
+    "3372": {
+      "id": "3372",
+      "name": "Conference center",
+      "has_value": false
+    },
+    "3374": {
+      "id": "3374",
+      "name": "Indoor tennis courts - ",
+      "has_value": true
+    },
+    "3376": {
+      "id": "3376",
+      "name": "Outdoor tennis courts - ",
+      "has_value": true
+    },
+    "3500": {
+      "id": "3500",
+      "name": "Snack bar/deli",
+      "has_value": false
+    },
+    "3547": {
+      "id": "3547",
+      "name": "Breakfast service",
+      "has_value": false
+    },
+    "3601": {
+      "id": "3601",
+      "name": "Turkish bath/Hammam",
+      "has_value": false
+    },
+    "3761": {
+      "id": "3761",
+      "name": "Parking (limited spaces)",
+      "has_value": false
+    },
+    "3778": {
+      "id": "3778",
+      "name": "Free bicycles on site",
+      "has_value": false
+    },
+    "3788": {
+      "id": "3788",
+      "name": "Access to nearby indoor pool",
+      "has_value": false
+    },
+    "3789": {
+      "id": "3789",
+      "name": "Access to nearby outdoor pool",
+      "has_value": false
+    },
+    "3799": {
+      "id": "3799",
+      "name": "Fitness classes on site",
+      "has_value": false
+    },
+    "3800": {
+      "id": "3800",
+      "name": "Basketball on site",
+      "has_value": false
+    },
+    "3801": {
+      "id": "3801",
+      "name": "Bicycle rentals on site",
+      "has_value": false
+    },
+    "3805": {
+      "id": "3805",
+      "name": "Bowling alley on site",
+      "has_value": false
+    },
+    "3807": {
+      "id": "3807",
+      "name": "Free bicycles nearby",
+      "has_value": false
+    },
+    "3809": {
+      "id": "3809",
+      "name": "Ecotours on site",
+      "has_value": false
+    },
+    "3810": {
+      "id": "3810",
+      "name": "Fishing on site",
+      "has_value": false
+    },
+    "3811": {
+      "id": "3811",
+      "name": "Golf driving range on site",
+      "has_value": false
+    },
+    "3812": {
+      "id": "3812",
+      "name": "Miniature golf on site",
+      "has_value": false
+    },
+    "3813": {
+      "id": "3813",
+      "name": "Golf lessons on site",
+      "has_value": false
+    },
+    "3814": {
+      "id": "3814",
+      "name": "Golfing on site",
+      "has_value": false
+    },
+    "3815": {
+      "id": "3815",
+      "name": "Helicopter/airplane tours on site",
+      "has_value": false
+    },
+    "3816": {
+      "id": "3816",
+      "name": "Hiking/biking trails on site",
+      "has_value": false
+    },
+    "3817": {
+      "id": "3817",
+      "name": "Horse riding/rental on site",
+      "has_value": false
+    },
+    "3819": {
+      "id": "3819",
+      "name": "Ice skating on site",
+      "has_value": false
+    },
+    "3820": {
+      "id": "3820",
+      "name": "Kayaking on site",
+      "has_value": false
+    },
+    "3821": {
+      "id": "3821",
+      "name": "Motor boating on site",
+      "has_value": false
+    },
+    "3822": {
+      "id": "3822",
+      "name": "Mountain biking on site",
+      "has_value": false
+    },
+    "3823": {
+      "id": "3823",
+      "name": "Parasailing on site",
+      "has_value": false
+    },
+    "3824": {
+      "id": "3824",
+      "name": "Pilates classes on site",
+      "has_value": false
+    },
+    "3825": {
+      "id": "3825",
+      "name": "Playground on site",
+      "has_value": false
+    },
+    "3826": {
+      "id": "3826",
+      "name": "Racquetball/squash on site",
+      "has_value": false
+    },
+    "3827": {
+      "id": "3827",
+      "name": "Rafting on site",
+      "has_value": false
+    },
+    "3829": {
+      "id": "3829",
+      "name": "Rowing or canoeing on site",
+      "has_value": false
+    },
+    "3831": {
+      "id": "3831",
+      "name": "Sailing on site",
+      "has_value": false
+    },
+    "3832": {
+      "id": "3832",
+      "name": "Scooter/moped rentals on site",
+      "has_value": false
+    },
+    "3833": {
+      "id": "3833",
+      "name": "Scuba diving on site",
+      "has_value": false
+    },
+    "3835": {
+      "id": "3835",
+      "name": "Ski equipment rentals on site",
+      "has_value": false
+    },
+    "3836": {
+      "id": "3836",
+      "name": "Ski lessons on site",
+      "has_value": false
+    },
+    "3837": {
+      "id": "3837",
+      "name": "Cross-country skiing on site",
+      "has_value": false
+    },
+    "3838": {
+      "id": "3838",
+      "name": "Downhill skiing on site",
+      "has_value": false
+    },
+    "3839": {
+      "id": "3839",
+      "name": "Skydiving on site",
+      "has_value": false
+    },
+    "3840": {
+      "id": "3840",
+      "name": "Snorkeling on site",
+      "has_value": false
+    },
+    "3842": {
+      "id": "3842",
+      "name": "Snowboarding on site",
+      "has_value": false
+    },
+    "3843": {
+      "id": "3843",
+      "name": "Snowmobiling on site",
+      "has_value": false
+    },
+    "3844": {
+      "id": "3844",
+      "name": "Snowshoeing on site",
+      "has_value": false
+    },
+    "3846": {
+      "id": "3846",
+      "name": "Surfing/bodyboarding on site",
+      "has_value": false
+    },
+    "3850": {
+      "id": "3850",
+      "name": "Tennis lessons on site",
+      "has_value": false
+    },
+    "3851": {
+      "id": "3851",
+      "name": "Volleyball on site",
+      "has_value": false
+    },
+    "3852": {
+      "id": "3852",
+      "name": "Water skiing on site",
+      "has_value": false
+    },
+    "3854": {
+      "id": "3854",
+      "name": "Windsurfing on site",
+      "has_value": false
+    },
+    "3855": {
+      "id": "3855",
+      "name": "Yoga classes/instruction on site",
+      "has_value": false
+    },
+    "3861": {
+      "id": "3861",
+      "name": "Free self parking",
+      "has_value": false
+    },
+    "3862": {
+      "id": "3862",
+      "name": "Self parking (surcharge)",
+      "has_value": false
+    },
+    "3863": {
+      "id": "3863",
+      "name": "Free valet parking",
+      "has_value": false
+    },
+    "3864": {
+      "id": "3864",
+      "name": "Valet parking (surcharge)",
+      "has_value": false
+    },
+    "3865": {
+      "id": "3865",
+      "name": "Computer station",
+      "has_value": false
+    },
+    "3912": {
+      "id": "3912",
+      "name": "Rooftop terrace",
+      "has_value": false
+    },
+    "3913": {
+      "id": "3913",
+      "name": "Number of bars/lounges - ",
+      "has_value": true
+    },
+    "3914": {
+      "id": "3914",
+      "name": "Number of poolside bars - ",
+      "has_value": true
+    },
+    "3915": {
+      "id": "3915",
+      "name": "Number of beach bars - ",
+      "has_value": true
+    },
+    "3916": {
+      "id": "3916",
+      "name": "Number of swim-up bars - ",
+      "has_value": true
+    },
+    "3926": {
+      "id": "3926",
+      "name": "Segway rental/tour on site",
+      "has_value": false
+    },
+    "3927": {
+      "id": "3927",
+      "name": "Segway rental/tour nearby",
+      "has_value": false
+    },
+    "3929": {
+      "id": "3929",
+      "name": "Number of coffee shops/cafes - ",
+      "has_value": true
+    },
+    "3969": {
+      "id": "3969",
+      "name": "Daily",
+      "has_value": false
+    },
+    "4003": {
+      "id": "4003",
+      "name": "Luggage storage",
+      "has_value": false
+    },
+    "4004": {
+      "id": "4004",
+      "name": "Free airport transportation - pickup",
+      "has_value": false
+    },
+    "4005": {
+      "id": "4005",
+      "name": "Free airport transportation - drop-off",
+      "has_value": false
+    },
+    "4006": {
+      "id": "4006",
+      "name": "Airport transportation - pickup (surcharge)",
+      "has_value": false
+    },
+    "4007": {
+      "id": "4007",
+      "name": "Airport transportation - drop-off (surcharge)",
+      "has_value": false
+    },
+    "4010": {
+      "id": "4010",
+      "name": "Train station pickup (surcharge)",
+      "has_value": false
+    },
+    "4025": {
+      "id": "4025",
+      "name": "Winery attached",
+      "has_value": false
+    },
+    "4111": {
+      "id": "4111",
+      "name": "Free grocery shopping service",
+      "has_value": false
+    },
+    "4174": {
+      "id": "4174",
+      "name": "Free water park access",
+      "has_value": false
+    },
+    "4175": {
+      "id": "4175",
+      "name": "Water park access (surcharge)",
+      "has_value": false
+    },
+    "4400": {
+      "id": "4400",
+      "name": "Sledding on site",
+      "has_value": false
+    },
+    "4401": {
+      "id": "4401",
+      "name": "Sledding nearby",
+      "has_value": false
+    },
+    "4404": {
+      "id": "4404",
+      "name": "Snow tubing on site",
+      "has_value": false
+    },
+    "4405": {
+      "id": "4405",
+      "name": "Snow tubing nearby",
+      "has_value": false
+    },
+    "4421": {
+      "id": "4421",
+      "name": "Free ski shuttle",
+      "has_value": false
+    },
+    "4422": {
+      "id": "4422",
+      "name": "Ski shuttle (surcharge)",
+      "has_value": false
+    },
+    "4423": {
+      "id": "4423",
+      "name": "Ski passes available",
+      "has_value": false
+    },
+    "4428": {
+      "id": "4428",
+      "name": "Free beach shuttle",
+      "has_value": false
+    },
+    "4429": {
+      "id": "4429",
+      "name": "Beach shuttle (surcharge)",
+      "has_value": false
+    },
+    "4431": {
+      "id": "4431",
+      "name": "Direct access to private beach",
+      "has_value": false
+    },
+    "4432": {
+      "id": "4432",
+      "name": "Beach umbrellas",
+      "has_value": false
+    },
+    "4433": {
+      "id": "4433",
+      "name": "Free beach cabanas",
+      "has_value": false
+    },
+    "4434": {
+      "id": "4434",
+      "name": "Beach cabanas (surcharge)",
+      "has_value": false
+    },
+    "4435": {
+      "id": "4435",
+      "name": "Pool cabanas (surcharge)",
+      "has_value": false
+    },
+    "4436": {
+      "id": "4436",
+      "name": "Free pool cabanas",
+      "has_value": false
+    },
+    "4437": {
+      "id": "4437",
+      "name": "Beach sun loungers",
+      "has_value": false
+    },
+    "4438": {
+      "id": "4438",
+      "name": "Pool sun loungers",
+      "has_value": false
+    },
+    "4450": {
+      "id": "4450",
+      "name": "Free long-term parking",
+      "has_value": false
+    },
+    "4451": {
+      "id": "4451",
+      "name": "Long-term parking (surcharge)",
+      "has_value": false
+    },
+    "4452": {
+      "id": "4452",
+      "name": "Free RV, bus, truck parking",
+      "has_value": false
+    },
+    "4453": {
+      "id": "4453",
+      "name": "RV, bus, truck parking (surcharge)",
+      "has_value": false
+    },
+    "4454": {
+      "id": "4454",
+      "name": "Free parking nearby",
+      "has_value": false
+    },
+    "4455": {
+      "id": "4455",
+      "name": "Offsite parking discounted rates available",
+      "has_value": false
+    },
+    "4456": {
+      "id": "4456",
+      "name": "Offsite parking reservations required",
+      "has_value": false
+    },
+    "4467": {
+      "id": "4467",
+      "name": "Beach towels",
+      "has_value": false
+    },
+    "4468": {
+      "id": "4468",
+      "name": "24-hour fitness facilities",
+      "has_value": false
+    },
+    "4491": {
+      "id": "4491",
+      "name": "Beach volleyball on site",
+      "has_value": false
+    },
+    "4497": {
+      "id": "4497",
+      "name": "Beach yoga on site",
+      "has_value": false
+    },
+    "4502": {
+      "id": "4502",
+      "name": "Boat tours nearby",
+      "has_value": false
+    },
+    "4503": {
+      "id": "4503",
+      "name": "Boat tours on site",
+      "has_value": false
+    },
+    "4514": {
+      "id": "4514",
+      "name": "Terrace",
+      "has_value": false
+    },
+    "4646": {
+      "id": "4646",
+      "name": "Free continental breakfast",
+      "has_value": false
+    },
+    "4647": {
+      "id": "4647",
+      "name": "Free buffet breakfast",
+      "has_value": false
+    },
+    "4648": {
+      "id": "4648",
+      "name": "Free cooked-to-order breakfast",
+      "has_value": false
+    },
+    "4649": {
+      "id": "4649",
+      "name": "Free English breakfast",
+      "has_value": false
+    },
+    "4650": {
+      "id": "4650",
+      "name": "Free full breakfast",
+      "has_value": false
+    },
+    "4695": {
+      "id": "4695",
+      "name": "Babysitting or childcare (free)",
+      "has_value": false
+    },
+    "4696": {
+      "id": "4696",
+      "name": "Babysitting or childcare (surcharge)",
+      "has_value": false
+    },
+    "4697": {
+      "id": "4697",
+      "name": "Children's club (free)",
+      "has_value": false
+    },
+    "4698": {
+      "id": "4698",
+      "name": "Children's club (surcharge)",
+      "has_value": false
+    },
+    "4699": {
+      "id": "4699",
+      "name": "Supervised childcare/activities (free)",
+      "has_value": false
+    },
+    "4700": {
+      "id": "4700",
+      "name": "Supervised childcare/activities (surcharge)",
+      "has_value": false
+    },
+    "5004": {
+      "id": "5004",
+      "name": "Hot springs on site",
+      "has_value": false
+    },
+    "5005": {
+      "id": "5005",
+      "name": "Hot springs nearby",
+      "has_value": false
+    },
+    "5015": {
+      "id": "5015",
+      "name": "Private beach nearby",
+      "has_value": false
+    },
+    "5023": {
+      "id": "5023",
+      "name": "Game viewing on site",
+      "has_value": false
+    },
+    "5024": {
+      "id": "5024",
+      "name": "Game viewing nearby",
+      "has_value": false
+    },
+    "5025": {
+      "id": "5025",
+      "name": "Game drive on site",
+      "has_value": false
+    },
+    "5026": {
+      "id": "5026",
+      "name": "Game drive nearby",
+      "has_value": false
+    },
+    "5027": {
+      "id": "5027",
+      "name": "Safari on site",
+      "has_value": false
+    },
+    "5028": {
+      "id": "5028",
+      "name": "Safari nearby",
+      "has_value": false
+    },
+    "5054": {
+      "id": "5054",
+      "name": "24-hour health club",
+      "has_value": false
+    },
+    "5096": {
+      "id": "5096",
+      "name": "Rock climbing nearby",
+      "has_value": false
+    },
+    "5097": {
+      "id": "5097",
+      "name": "Rock climbing on site",
+      "has_value": false
+    },
+    "5098": {
+      "id": "5098",
+      "name": "Cave exploring/spelunking nearby",
+      "has_value": false
+    },
+    "5099": {
+      "id": "5099",
+      "name": "Cave exploring/spelunking on site",
+      "has_value": false
+    },
+    "5103": {
+      "id": "5103",
+      "name": "Ziplining nearby",
+      "has_value": false
+    },
+    "5104": {
+      "id": "5104",
+      "name": "Ziplining on site",
+      "has_value": false
+    },
+    "6145": {
+      "id": "6145",
+      "name": "Free breakfast to go",
+      "has_value": false
+    },
+    "1073742765": {
+      "id": "1073742765",
+      "name": "Fitness facilities (surcharge)",
+      "has_value": false
+    },
+    "1073742767": {
+      "id": "1073742767",
+      "name": "Spa tub (surcharge)",
+      "has_value": false
+    },
+    "1073742791": {
+      "id": "1073742791",
+      "name": "Newspapers in lobby (surcharge)",
+      "has_value": false
+    },
+    "1073742906": {
+      "id": "1073742906",
+      "name": "Parking onsite",
+      "has_value": false
+    },
+    "1073742907": {
+      "id": "1073742907",
+      "name": "Internet access",
+      "has_value": false
+    },
+    "1073743304": {
+      "id": "1073743304",
+      "name": "Karaoke",
+      "has_value": false
+    },
+    "1073743305": {
+      "id": "1073743305",
+      "name": "Free train station drop-off",
+      "has_value": false
+    },
+    "1073743306": {
+      "id": "1073743306",
+      "name": "Train station drop-off (surcharge)",
+      "has_value": false
+    },
+    "1073743315": {
+      "id": "1073743315",
+      "name": "Electric car charging station",
+      "has_value": false
+    },
+    "1073743381": {
+      "id": "1073743381",
+      "name": "Stereo",
+      "has_value": false
+    },
+    "1073743382": {
+      "id": "1073743382",
+      "name": "Books",
+      "has_value": false
+    },
+    "1073743383": {
+      "id": "1073743383",
+      "name": "Games",
+      "has_value": false
+    },
+    "1073743384": {
+      "id": "1073743384",
+      "name": "Video library",
+      "has_value": false
+    },
+    "1073743385": {
+      "id": "1073743385",
+      "name": "Infant/toddler toys",
+      "has_value": false
+    },
+    "1073743386": {
+      "id": "1073743386",
+      "name": "Table tennis",
+      "has_value": false
+    },
+    "1073743387": {
+      "id": "1073743387",
+      "name": "Music library",
+      "has_value": false
+    },
+    "1073743388": {
+      "id": "1073743388",
+      "name": "Foosball",
+      "has_value": false
+    },
+    "1073743392": {
+      "id": "1073743392",
+      "name": "Free WiFi (limited) time - ",
+      "has_value": true
+    },
+    "1073743393": {
+      "id": "1073743393",
+      "name": "Free WiFi (limited) duration - ",
+      "has_value": true
+    },
+    "1073743394": {
+      "id": "1073743394",
+      "name": "Free WiFi (limited) device count - ",
+      "has_value": true
+    },
+    "1073743395": {
+      "id": "1073743395",
+      "name": "Limited WiFi (surcharge) device count - ",
+      "has_value": true
+    },
+    "1073743404": {
+      "id": "1073743404",
+      "name": "Shared microwave",
+      "has_value": false
+    },
+    "1073743405": {
+      "id": "1073743405",
+      "name": "Shared refrigerator",
+      "has_value": false
+    },
+    "1073743434": {
+      "id": "1073743434",
+      "name": "Free breakfast (local cuisine)",
+      "has_value": false
+    },
+    "1073743549": {
+      "id": "1073743549",
+      "name": "24-hour pool access",
+      "has_value": false
+    },
+    "1073743877": {
+      "id": "1073743877",
+      "name": "Water dispenser",
+      "has_value": false
+    },
+    "1073743884": {
+      "id": "1073743884",
+      "name": "Lockers available",
+      "has_value": false
+    },
+    "1073743926": {
+      "id": "1073743926",
+      "name": "Housekeeping on request",
+      "has_value": false
+    },
+    "1073743950": {
+      "id": "1073743950",
+      "name": "Firepit",
+      "has_value": false
+    },
+    "1073743951": {
+      "id": "1073743951",
+      "name": "Outdoor fireplace",
+      "has_value": false
+    },
+    "1073743952": {
+      "id": "1073743952",
+      "name": "Shoji (room divider)",
+      "has_value": false
+    },
+    "1073743953": {
+      "id": "1073743953",
+      "name": "Engawa (sitting area)",
+      "has_value": false
+    },
+    "1073743954": {
+      "id": "1073743954",
+      "name": "Concerts/live shows",
+      "has_value": false
+    },
+    "1073743955": {
+      "id": "1073743955",
+      "name": "Evening entertainment",
+      "has_value": false
+    },
+    "1073743956": {
+      "id": "1073743956",
+      "name": "Mosquito nets",
+      "has_value": false
+    },
+    "1073743961": {
+      "id": "1073743961",
+      "name": "Number of slot machines - ",
+      "has_value": true
+    },
+    "1073743962": {
+      "id": "1073743962",
+      "name": "Number of gaming tables - ",
+      "has_value": true
+    },
+    "1073743963": {
+      "id": "1073743963",
+      "name": "Number of VIP gaming rooms - ",
+      "has_value": true
+    },
+    "1073743964": {
+      "id": "1073743964",
+      "name": "Pachinko",
+      "has_value": false
+    },
+    "1073743965": {
+      "id": "1073743965",
+      "name": "Bingo",
+      "has_value": false
+    },
+    "1073743966": {
+      "id": "1073743966",
+      "name": "Casino floor size square feet - ",
+      "has_value": true
+    },
+    "1073744062": {
+      "id": "1073744062",
+      "name": "Golf lessons with a pro",
+      "has_value": false
+    },
+    "1073744063": {
+      "id": "1073744063",
+      "name": "Pro shop",
+      "has_value": false
+    },
+    "1073744064": {
+      "id": "1073744064",
+      "name": "Clubhouse",
+      "has_value": false
+    },
+    "1073744065": {
+      "id": "1073744065",
+      "name": "Golf caddy",
+      "has_value": false
+    },
+    "1073744066": {
+      "id": "1073744066",
+      "name": "Couples/private dining",
+      "has_value": false
+    },
+    "1073744067": {
+      "id": "1073744067",
+      "name": "Private picnics",
+      "has_value": false
+    },
+    "1073744069": {
+      "id": "1073744069",
+      "name": "Designer stores on site",
+      "has_value": false
+    },
+    "1073744070": {
+      "id": "1073744070",
+      "name": "Shopping mall on site",
+      "has_value": false
+    },
+    "1073744071": {
+      "id": "1073744071",
+      "name": "Art gallery on site",
+      "has_value": false
+    },
+    "1073744072": {
+      "id": "1073744072",
+      "name": "Vineyard",
+      "has_value": false
+    },
+    "1073744073": {
+      "id": "1073744073",
+      "name": "Tasting room",
+      "has_value": false
+    },
+    "1073744074": {
+      "id": "1073744074",
+      "name": "Wine release events",
+      "has_value": false
+    },
+    "1073744075": {
+      "id": "1073744075",
+      "name": "Private winery tours",
+      "has_value": false
+    },
+    "1073744076": {
+      "id": "1073744076",
+      "name": "Public winery tours",
+      "has_value": false
+    },
+    "1073744083": {
+      "id": "1073744083",
+      "name": "Motorcycle parking only",
+      "has_value": false
+    },
+    "1073744084": {
+      "id": "1073744084",
+      "name": "Luxury tents",
+      "has_value": false
+    },
+    "1073744085": {
+      "id": "1073744085",
+      "name": "Nature reserve",
+      "has_value": false
+    },
+    "1073744086": {
+      "id": "1073744086",
+      "name": "Farming classes",
+      "has_value": false
+    },
+    "1073744087": {
+      "id": "1073744087",
+      "name": "Vegetable garden",
+      "has_value": false
+    },
+    "1073744088": {
+      "id": "1073744088",
+      "name": "Organic produce",
+      "has_value": false
+    },
+    "1073744091": {
+      "id": "1073744091",
+      "name": "Birdwatching on site",
+      "has_value": false
+    },
+    "1073744092": {
+      "id": "1073744092",
+      "name": "Birdwatching nearby",
+      "has_value": false
+    },
+    "1073744094": {
+      "id": "1073744094",
+      "name": "Casino floor size square meters - ",
+      "has_value": true
+    },
+    "1073744097": {
+      "id": "1073744097",
+      "name": "Game/wildlife walks on site",
+      "has_value": false
+    },
+    "1073744098": {
+      "id": "1073744098",
+      "name": "Game/wildlife walks nearby",
+      "has_value": false
+    },
+    "1073744099": {
+      "id": "1073744099",
+      "name": "Proposal/romance packages available",
+      "has_value": false
+    },
+    "1073744107": {
+      "id": "1073744107",
+      "name": "Archery on site",
+      "has_value": false
+    },
+    "1073744108": {
+      "id": "1073744108",
+      "name": "Hunting on site",
+      "has_value": false
+    },
+    "1073744109": {
+      "id": "1073744109",
+      "name": "Ropes course on site",
+      "has_value": false
+    },
+    "1073744110": {
+      "id": "1073744110",
+      "name": "Ballroom",
+      "has_value": false
+    },
+    "1073744111": {
+      "id": "1073744111",
+      "name": "Banquet hall",
+      "has_value": false
+    },
+    "1073744112": {
+      "id": "1073744112",
+      "name": "Reception hall",
+      "has_value": false
+    },
+    "1073744113": {
+      "id": "1073744113",
+      "name": "Vending machine",
+      "has_value": false
+    },
+    "1073744114": {
+      "id": "1073744114",
+      "name": "Natural pool",
+      "has_value": false
+    },
+    "1073744115": {
+      "id": "1073744115",
+      "name": "Infinity pool",
+      "has_value": false
+    },
+    "1073744117": {
+      "id": "1073744117",
+      "name": "Indoor/outdoor pool",
+      "has_value": false
+    },
+    "1073744118": {
+      "id": "1073744118",
+      "name": "Pool waterfall",
+      "has_value": false
+    },
+    "1073744119": {
+      "id": "1073744119",
+      "name": "Rooftop pool",
+      "has_value": false
+    },
+    "1073744120": {
+      "id": "1073744120",
+      "name": "Exercise/lap pool",
+      "has_value": false
+    },
+    "1073744121": {
+      "id": "1073744121",
+      "name": "Heated pool",
+      "has_value": false
+    },
+    "1073744122": {
+      "id": "1073744122",
+      "name": "Shared/communal pool",
+      "has_value": false
+    },
+    "1073744141": {
+      "id": "1073744141",
+      "name": "Free self-serve breakfast",
+      "has_value": false
+    },
+    "1073744226": {
+      "id": "1073744226",
+      "name": "Trampoline",
+      "has_value": false
+    },
+    "1073744233": {
+      "id": "1073744233",
+      "name": "Dock",
+      "has_value": false
+    },
+    "1073744234": {
+      "id": "1073744234",
+      "name": "Firewood (free)",
+      "has_value": false
+    },
+    "1073744235": {
+      "id": "1073744235",
+      "name": "Fully fenced",
+      "has_value": false
+    },
+    "1073744236": {
+      "id": "1073744236",
+      "name": "Street parking",
+      "has_value": false
+    },
+    "1073744239": {
+      "id": "1073744239",
+      "name": "Composting",
+      "has_value": false
+    },
+    "1073744240": {
+      "id": "1073744240",
+      "name": "Eco-friendly cleaning products provided",
+      "has_value": false
+    },
+    "1073744241": {
+      "id": "1073744241",
+      "name": "Eco-friendly toiletries",
+      "has_value": false
+    },
+    "1073744242": {
+      "id": "1073744242",
+      "name": "LED light bulbs",
+      "has_value": false
+    },
+    "1073744243": {
+      "id": "1073744243",
+      "name": "Recycling",
+      "has_value": false
+    },
+    "1073744244": {
+      "id": "1073744244",
+      "name": "Reusable coffee/tea filters",
+      "has_value": false
+    },
+    "1073744245": {
+      "id": "1073744245",
+      "name": "Living plant wall",
+      "has_value": false
+    },
+    "1073744252": {
+      "id": "1073744252",
+      "name": "Renewable energy source - solar",
+      "has_value": false
+    },
+    "1073744253": {
+      "id": "1073744253",
+      "name": "Renewable energy source - geothermal",
+      "has_value": false
+    },
+    "1073744254": {
+      "id": "1073744254",
+      "name": "Renewable energy source - wind",
+      "has_value": false
+    },
+    "1073744255": {
+      "id": "1073744255",
+      "name": "Eco-friendly cleaning products used",
+      "has_value": false
+    },
+    "1073744256": {
+      "id": "1073744256",
+      "name": "Grey water recycling system",
+      "has_value": false
+    },
+    "1073744264": {
+      "id": "1073744264",
+      "name": "Japanese garden",
+      "has_value": false
+    },
+    "1073744272": {
+      "id": "1073744272",
+      "name": "Covered parking",
+      "has_value": false
+    },
+    "1073744273": {
+      "id": "1073744273",
+      "name": "Uncovered parking",
+      "has_value": false
+    },
+    "1073744274": {
+      "id": "1073744274",
+      "name": "Secured parking",
+      "has_value": false
+    },
+    "1073744275": {
+      "id": "1073744275",
+      "name": "Covered parking",
+      "has_value": false
+    },
+    "1073744276": {
+      "id": "1073744276",
+      "name": "Uncovered parking",
+      "has_value": false
+    },
+    "1073744277": {
+      "id": "1073744277",
+      "name": "Secured parking",
+      "has_value": false
+    },
+    "1073744278": {
+      "id": "1073744278",
+      "name": "Covered parking",
+      "has_value": false
+    },
+    "1073744279": {
+      "id": "1073744279",
+      "name": "Uncovered parking",
+      "has_value": false
+    },
+    "1073744280": {
+      "id": "1073744280",
+      "name": "Secured parking",
+      "has_value": false
+    },
+    "1073744288": {
+      "id": "1073744288",
+      "name": "Distance from property (ft) - ",
+      "has_value": true
+    },
+    "1073744290": {
+      "id": "1073744290",
+      "name": "Distance from property (km) - ",
+      "has_value": true
+    },
+    "1073744293": {
+      "id": "1073744293",
+      "name": "Distance from property (meters) - ",
+      "has_value": true
+    },
+    "1073744295": {
+      "id": "1073744295",
+      "name": "Distance from property (miles) - ",
+      "has_value": true
+    },
+    "1073744296": {
+      "id": "1073744296",
+      "name": "Lot hours - 24 hours",
+      "has_value": false
+    },
+    "1073744299": {
+      "id": "1073744299",
+      "name": "Lot hours - end time - ",
+      "has_value": true
+    },
+    "1073744301": {
+      "id": "1073744301",
+      "name": "Free bus station shuttle",
+      "has_value": false
+    },
+    "1073744302": {
+      "id": "1073744302",
+      "name": "Bus station shuttle (surcharge)",
+      "has_value": false
+    },
+    "1073744303": {
+      "id": "1073744303",
+      "name": "Tea service",
+      "has_value": false
+    },
+    "1073744304": {
+      "id": "1073744304",
+      "name": "Kaiseki meal",
+      "has_value": false
+    },
+    "1073744305": {
+      "id": "1073744305",
+      "name": "Genkan (entryway)",
+      "has_value": false
+    },
+    "1073744314": {
+      "id": "1073744314",
+      "name": "Lot hours - start time - ",
+      "has_value": true
+    },
+    "1073744371": {
+      "id": "1073744371",
+      "name": "Air hockey",
+      "has_value": false
+    },
+    "1073744372": {
+      "id": "1073744372",
+      "name": "Carport",
+      "has_value": false
+    },
+    "1073744373": {
+      "id": "1073744373",
+      "name": "Garage",
+      "has_value": false
+    },
+    "1073744374": {
+      "id": "1073744374",
+      "name": "Gated community",
+      "has_value": false
+    },
+    "1073744375": {
+      "id": "1073744375",
+      "name": "Golf cart",
+      "has_value": false
+    },
+    "1073744376": {
+      "id": "1073744376",
+      "name": "Golf clubs (equipment)",
+      "has_value": false
+    },
+    "1073744377": {
+      "id": "1073744377",
+      "name": "Optional golf privileges",
+      "has_value": false
+    },
+    "1073744378": {
+      "id": "1073744378",
+      "name": "Outdoor entertainment area",
+      "has_value": false
+    },
+    "1073744379": {
+      "id": "1073744379",
+      "name": "Outdoor furniture",
+      "has_value": false
+    },
+    "1073744381": {
+      "id": "1073744381",
+      "name": "Off-street parking",
+      "has_value": false
+    },
+    "1073744383": {
+      "id": "1073744383",
+      "name": "Telescope",
+      "has_value": false
+    },
+    "1073744384": {
+      "id": "1073744384",
+      "name": "Walkway to water",
+      "has_value": false
+    },
+    "1073744387": {
+      "id": "1073744387",
+      "name": "Children's games",
+      "has_value": false
+    },
+    "1073744388": {
+      "id": "1073744388",
+      "name": "Children's toys",
+      "has_value": false
+    },
+    "1073744389": {
+      "id": "1073744389",
+      "name": "Basketball nearby",
+      "has_value": false
+    },
+    "1073744390": {
+      "id": "1073744390",
+      "name": "Boat on site",
+      "has_value": false
+    },
+    "1073744391": {
+      "id": "1073744391",
+      "name": "Boat and paddles on site",
+      "has_value": false
+    },
+    "1073744392": {
+      "id": "1073744392",
+      "name": "Motor boating nearby",
+      "has_value": false
+    },
+    "1073744393": {
+      "id": "1073744393",
+      "name": "Canoe on site",
+      "has_value": false
+    },
+    "1073744394": {
+      "id": "1073744394",
+      "name": "Cycling nearby",
+      "has_value": false
+    },
+    "1073744395": {
+      "id": "1073744395",
+      "name": "Fish cleaning table",
+      "has_value": false
+    },
+    "1073744396": {
+      "id": "1073744396",
+      "name": "Fishing nearby",
+      "has_value": false
+    },
+    "1073744397": {
+      "id": "1073744397",
+      "name": "Casino nearby",
+      "has_value": false
+    },
+    "1073744398": {
+      "id": "1073744398",
+      "name": "Health or beauty spa nearby",
+      "has_value": false
+    },
+    "1073744399": {
+      "id": "1073744399",
+      "name": "Hiking nearby",
+      "has_value": false
+    },
+    "1073744400": {
+      "id": "1073744400",
+      "name": "Horse riding nearby",
+      "has_value": false
+    },
+    "1073744401": {
+      "id": "1073744401",
+      "name": "Hunting nearby",
+      "has_value": false
+    },
+    "1073744402": {
+      "id": "1073744402",
+      "name": "Ice skating nearby",
+      "has_value": false
+    },
+    "1073744403": {
+      "id": "1073744403",
+      "name": "Inflatable boat on site",
+      "has_value": false
+    },
+    "1073744404": {
+      "id": "1073744404",
+      "name": "Jet skiing nearby",
+      "has_value": false
+    },
+    "1073744405": {
+      "id": "1073744405",
+      "name": "Kayak on site",
+      "has_value": false
+    },
+    "1073744406": {
+      "id": "1073744406",
+      "name": "Marina nearby",
+      "has_value": false
+    },
+    "1073744407": {
+      "id": "1073744407",
+      "name": "Mountain climbing nearby",
+      "has_value": false
+    },
+    "1073744408": {
+      "id": "1073744408",
+      "name": "Pedal boat on site",
+      "has_value": false
+    },
+    "1073744409": {
+      "id": "1073744409",
+      "name": "Sailboat on site",
+      "has_value": false
+    },
+    "1073744410": {
+      "id": "1073744410",
+      "name": "Ski lift privileges",
+      "has_value": false
+    },
+    "1073744411": {
+      "id": "1073744411",
+      "name": "Optional ski privileges",
+      "has_value": false
+    },
+    "1073744412": {
+      "id": "1073744412",
+      "name": "Snow sports gear",
+      "has_value": false
+    },
+    "1073744413": {
+      "id": "1073744413",
+      "name": "Swimming nearby",
+      "has_value": false
+    },
+    "1073744414": {
+      "id": "1073744414",
+      "name": "Water sports equipment",
+      "has_value": false
+    },
+    "1073744415": {
+      "id": "1073744415",
+      "name": "Water tubing nearby",
+      "has_value": false
+    },
+    "1073744416": {
+      "id": "1073744416",
+      "name": "Bicycle on site",
+      "has_value": false
+    },
+    "1073744422": {
+      "id": "1073744422",
+      "name": "Coin laundry on site",
+      "has_value": false
+    },
+    "1073744430": {
+      "id": "1073744430",
+      "name": "Wheelchair accessible (may have limitations)",
+      "has_value": false
+    },
+    "1073744451": {
+      "id": "1073744451",
+      "name": "Sportsbook",
+      "has_value": false
+    },
+    "1073744462": {
+      "id": "1073744462",
+      "name": "Free Korean breakfast",
+      "has_value": false
+    },
+    "1073744464": {
+      "id": "1073744464",
+      "name": "Free Japanese breakfast",
+      "has_value": false
+    },
+    "1073744465": {
+      "id": "1073744465",
+      "name": "Free Taiwanese breakfast",
+      "has_value": false
+    },
+    "1073744466": {
+      "id": "1073744466",
+      "name": "Free Cantonese breakfast",
+      "has_value": false
+    },
+    "1073744526": {
+      "id": "1073744526",
+      "name": "Free beach club on site",
+      "has_value": false
+    },
+    "1073744527": {
+      "id": "1073744527",
+      "name": "Free beach club nearby",
+      "has_value": false
+    },
+    "1073744528": {
+      "id": "1073744528",
+      "name": "Beach club on site (surcharge)",
+      "has_value": false
+    },
+    "1073744529": {
+      "id": "1073744529",
+      "name": "Beach club nearby (surcharge)",
+      "has_value": false
+    },
+    "1073744560": {
+      "id": "1073744560",
+      "name": "Hosted evening meal",
+      "has_value": false
+    },
+    "1073744572": {
+      "id": "1073744572",
+      "name": "Hosted evening meal (reserve)",
+      "has_value": false
+    },
+    "1073744629": {
+      "id": "1073744629",
+      "name": "Wheelchair-accessible public washroom",
+      "has_value": false
+    },
+    "1073744630": {
+      "id": "1073744630",
+      "name": "Wheelchair-accessible concierge desk",
+      "has_value": false
+    },
+    "1073744631": {
+      "id": "1073744631",
+      "name": "Assistive listening devices in meeting rooms",
+      "has_value": false
+    },
+    "1073744632": {
+      "id": "1073744632",
+      "name": "Wheelchair-accessible van parking",
+      "has_value": false
+    },
+    "1073744633": {
+      "id": "1073744633",
+      "name": "Valet for wheelchair-equipped vehicle",
+      "has_value": false
+    },
+    "1073744634": {
+      "id": "1073744634",
+      "name": "Wheelchair-accessible path to elevator",
+      "has_value": false
+    },
+    "1073744635": {
+      "id": "1073744635",
+      "name": "Wheelchair-accessible registration desk",
+      "has_value": false
+    },
+    "1073744636": {
+      "id": "1073744636",
+      "name": "Wheelchair-accessible spa",
+      "has_value": false
+    },
+    "1073744637": {
+      "id": "1073744637",
+      "name": "Wheelchair-accessible pool",
+      "has_value": false
+    },
+    "1073744638": {
+      "id": "1073744638",
+      "name": "Wheelchair-accessible fitness center",
+      "has_value": false
+    },
+    "1073744639": {
+      "id": "1073744639",
+      "name": "Wheelchair-accessible meeting spaces/business center",
+      "has_value": false
+    },
+    "1073744640": {
+      "id": "1073744640",
+      "name": "Wheelchair-accessible on-site restaurant",
+      "has_value": false
+    },
+    "1073744641": {
+      "id": "1073744641",
+      "name": "Wheelchair-accessible lounge",
+      "has_value": false
+    },
+    "1073744642": {
+      "id": "1073744642",
+      "name": "Visual alarms in hallways",
+      "has_value": false
+    },
+    "1073744643": {
+      "id": "1073744643",
+      "name": "Sign language-capable staff",
+      "has_value": false
+    },
+    "1073744644": {
+      "id": "1073744644",
+      "name": "Handrails in hallways",
+      "has_value": false
+    },
+    "1073744645": {
+      "id": "1073744645",
+      "name": "Handrails in stairways",
+      "has_value": false
+    },
+    "1073744646": {
+      "id": "1073744646",
+      "name": "Wheelchairs available on site",
+      "has_value": false
+    },
+    "1073744740": {
+      "id": "1073744740",
+      "name": "Wheelchair accessible – no",
+      "has_value": false
+    },
+    "1073744760": {
+      "id": "1073744760",
+      "name": "Surf lessons - onsite",
+      "has_value": false
+    },
+    "1073744761": {
+      "id": "1073744761",
+      "name": "Surf lessons - nearby",
+      "has_value": false
+    },
+    "1073744795": {
+      "id": "1073744795",
+      "name": "Food and water bowls",
+      "has_value": false
+    },
+    "1073744796": {
+      "id": "1073744796",
+      "name": "Litter box",
+      "has_value": false
+    },
+    "1073744797": {
+      "id": "1073744797",
+      "name": "Dog exercise area",
+      "has_value": false
+    },
+    "1073744798": {
+      "id": "1073744798",
+      "name": "Pet-sitting services",
+      "has_value": false
+    },
+    "1073744799": {
+      "id": "1073744799",
+      "name": "Pet grooming services",
+      "has_value": false
+    },
+    "1073744803": {
+      "id": "1073744803",
+      "name": "Secured bicycle storage",
+      "has_value": false
+    },
+    "1073744805": {
+      "id": "1073744805",
+      "name": "Bicycle parking available",
+      "has_value": false
+    },
+    "1073744807": {
+      "id": "1073744807",
+      "name": "Bicycle tour information",
+      "has_value": false
+    },
+    "1073744808": {
+      "id": "1073744808",
+      "name": "Shuttle for bicycles available",
+      "has_value": false
+    },
+    "1073744809": {
+      "id": "1073744809",
+      "name": "Bicycle repair station",
+      "has_value": false
+    },
+    "1073744810": {
+      "id": "1073744810",
+      "name": "Bicycle cleaning area",
+      "has_value": false
+    },
+    "1073744811": {
+      "id": "1073744811",
+      "name": "Bicycle equipment shop on site",
+      "has_value": false
+    },
+    "1073744812": {
+      "id": "1073744812",
+      "name": "Bicycle-friendly property",
+      "has_value": false
+    },
+    "1073744814": {
+      "id": "1073744814",
+      "name": "Electric bicycle charging station",
+      "has_value": false
+    },
+    "1073744825": {
+      "id": "1073744825",
+      "name": "Lifeguard on site",
+      "has_value": false
+    },
+    "1073744828": {
+      "id": "1073744828",
+      "name": "Change of towels (on request)",
+      "has_value": false
+    },
+    "1073744831": {
+      "id": "1073744831",
+      "name": "Change of bed sheets (on request)",
+      "has_value": false
+    },
+    "1073744898": {
+      "id": "1073744898",
+      "name": "Coworking spaces",
+      "has_value": false
+    },
+    "1073744904": {
+      "id": "1073744904",
+      "name": "No elevator (single level property)",
+      "has_value": false
+    },
+    "1073744905": {
+      "id": "1073744905",
+      "name": "Upper floors accessible by stairs only",
+      "has_value": false
+    },
+    "1073744906": {
+      "id": "1073744906",
+      "name": "Well-lit path to entrance",
+      "has_value": false
+    },
+    "1073744907": {
+      "id": "1073744907",
+      "name": "Stair-free path to entrance",
+      "has_value": false
+    },
+    "1073744908": {
+      "id": "1073744908",
+      "name": "Hospital bed available",
+      "has_value": false
+    },
+    "1073744909": {
+      "id": "1073744909",
+      "name": "Portable hoist available",
+      "has_value": false
+    },
+    "1073744910": {
+      "id": "1073744910",
+      "name": "Pool hoist on site",
+      "has_value": false
+    },
+    "1073744911": {
+      "id": "1073744911",
+      "name": "Pool access ramp on site",
+      "has_value": false
+    },
+    "1073745192": {
+      "id": "1073745192",
+      "name": "Fence around pool",
+      "has_value": false
+    },
+    "1073745242": {
+      "id": "1073745242",
+      "name": "Beach toys",
+      "has_value": false
+    },
+    "1073745256": {
+      "id": "1073745256",
+      "name": "Stroller",
+      "has_value": false
+    },
+    "1073745261": {
+      "id": "1073745261",
+      "name": "Gas grill",
+      "has_value": false
+    },
+    "1073745262": {
+      "id": "1073745262",
+      "name": "Charcoal grill",
+      "has_value": false
+    },
+    "1073745263": {
+      "id": "1073745263",
+      "name": "Paddleboard on site",
+      "has_value": false
+    },
+    "1073745264": {
+      "id": "1073745264",
+      "name": "Bodyboard on site",
+      "has_value": false
+    },
+    "1073745265": {
+      "id": "1073745265",
+      "name": "Vegetarian breakfast available",
+      "has_value": false
+    },
+    "1073745284": {
+      "id": "1073745284",
+      "name": "Organic food",
+      "has_value": false
+    },
+    "1073745285": {
+      "id": "1073745285",
+      "name": "Rooftop garden",
+      "has_value": false
+    },
+    "1073745286": {
+      "id": "1073745286",
+      "name": "Annual carbon offsets",
+      "has_value": false
+    },
+    "1073745287": {
+      "id": "1073745287",
+      "name": "Humane animal treatment",
+      "has_value": false
+    },
+    "1073745288": {
+      "id": "1073745288",
+      "name": "Locally-owned & organized tours & activities",
+      "has_value": false
+    },
+    "1073745289": {
+      "id": "1073745289",
+      "name": "Showcase for local artists",
+      "has_value": false
+    },
+    "1073745290": {
+      "id": "1073745290",
+      "name": "Sustainability/community reinvestment (10% revenue or more)",
+      "has_value": false
+    },
+    "1073745291": {
+      "id": "1073745291",
+      "name": "Guest education on local ecosystems and culture",
+      "has_value": false
+    },
+    "1073745292": {
+      "id": "1073745292",
+      "name": "Double-glazing on all windows",
+      "has_value": false
+    },
+    "1073745293": {
+      "id": "1073745293",
+      "name": "Locally-sourced food on site (80% or more)",
+      "has_value": false
+    },
+    "1073745294": {
+      "id": "1073745294",
+      "name": "Energy-saving features in guest rooms",
+      "has_value": false
+    },
+    "1073745295": {
+      "id": "1073745295",
+      "name": "Energy-saving features in guest rooms",
+      "has_value": false
+    },
+    "1073745296": {
+      "id": "1073745296",
+      "name": "All property's electricity comes from renewable sources",
+      "has_value": false
+    },
+    "1073745297": {
+      "id": "1073745297",
+      "name": "Comprehensive food waste policy",
+      "has_value": false
+    },
+    "1073745298": {
+      "id": "1073745298",
+      "name": "Vegan menu options available",
+      "has_value": false
+    },
+    "1073745299": {
+      "id": "1073745299",
+      "name": "Vegetarian menu options available",
+      "has_value": false
+    },
+    "1073745300": {
+      "id": "1073745300",
+      "name": "Comprehensive recycling policy",
+      "has_value": false
+    },
+    "1073745301": {
+      "id": "1073745301",
+      "name": "Bulk dispenser for toiletries",
+      "has_value": false
+    },
+    "1073745302": {
+      "id": "1073745302",
+      "name": "No single-use plastic soda bottles",
+      "has_value": false
+    },
+    "1073745303": {
+      "id": "1073745303",
+      "name": "No single-use plastic stirrers",
+      "has_value": false
+    },
+    "1073745304": {
+      "id": "1073745304",
+      "name": "Biodegradable/compostable stirrers",
+      "has_value": false
+    },
+    "1073745305": {
+      "id": "1073745305",
+      "name": "No single-use plastic straws",
+      "has_value": false
+    },
+    "1073745306": {
+      "id": "1073745306",
+      "name": "Biodegradable/compostable straws",
+      "has_value": false
+    },
+    "1073745307": {
+      "id": "1073745307",
+      "name": "No single-use plastic water bottles",
+      "has_value": false
+    },
+    "1073745308": {
+      "id": "1073745308",
+      "name": "Reusable cups only",
+      "has_value": false
+    },
+    "1073745309": {
+      "id": "1073745309",
+      "name": "Reusable tableware only",
+      "has_value": false
+    },
+    "1073745310": {
+      "id": "1073745310",
+      "name": "Water-efficient showers only",
+      "has_value": false
+    },
+    "1073745311": {
+      "id": "1073745311",
+      "name": "Water-efficient toilets only",
+      "has_value": false
+    },
+    "1073745312": {
+      "id": "1073745312",
+      "name": "Water dispenser use by guests actively encouraged",
+      "has_value": false
+    },
+    "1073745313": {
+      "id": "1073745313",
+      "name": "Canoeing nearby",
+      "has_value": false
+    },
+    "1073745314": {
+      "id": "1073745314",
+      "name": "Pool toys",
+      "has_value": false
+    },
+    "1073745318": {
+      "id": "1073745318",
+      "name": "Duty-free shopping",
+      "has_value": false
+    },
+    "1073745320": {
+      "id": "1073745320",
+      "name": "Paddle boating nearby",
+      "has_value": false
+    },
+    "1073745331": {
+      "id": "1073745331",
+      "name": "Accessible shuttle",
+      "has_value": false
+    },
+    "1073745332": {
+      "id": "1073745332",
+      "name": "No accessible shuttle",
+      "has_value": false
+    },
+    "1073745333": {
+      "id": "1073745333",
+      "name": "Accessible airport shuttle",
+      "has_value": false
+    },
+    "1073745334": {
+      "id": "1073745334",
+      "name": "No accessible airport shuttle",
+      "has_value": false
+    },
+    "1073745335": {
+      "id": "1073745335",
+      "name": "Accessible bus station shuttle",
+      "has_value": false
+    },
+    "1073745336": {
+      "id": "1073745336",
+      "name": "No accessible bus station shuttle",
+      "has_value": false
+    },
+    "1073745337": {
+      "id": "1073745337",
+      "name": "Accessible train station shuttle",
+      "has_value": false
+    },
+    "1073745338": {
+      "id": "1073745338",
+      "name": "No accessible train station shuttle",
+      "has_value": false
+    },
+    "1073745339": {
+      "id": "1073745339",
+      "name": "Number of accessible parking spaces - ",
+      "has_value": true
+    },
+    "1073745340": {
+      "id": "1073745340",
+      "name": "Single-level property",
+      "has_value": false
+    },
+    "1073745341": {
+      "id": "1073745341",
+      "name": "Number of stairs to reach property - ",
+      "has_value": true
+    },
+    "1073745342": {
+      "id": "1073745342",
+      "name": "Smooth flooring in public areas",
+      "has_value": false
+    },
+    "1073745343": {
+      "id": "1073745343",
+      "name": "Thin carpet in public areas",
+      "has_value": false
+    },
+    "1073745344": {
+      "id": "1073745344",
+      "name": "Tile flooring in public areas",
+      "has_value": false
+    },
+    "1073745345": {
+      "id": "1073745345",
+      "name": "Hardwood flooring in public areas",
+      "has_value": false
+    },
+    "1073745346": {
+      "id": "1073745346",
+      "name": "Gravel flooring in public areas",
+      "has_value": false
+    },
+    "1073745347": {
+      "id": "1073745347",
+      "name": "Cobblestone flooring in public areas",
+      "has_value": false
+    },
+    "1073745348": {
+      "id": "1073745348",
+      "name": "Area rugs in public areas",
+      "has_value": false
+    },
+    "1073745349": {
+      "id": "1073745349",
+      "name": "Front entrance ramp",
+      "has_value": false
+    },
+    "1073745350": {
+      "id": "1073745350",
+      "name": "Registration desk height (inches) - ",
+      "has_value": true
+    },
+    "1073745351": {
+      "id": "1073745351",
+      "name": "Registration desk height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745352": {
+      "id": "1073745352",
+      "name": "Elevator door width (inches) - ",
+      "has_value": true
+    },
+    "1073745353": {
+      "id": "1073745353",
+      "name": "Elevator door width (centimeters) - ",
+      "has_value": true
+    },
+    "1073745354": {
+      "id": "1073745354",
+      "name": "Hallway handrail height (inches) - ",
+      "has_value": true
+    },
+    "1073745355": {
+      "id": "1073745355",
+      "name": "Hallway handrail height (centimeters) - ",
+      "has_value": true
+    },
+    "1073745356": {
+      "id": "1073745356",
+      "name": "Stairwell handrail height (inches) - ",
+      "has_value": true
+    },
+    "1073745357": {
+      "id": "1073745357",
+      "name": "Stairwell handrail height (centimeters) - ",
+      "has_value": true
+    }
+  },
+  "images": {
+    "3": {
+      "id": "3",
+      "group": "Featured Image",
+      "name": "Featured Image"
+    },
+    "10000": {
+      "id": "10000",
+      "group": "Lobby",
+      "name": "Interior Entrance"
+    },
+    "10001": {
+      "id": "10001",
+      "group": "Lobby",
+      "name": "Lobby"
+    },
+    "10002": {
+      "id": "10002",
+      "group": "Lobby",
+      "name": "Reception"
+    },
+    "10003": {
+      "id": "10003",
+      "group": "Lobby",
+      "name": "Lobby Sitting Area"
+    },
+    "10004": {
+      "id": "10004",
+      "group": "Guest facilities and services",
+      "name": "Concierge Desk"
+    },
+    "10005": {
+      "id": "10005",
+      "group": "Lobby",
+      "name": "Check-in/Check-out Kiosk"
+    },
+    "10006": {
+      "id": "10006",
+      "group": "Bar (on property)",
+      "name": "Lobby Lounge"
+    },
+    "21001": {
+      "id": "21001",
+      "group": "Room",
+      "name": "Room"
+    },
+    "21002": {
+      "id": "21002",
+      "group": "Room Layout",
+      "name": "Children's Theme Room"
+    },
+    "21003": {
+      "id": "21003",
+      "group": "Room",
+      "name": "Capsule"
+    },
+    "21050": {
+      "id": "21050",
+      "group": "Bedding",
+      "name": "Extra Beds"
+    },
+    "22001": {
+      "id": "22001",
+      "group": "Room Layout",
+      "name": "In-Room Dining"
+    },
+    "22002": {
+      "id": "22002",
+      "group": "Kitchen",
+      "name": "Private Kitchen"
+    },
+    "22003": {
+      "id": "22003",
+      "group": "Room service",
+      "name": "Room Service - Dining"
+    },
+    "22004": {
+      "id": "22004",
+      "group": "Kitchen",
+      "name": "Private Kitchenette"
+    },
+    "22005": {
+      "id": "22005",
+      "group": "Room Layout",
+      "name": "Living Area"
+    },
+    "22006": {
+      "id": "22006",
+      "group": "Room Layout",
+      "name": "Living Room"
+    },
+    "22007": {
+      "id": "22007",
+      "group": "Room Layout",
+      "name": "Terrace/Patio"
+    },
+    "22008": {
+      "id": "22008",
+      "group": "Room Layout",
+      "name": "Balcony"
+    },
+    "22009": {
+      "id": "22009",
+      "group": "Conveniences",
+      "name": "Room Amenity"
+    },
+    "22010": {
+      "id": "22010",
+      "group": "Kitchen Features",
+      "name": "Mini-Refrigerator"
+    },
+    "22011": {
+      "id": "22011",
+      "group": "Kitchen Features",
+      "name": "Microwave"
+    },
+    "22012": {
+      "id": "22012",
+      "group": "Conveniences",
+      "name": "Safe"
+    },
+    "22013": {
+      "id": "22013",
+      "group": "Room views",
+      "name": "View from Room"
+    },
+    "22014": {
+      "id": "22014",
+      "group": "Room Layout",
+      "name": "Ryokan Dining"
+    },
+    "22015": {
+      "id": "22015",
+      "group": "Room Layout",
+      "name": "In-room fitness"
+    },
+    "22022": {
+      "id": "22022",
+      "group": "Refreshments",
+      "name": "Minibar"
+    },
+    "22023": {
+      "id": "22023",
+      "group": "Refreshments",
+      "name": "Coffee and/or Coffee Maker"
+    },
+    "22024": {
+      "id": "22024",
+      "group": "Room Layout",
+      "name": "In-Room Business Center"
+    },
+    "22025": {
+      "id": "22025",
+      "group": "Romantic",
+      "name": "Champagne service"
+    },
+    "22050": {
+      "id": "22050",
+      "group": "Room Layout",
+      "name": "Lanai"
+    },
+    "22051": {
+      "id": "22051",
+      "group": "Room Layout",
+      "name": "Private Pool"
+    },
+    "22052": {
+      "id": "22052",
+      "group": "Room Layout",
+      "name": "Private Spa Tub"
+    },
+    "22060": {
+      "id": "22060",
+      "group": "Room Layout",
+      "name": "Floor plan"
+    },
+    "22061": {
+      "id": "22061",
+      "group": "Room Layout",
+      "name": "Wardrobe"
+    },
+    "22062": {
+      "id": "22062",
+      "group": "Room Layout",
+      "name": "Dining room"
+    },
+    "22070": {
+      "id": "22070",
+      "group": "Conveniences",
+      "name": "Iron/Ironing Board"
+    },
+    "22071": {
+      "id": "22071",
+      "group": "Conveniences",
+      "name": "Laundry"
+    },
+    "22072": {
+      "id": "22072",
+      "group": "Conveniences",
+      "name": "Massage in Accommodation"
+    },
+    "22080": {
+      "id": "22080",
+      "group": "Climate control",
+      "name": "Air conditioning"
+    },
+    "22081": {
+      "id": "22081",
+      "group": "Climate control",
+      "name": "Heating"
+    },
+    "22082": {
+      "id": "22082",
+      "group": "Climate control",
+      "name": "Fan"
+    },
+    "22090": {
+      "id": "22090",
+      "group": "Entertainment and Tech",
+      "name": "Television"
+    },
+    "22091": {
+      "id": "22091",
+      "group": "Entertainment and Tech",
+      "name": "Tech"
+    },
+    "23000": {
+      "id": "23000",
+      "group": "Bathroom types",
+      "name": "Bathroom"
+    },
+    "23001": {
+      "id": "23001",
+      "group": "Bathroom Features",
+      "name": "Jetted Tub"
+    },
+    "23002": {
+      "id": "23002",
+      "group": "Bathroom Features",
+      "name": "Deep Soaking Bathtub"
+    },
+    "23003": {
+      "id": "23003",
+      "group": "Bathroom Features",
+      "name": "Bathroom Sink"
+    },
+    "23004": {
+      "id": "23004",
+      "group": "Bathroom Features",
+      "name": "Bathroom Shower"
+    },
+    "23005": {
+      "id": "23005",
+      "group": "Bathroom Features",
+      "name": "Bathroom Amenities"
+    },
+    "23006": {
+      "id": "23006",
+      "group": "Bathroom types",
+      "name": "Shared bathroom"
+    },
+    "30000": {
+      "id": "30000",
+      "group": "Pool",
+      "name": "Pool"
+    },
+    "30001": {
+      "id": "30001",
+      "group": "Pool",
+      "name": "Children's Pool"
+    },
+    "30002": {
+      "id": "30002",
+      "group": "Pool",
+      "name": "Indoor Pool"
+    },
+    "30003": {
+      "id": "30003",
+      "group": "Pool",
+      "name": "Outdoor Pool"
+    },
+    "30004": {
+      "id": "30004",
+      "group": "Pool",
+      "name": "Natural Pool"
+    },
+    "30005": {
+      "id": "30005",
+      "group": "Pool",
+      "name": "Infinity Pool"
+    },
+    "30006": {
+      "id": "30006",
+      "group": "Pool",
+      "name": "Water Park"
+    },
+    "30007": {
+      "id": "30007",
+      "group": "Pool",
+      "name": "Aqua Center"
+    },
+    "30008": {
+      "id": "30008",
+      "group": "Pool",
+      "name": "Waterslide"
+    },
+    "30009": {
+      "id": "30009",
+      "group": "Pool",
+      "name": "Outdoor Spa Tub"
+    },
+    "30010": {
+      "id": "30010",
+      "group": "Pool",
+      "name": "Indoor Spa Tub"
+    },
+    "30011": {
+      "id": "30011",
+      "group": "Pool",
+      "name": "Indoor/Outdoor Pool"
+    },
+    "30012": {
+      "id": "30012",
+      "group": "Pool",
+      "name": "Pool Waterfall"
+    },
+    "30013": {
+      "id": "30013",
+      "group": "Pool",
+      "name": "Rooftop Pool"
+    },
+    "30020": {
+      "id": "30020",
+      "group": "Pool",
+      "name": "Swim-up Bar"
+    },
+    "41000": {
+      "id": "41000",
+      "group": "Fitness",
+      "name": "Fitness Facility"
+    },
+    "41001": {
+      "id": "41001",
+      "group": "Fitness",
+      "name": "Gym"
+    },
+    "41002": {
+      "id": "41002",
+      "group": "Fitness",
+      "name": "Aerobics Facility"
+    },
+    "41003": {
+      "id": "41003",
+      "group": "Fitness",
+      "name": "Fitness Studio"
+    },
+    "41004": {
+      "id": "41004",
+      "group": "Adventure activities",
+      "name": "Rock Climbing Wall - Indoor"
+    },
+    "41005": {
+      "id": "41005",
+      "group": "Pool",
+      "name": "Exercise/Lap Pool"
+    },
+    "42001": {
+      "id": "42001",
+      "group": "Fitness",
+      "name": "Yoga"
+    },
+    "42002": {
+      "id": "42002",
+      "group": "Fitness",
+      "name": "Pilates"
+    },
+    "51000": {
+      "id": "51000",
+      "group": "Spa",
+      "name": "Spa"
+    },
+    "51001": {
+      "id": "51001",
+      "group": "Guest facilities and services",
+      "name": "Hair Salon"
+    },
+    "51002": {
+      "id": "51002",
+      "group": "Spa",
+      "name": "Nail Salon"
+    },
+    "51003": {
+      "id": "51003",
+      "group": "Spa",
+      "name": "Vichy Shower"
+    },
+    "51004": {
+      "id": "51004",
+      "group": "Spa",
+      "name": "Sauna"
+    },
+    "51005": {
+      "id": "51005",
+      "group": "Spa",
+      "name": "Steam Room"
+    },
+    "51006": {
+      "id": "51006",
+      "group": "Spa",
+      "name": "Turkish Bath"
+    },
+    "51007": {
+      "id": "51007",
+      "group": "Spa",
+      "name": "Spa Reception"
+    },
+    "51008": {
+      "id": "51008",
+      "group": "Spa",
+      "name": "Treatment Room"
+    },
+    "51020": {
+      "id": "51020",
+      "group": "Pool",
+      "name": "Sauna"
+    },
+    "51021": {
+      "id": "51021",
+      "group": "Pool",
+      "name": "Steam Room"
+    },
+    "51050": {
+      "id": "51050",
+      "group": "Hot springs",
+      "name": "Hot springs"
+    },
+    "52001": {
+      "id": "52001",
+      "group": "Spa",
+      "name": "Massage"
+    },
+    "52002": {
+      "id": "52002",
+      "group": "Spa",
+      "name": "Spa Treatment"
+    },
+    "52003": {
+      "id": "52003",
+      "group": "Spa",
+      "name": "Facial"
+    },
+    "52030": {
+      "id": "52030",
+      "group": "Ryokan facilities",
+      "name": "Public Bath"
+    },
+    "52031": {
+      "id": "52031",
+      "group": "Ryokan facilities",
+      "name": "Hot Springs"
+    },
+    "52032": {
+      "id": "52032",
+      "group": "Ryokan facilities",
+      "name": "Yukata"
+    },
+    "56001": {
+      "id": "56001",
+      "group": "Accessibility",
+      "name": "Wheelchair-accessible van parking"
+    },
+    "56002": {
+      "id": "56002",
+      "group": "Accessibility",
+      "name": "Accessible parking"
+    },
+    "56003": {
+      "id": "56003",
+      "group": "Accessibility",
+      "name": "Elevator"
+    },
+    "56004": {
+      "id": "56004",
+      "group": "Accessibility",
+      "name": "Accessible bathroom"
+    },
+    "56005": {
+      "id": "56005",
+      "group": "Accessibility",
+      "name": "Guest wheelchair"
+    },
+    "56006": {
+      "id": "56006",
+      "group": "Accessibility",
+      "name": "Handrails in hallways"
+    },
+    "56007": {
+      "id": "56007",
+      "group": "Accessibility",
+      "name": "Handrails in stairways"
+    },
+    "56008": {
+      "id": "56008",
+      "group": "Accessibility",
+      "name": "Hand-held showerhead"
+    },
+    "56009": {
+      "id": "56009",
+      "group": "Accessibility",
+      "name": "Portable bathtub seat"
+    },
+    "56010": {
+      "id": "56010",
+      "group": "Accessibility",
+      "name": "Portable shower seat"
+    },
+    "56011": {
+      "id": "56011",
+      "group": "Accessibility",
+      "name": "Raised toilet seat"
+    },
+    "60000": {
+      "id": "60000",
+      "group": "Sports Facility",
+      "name": "Sports Facility"
+    },
+    "60001": {
+      "id": "60001",
+      "group": "Water-based activities ",
+      "name": "Boating"
+    },
+    "60002": {
+      "id": "60002",
+      "group": "Adventure activities",
+      "name": "Bicycling"
+    },
+    "60003": {
+      "id": "60003",
+      "group": "Sports Facility",
+      "name": "Tennis Court"
+    },
+    "60004": {
+      "id": "60004",
+      "group": "Sports Facility",
+      "name": "Basketball Court"
+    },
+    "60005": {
+      "id": "60005",
+      "group": "Sports Facility",
+      "name": "Sport Court"
+    },
+    "60006": {
+      "id": "60006",
+      "group": "Water-based activities ",
+      "name": "Fishing"
+    },
+    "60007": {
+      "id": "60007",
+      "group": "Adventure activities",
+      "name": "Hunting"
+    },
+    "60008": {
+      "id": "60008",
+      "group": "Adventure activities",
+      "name": "Archery"
+    },
+    "60009": {
+      "id": "60009",
+      "group": "Adventure activities",
+      "name": "Hiking"
+    },
+    "60010": {
+      "id": "60010",
+      "group": "Adventure activities",
+      "name": "Outdoor Rock Climbing"
+    },
+    "60011": {
+      "id": "60011",
+      "group": "Adventure activities",
+      "name": "Ropes Course (Team Building)"
+    },
+    "60021": {
+      "id": "60021",
+      "group": "Water-based activities ",
+      "name": "Kayaking"
+    },
+    "60022": {
+      "id": "60022",
+      "group": "Water-based activities ",
+      "name": "Rafting"
+    },
+    "60023": {
+      "id": "60023",
+      "group": "Water-based activities ",
+      "name": "Rowing"
+    },
+    "60024": {
+      "id": "60024",
+      "group": "Water-based activities ",
+      "name": "Surfing/boogie boarding"
+    },
+    "61000": {
+      "id": "61000",
+      "group": "Golf",
+      "name": "Golf"
+    },
+    "61001": {
+      "id": "61001",
+      "group": "Sports Facility",
+      "name": "Mini-Golf"
+    },
+    "61002": {
+      "id": "61002",
+      "group": "Golf",
+      "name": "Golf Cart"
+    },
+    "61003": {
+      "id": "61003",
+      "group": "Golf",
+      "name": "Indoor Golf Driving Range"
+    },
+    "61004": {
+      "id": "61004",
+      "group": "Golf",
+      "name": "Pro Shop"
+    },
+    "61050": {
+      "id": "61050",
+      "group": "Safari and game",
+      "name": "Game Viewing"
+    },
+    "61051": {
+      "id": "61051",
+      "group": "Safari and game",
+      "name": "Game Drive"
+    },
+    "61052": {
+      "id": "61052",
+      "group": "Safari and game",
+      "name": "Safari"
+    },
+    "62000": {
+      "id": "62000",
+      "group": "Skiing and snowboarding",
+      "name": "Snow and Ski Sports"
+    },
+    "62001": {
+      "id": "62001",
+      "group": "Skiing and snowboarding",
+      "name": "Ski Hill"
+    },
+    "62002": {
+      "id": "62002",
+      "group": "Skiing and snowboarding",
+      "name": "Skiing"
+    },
+    "62003": {
+      "id": "62003",
+      "group": "Skiing and snowboarding",
+      "name": "Snowboarding"
+    },
+    "62004": {
+      "id": "62004",
+      "group": "Skiing and snowboarding",
+      "name": "Equipment Storage"
+    },
+    "62020": {
+      "id": "62020",
+      "group": "Adventure activities",
+      "name": "Horse Riding"
+    },
+    "62021": {
+      "id": "62021",
+      "group": "Adventure activities",
+      "name": "Cave Exploring"
+    },
+    "62022": {
+      "id": "62022",
+      "group": "Adventure activities",
+      "name": "Ecotours"
+    },
+    "62023": {
+      "id": "62023",
+      "group": "Adventure activities",
+      "name": "Helicopter/Plane Tours"
+    },
+    "62024": {
+      "id": "62024",
+      "group": "Adventure activities",
+      "name": "Skydiving"
+    },
+    "62025": {
+      "id": "62025",
+      "group": "Adventure activities",
+      "name": "Ziplining"
+    },
+    "62026": {
+      "id": "62026",
+      "group": "Adventure activities",
+      "name": "Bowling"
+    },
+    "62027": {
+      "id": "62027",
+      "group": "Adventure activities",
+      "name": "Scooter/Moped"
+    },
+    "62028": {
+      "id": "62028",
+      "group": "Adventure activities",
+      "name": "Segway Tours"
+    },
+    "62040": {
+      "id": "62040",
+      "group": "Winter sports",
+      "name": "Snowshoeing"
+    },
+    "62041": {
+      "id": "62041",
+      "group": "Winter sports",
+      "name": "Snowmobiling"
+    },
+    "62042": {
+      "id": "62042",
+      "group": "Winter sports",
+      "name": "Ice Skating"
+    },
+    "62043": {
+      "id": "62043",
+      "group": "Winter sports",
+      "name": "Sledding"
+    },
+    "62044": {
+      "id": "62044",
+      "group": "Winter sports",
+      "name": "Snow tubing"
+    },
+    "71000": {
+      "id": "71000",
+      "group": "Guest facilities and services",
+      "name": "Property Amenity"
+    },
+    "71001": {
+      "id": "71001",
+      "group": "Casino",
+      "name": "Casino"
+    },
+    "71002": {
+      "id": "71002",
+      "group": "Games and Entertainment",
+      "name": "Theater Show"
+    },
+    "71003": {
+      "id": "71003",
+      "group": "Family and Children",
+      "name": "Game Room"
+    },
+    "71004": {
+      "id": "71004",
+      "group": "Family and Children",
+      "name": "Arcade"
+    },
+    "71005": {
+      "id": "71005",
+      "group": "Games and Entertainment",
+      "name": "Karaoke Room"
+    },
+    "71006": {
+      "id": "71006",
+      "group": "Games and Entertainment",
+      "name": "Billiards"
+    },
+    "71007": {
+      "id": "71007",
+      "group": "Guest facilities and services",
+      "name": "Gift Shop"
+    },
+    "71008": {
+      "id": "71008",
+      "group": "Guest facilities and services",
+      "name": "Laundry Room"
+    },
+    "71009": {
+      "id": "71009",
+      "group": "Guest facilities and services",
+      "name": "Vending Machine"
+    },
+    "71010": {
+      "id": "71010",
+      "group": "Parking",
+      "name": "RV or Truck Parking"
+    },
+    "71011": {
+      "id": "71011",
+      "group": "Guest facilities and services",
+      "name": "ATM/Banking On site"
+    },
+    "71012": {
+      "id": "71012",
+      "group": "Pets",
+      "name": "Pet-Friendly"
+    },
+    "71013": {
+      "id": "71013",
+      "group": "Property Amenity",
+      "name": "Miscellaneous"
+    },
+    "71014": {
+      "id": "71014",
+      "group": "Pets",
+      "name": "Pet-friendly amenities"
+    },
+    "71050": {
+      "id": "71050",
+      "group": "Winery",
+      "name": "Winery"
+    },
+    "71051": {
+      "id": "71051",
+      "group": "Guest facilities and services",
+      "name": "Lockers"
+    },
+    "71070": {
+      "id": "71070",
+      "group": "Winery",
+      "name": "Vineyard"
+    },
+    "71071": {
+      "id": "71071",
+      "group": "Winery",
+      "name": "Tasting room"
+    },
+    "72001": {
+      "id": "72001",
+      "group": "Family and Children",
+      "name": "Children's Area"
+    },
+    "72002": {
+      "id": "72002",
+      "group": "Family and Children",
+      "name": "Day Care"
+    },
+    "72003": {
+      "id": "72003",
+      "group": "Family and Children",
+      "name": "Children's Play Area - Indoor"
+    },
+    "72004": {
+      "id": "72004",
+      "group": "Family and Children",
+      "name": "Children's Play Area - Outdoor"
+    },
+    "72005": {
+      "id": "72005",
+      "group": "Family and Children",
+      "name": "Birthday Party Area"
+    },
+    "72006": {
+      "id": "72006",
+      "group": "Family and Children",
+      "name": "Children's Activities"
+    },
+    "81000": {
+      "id": "81000",
+      "group": "Dining (on property)",
+      "name": "Dining"
+    },
+    "81001": {
+      "id": "81001",
+      "group": "Breakfast",
+      "name": "Breakfast Area"
+    },
+    "81002": {
+      "id": "81002",
+      "group": "Dining (on property)",
+      "name": "Coffee Service"
+    },
+    "81003": {
+      "id": "81003",
+      "group": "Dining (on property)",
+      "name": "Restaurant"
+    },
+    "81004": {
+      "id": "81004",
+      "group": "Dining (on property)",
+      "name": "Buffet"
+    },
+    "81005": {
+      "id": "81005",
+      "group": "Dining (on property)",
+      "name": "Delicatessen"
+    },
+    "81006": {
+      "id": "81006",
+      "group": "Dining (on property)",
+      "name": "Cafe"
+    },
+    "81007": {
+      "id": "81007",
+      "group": "Dining (on property)",
+      "name": "Coffee Shop"
+    },
+    "81008": {
+      "id": "81008",
+      "group": "Dining (on property)",
+      "name": "Snack Bar"
+    },
+    "81009": {
+      "id": "81009",
+      "group": "Dining (on property)",
+      "name": "Food Court"
+    },
+    "81010": {
+      "id": "81010",
+      "group": "Romantic",
+      "name": "Couples Dining"
+    },
+    "81011": {
+      "id": "81011",
+      "group": "Dining (on property)",
+      "name": "Family Dining"
+    },
+    "81012": {
+      "id": "81012",
+      "group": "Dining (on property)",
+      "name": "Food and Drink"
+    },
+    "81020": {
+      "id": "81020",
+      "group": "Common Kitchen Area ",
+      "name": "Shared Kitchen"
+    },
+    "81021": {
+      "id": "81021",
+      "group": "Common Kitchen Area ",
+      "name": "Shared Kitchen Facilities"
+    },
+    "81030": {
+      "id": "81030",
+      "group": "Breakfast",
+      "name": "Breakfast buffet"
+    },
+    "81031": {
+      "id": "81031",
+      "group": "Breakfast",
+      "name": "Breakfast Meal"
+    },
+    "82000": {
+      "id": "82000",
+      "group": "Bar (on property)",
+      "name": "Bar"
+    },
+    "82001": {
+      "id": "82001",
+      "group": "Bar (on property)",
+      "name": "Lounge"
+    },
+    "82002": {
+      "id": "82002",
+      "group": "Bar (on property)",
+      "name": "Sports Bar"
+    },
+    "82003": {
+      "id": "82003",
+      "group": "Pool",
+      "name": "Poolside Bar"
+    },
+    "82004": {
+      "id": "82004",
+      "group": "Games and Entertainment",
+      "name": "Nightclub"
+    },
+    "82005": {
+      "id": "82005",
+      "group": "Beach",
+      "name": "Beach Bar"
+    },
+    "83000": {
+      "id": "83000",
+      "group": "Interior",
+      "name": "Interior"
+    },
+    "83001": {
+      "id": "83001",
+      "group": "Guest facilities and services",
+      "name": "Library"
+    },
+    "83002": {
+      "id": "83002",
+      "group": "Guest facilities and services",
+      "name": "Ballroom"
+    },
+    "83003": {
+      "id": "83003",
+      "group": "Guest facilities and services",
+      "name": "Banquet Hall"
+    },
+    "83004": {
+      "id": "83004",
+      "group": "Guest facilities and services",
+      "name": "Reception Hall"
+    },
+    "83005": {
+      "id": "83005",
+      "group": "Guest facilities and services",
+      "name": "Chapel"
+    },
+    "83006": {
+      "id": "83006",
+      "group": "Guest facilities and services",
+      "name": "Indoor Wedding"
+    },
+    "83007": {
+      "id": "83007",
+      "group": "Interior",
+      "name": "Hallway"
+    },
+    "83008": {
+      "id": "83008",
+      "group": "Interior",
+      "name": "Staircase"
+    },
+    "83009": {
+      "id": "83009",
+      "group": "Business and conference",
+      "name": "Meeting Facility"
+    },
+    "83010": {
+      "id": "83010",
+      "group": "Business and conference",
+      "name": "Business Center"
+    },
+    "83011": {
+      "id": "83011",
+      "group": "Interior",
+      "name": "Interior Detail"
+    },
+    "83012": {
+      "id": "83012",
+      "group": "Guest facilities and services",
+      "name": "Fireplace"
+    },
+    "83013": {
+      "id": "83013",
+      "group": "Club/Executive",
+      "name": "Executive Lounge"
+    },
+    "85010": {
+      "id": "85010",
+      "group": "Shopping",
+      "name": "Designer store"
+    },
+    "85011": {
+      "id": "85011",
+      "group": "Shopping",
+      "name": "Shopping mall"
+    },
+    "91000": {
+      "id": "91000",
+      "group": "Exterior",
+      "name": "Property Grounds"
+    },
+    "91001": {
+      "id": "91001",
+      "group": "Exterior",
+      "name": "Front of Property"
+    },
+    "91002": {
+      "id": "91002",
+      "group": "Exterior",
+      "name": "Property Entrance"
+    },
+    "91003": {
+      "id": "91003",
+      "group": "Exterior",
+      "name": "Front of Property - Evening/Night"
+    },
+    "91004": {
+      "id": "91004",
+      "group": "Beach",
+      "name": "Beach"
+    },
+    "91005": {
+      "id": "91005",
+      "group": "Outdoor Areas",
+      "name": "Garden"
+    },
+    "91006": {
+      "id": "91006",
+      "group": "Outdoor Areas",
+      "name": "Courtyard"
+    },
+    "91007": {
+      "id": "91007",
+      "group": "Dining (on property)",
+      "name": "Outdoor Dining"
+    },
+    "91008": {
+      "id": "91008",
+      "group": "Outdoor Areas",
+      "name": "Terrace/Patio"
+    },
+    "91009": {
+      "id": "91009",
+      "group": "Outdoor Areas",
+      "name": "Porch"
+    },
+    "91010": {
+      "id": "91010",
+      "group": "Outdoor Areas",
+      "name": "Gazebo"
+    },
+    "91011": {
+      "id": "91011",
+      "group": "Outdoor Areas",
+      "name": "Outdoor Wedding Area"
+    },
+    "91012": {
+      "id": "91012",
+      "group": "Outdoor Areas",
+      "name": "Outdoor Banquet Area"
+    },
+    "91013": {
+      "id": "91013",
+      "group": "Outdoor Areas",
+      "name": "Sundeck"
+    },
+    "91014": {
+      "id": "91014",
+      "group": "Guest facilities and services",
+      "name": "Marina"
+    },
+    "91015": {
+      "id": "91015",
+      "group": "Outdoor Areas",
+      "name": "Fountain"
+    },
+    "91016": {
+      "id": "91016",
+      "group": "Outdoor Areas",
+      "name": "BBQ/Picnic Area"
+    },
+    "91017": {
+      "id": "91017",
+      "group": "Outdoor Areas",
+      "name": "Lake"
+    },
+    "91018": {
+      "id": "91018",
+      "group": "Outdoor Areas",
+      "name": "Dock"
+    },
+    "91019": {
+      "id": "91019",
+      "group": "Parking",
+      "name": "Electric vehicle charging station"
+    },
+    "91020": {
+      "id": "91020",
+      "group": "Parking",
+      "name": "Parking"
+    },
+    "91021": {
+      "id": "91021",
+      "group": "Airport transport and shuttles",
+      "name": "Airport Shuttle"
+    },
+    "91022": {
+      "id": "91022",
+      "group": "Transportation and shuttles",
+      "name": "City Shuttle"
+    },
+    "91023": {
+      "id": "91023",
+      "group": "Exterior",
+      "name": "Exterior detail"
+    },
+    "91024": {
+      "id": "91024",
+      "group": "Exterior",
+      "name": "Exterior"
+    },
+    "91026": {
+      "id": "91026",
+      "group": "Ryokan facilities",
+      "name": "Japanese garden"
+    },
+    "91027": {
+      "id": "91027",
+      "group": "Outdoor Areas",
+      "name": "Rooftop terrace"
+    },
+    "91028": {
+      "id": "91028",
+      "group": "Outdoor Areas",
+      "name": "Property map"
+    },
+    "91050": {
+      "id": "91050",
+      "group": "Transportation and shuttles",
+      "name": "Train Station Shuttle"
+    },
+    "91051": {
+      "id": "91051",
+      "group": "Transportation and shuttles",
+      "name": "Casino Shuttle"
+    },
+    "91052": {
+      "id": "91052",
+      "group": "Transportation and shuttles",
+      "name": "Cruise Terminal Shuttle"
+    },
+    "91053": {
+      "id": "91053",
+      "group": "Transportation and shuttles",
+      "name": "Ferry Terminal Shuttle"
+    },
+    "91054": {
+      "id": "91054",
+      "group": "Transportation and shuttles",
+      "name": "Shopping Centre Shuttle"
+    },
+    "91055": {
+      "id": "91055",
+      "group": "Transportation and shuttles",
+      "name": "Theme Park Shuttle"
+    },
+    "92000": {
+      "id": "92000",
+      "group": "Room views",
+      "name": "Beach/Ocean View"
+    },
+    "92001": {
+      "id": "92001",
+      "group": "Exterior",
+      "name": "Aerial View"
+    },
+    "92002": {
+      "id": "92002",
+      "group": "Location Highlights",
+      "name": "View from Property"
+    },
+    "92003": {
+      "id": "92003",
+      "group": "Room views",
+      "name": "Lake View"
+    },
+    "92004": {
+      "id": "92004",
+      "group": "Room views",
+      "name": "Mountain View"
+    },
+    "92005": {
+      "id": "92005",
+      "group": "Room views",
+      "name": "Balcony View"
+    },
+    "92006": {
+      "id": "92006",
+      "group": "Room views",
+      "name": "Street View"
+    },
+    "92007": {
+      "id": "92007",
+      "group": "Room views",
+      "name": "City View"
+    },
+    "92008": {
+      "id": "92008",
+      "group": "Room views",
+      "name": "Garden View"
+    },
+    "92009": {
+      "id": "92009",
+      "group": "Room views",
+      "name": "Courtyard View"
+    },
+    "92010": {
+      "id": "92010",
+      "group": "Room views",
+      "name": "Desert view"
+    },
+    "92011": {
+      "id": "92011",
+      "group": "Room views",
+      "name": "Golf view"
+    },
+    "92012": {
+      "id": "92012",
+      "group": "Room views",
+      "name": "Water view"
+    },
+    "92013": {
+      "id": "92013",
+      "group": "Room views",
+      "name": "Resort View"
+    },
+    "92014": {
+      "id": "92014",
+      "group": "Room views",
+      "name": "Valley View"
+    },
+    "92015": {
+      "id": "92015",
+      "group": "Room views",
+      "name": "Vineyard View"
+    },
+    "92016": {
+      "id": "92016",
+      "group": "Room views",
+      "name": "Park View"
+    },
+    "92017": {
+      "id": "92017",
+      "group": "Room views",
+      "name": "Hill View"
+    },
+    "92030": {
+      "id": "92030",
+      "group": "Location Highlights",
+      "name": "Land View from Property"
+    },
+    "92031": {
+      "id": "92031",
+      "group": "Location Highlights",
+      "name": "City View from Property"
+    },
+    "93000": {
+      "id": "93000",
+      "group": "Building Features ",
+      "name": "Building design"
+    },
+    "93001": {
+      "id": "93001",
+      "group": "Guest facilities and services",
+      "name": "Cleanliness standards"
+    },
+    "93002": {
+      "id": "93002",
+      "group": "Guest facilities and services",
+      "name": "Cleanliness badge"
+    },
+    "93003": {
+      "id": "93003",
+      "group": "Guest facilities and services",
+      "name": "Property manager"
+    },
+    "100000": {
+      "id": "100000",
+      "group": "Point of Interest",
+      "name": "Point of Interest"
+    }
+  },
+  "onsite_payment_types": {
+    "171": {
+      "id": "171",
+      "name": "American Express"
+    },
+    "177": {
+      "id": "177",
+      "name": "Carte Blanche"
+    },
+    "179": {
+      "id": "179",
+      "name": "Diners Club"
+    },
+    "180": {
+      "id": "180",
+      "name": "Discover"
+    },
+    "183": {
+      "id": "183",
+      "name": "JCB International"
+    },
+    "184": {
+      "id": "184",
+      "name": "Mastercard"
+    },
+    "189": {
+      "id": "189",
+      "name": "Visa"
+    },
+    "190": {
+      "id": "190",
+      "name": "Cash not accepted"
+    },
+    "407": {
+      "id": "407",
+      "name": "Cash"
+    },
+    "1073742461": {
+      "id": "1073742461",
+      "name": "Debit cards"
+    },
+    "1073743307": {
+      "id": "1073743307",
+      "name": "UnionPay"
+    },
+    "1073744166": {
+      "id": "1073744166",
+      "name": "Debit cards not accepted"
+    },
+    "1073744759": {
+      "id": "1073744759",
+      "name": "Cash-only property"
+    },
+    "1073744945": {
+      "id": "1073744945",
+      "name": "ANCV Chèques-Vacances"
+    }
+  },
+  "amenities_rates": {
+    "2096": {
+      "id": "2096",
+      "name": "Eligible for hotel loyalty points",
+      "has_value": false
+    },
+    "2097": {
+      "id": "2097",
+      "name": "Free high-speed internet",
+      "has_value": false
+    },
+    "2098": {
+      "id": "2098",
+      "name": "Free breakfast",
+      "has_value": false
+    },
+    "2102": {
+      "id": "2102",
+      "name": "All meals",
+      "has_value": false
+    },
+    "2103": {
+      "id": "2103",
+      "name": "Continental breakfast",
+      "has_value": false
+    },
+    "2104": {
+      "id": "2104",
+      "name": "Full Breakfast",
+      "has_value": false
+    },
+    "2105": {
+      "id": "2105",
+      "name": "English breakfast",
+      "has_value": false
+    },
+    "2106": {
+      "id": "2106",
+      "name": "Free lunch",
+      "has_value": false
+    },
+    "2107": {
+      "id": "2107",
+      "name": "Free dinner",
+      "has_value": false
+    },
+    "2108": {
+      "id": "2108",
+      "name": "Food/beverage credit",
+      "has_value": false
+    },
+    "2109": {
+      "id": "2109",
+      "name": "Free self parking",
+      "has_value": false
+    },
+    "2110": {
+      "id": "2110",
+      "name": "Free airport parking",
+      "has_value": false
+    },
+    "2111": {
+      "id": "2111",
+      "name": "All-inclusive",
+      "has_value": false
+    },
+    "2175": {
+      "id": "2175",
+      "name": "Same-day cancellation",
+      "has_value": false
+    },
+    "2191": {
+      "id": "2191",
+      "name": "Free high-speed internet",
+      "has_value": false
+    },
+    "2192": {
+      "id": "2192",
+      "name": "Free WiFi",
+      "has_value": false
+    },
+    "2193": {
+      "id": "2193",
+      "name": "Continental breakfast for 2",
+      "has_value": false
+    },
+    "2194": {
+      "id": "2194",
+      "name": "Breakfast for 2",
+      "has_value": false
+    },
+    "2195": {
+      "id": "2195",
+      "name": "Free valet parking",
+      "has_value": false
+    },
+    "2196": {
+      "id": "2196",
+      "name": "Free airport shuttle",
+      "has_value": false
+    },
+    "2197": {
+      "id": "2197",
+      "name": "Free room upgrade",
+      "has_value": false
+    },
+    "2198": {
+      "id": "2198",
+      "name": "Resort credit included",
+      "has_value": false
+    },
+    "2199": {
+      "id": "2199",
+      "name": "Welcome gift upon arrival",
+      "has_value": false
+    },
+    "2200": {
+      "id": "2200",
+      "name": "Spa Credit",
+      "has_value": false
+    },
+    "2201": {
+      "id": "2201",
+      "name": "Golf credit",
+      "has_value": false
+    },
+    "2202": {
+      "id": "2202",
+      "name": "VIP line access to nightclub(s)",
+      "has_value": false
+    },
+    "2203": {
+      "id": "2203",
+      "name": "2-for-1 buffet",
+      "has_value": false
+    },
+    "2204": {
+      "id": "2204",
+      "name": "Free ski lift ticket & rental",
+      "has_value": false
+    },
+    "2205": {
+      "id": "2205",
+      "name": "Breakfast buffet",
+      "has_value": false
+    },
+    "2206": {
+      "id": "2206",
+      "name": "Half board",
+      "has_value": false
+    },
+    "2207": {
+      "id": "2207",
+      "name": "Full board",
+      "has_value": false
+    },
+    "2208": {
+      "id": "2208",
+      "name": "Full kitchen",
+      "has_value": false
+    },
+    "2209": {
+      "id": "2209",
+      "name": "Continental breakfast",
+      "has_value": false
+    },
+    "2210": {
+      "id": "2210",
+      "name": "Full breakfast",
+      "has_value": false
+    },
+    "2211": {
+      "id": "2211",
+      "name": "Breakfast buffet",
+      "has_value": false
+    },
+    "2212": {
+      "id": "2212",
+      "name": "Free fitness center access",
+      "has_value": false
+    },
+    "2213": {
+      "id": "2213",
+      "name": "Free business center access",
+      "has_value": false
+    },
+    "2214": {
+      "id": "2214",
+      "name": "Free airport shuttle",
+      "has_value": false
+    },
+    "2215": {
+      "id": "2215",
+      "name": "Free hotel parking",
+      "has_value": false
+    },
+    "2216": {
+      "id": "2216",
+      "name": "Free valet parking",
+      "has_value": false
+    },
+    "2217": {
+      "id": "2217",
+      "name": "Welcome drink upon arrival",
+      "has_value": false
+    },
+    "2218": {
+      "id": "2218",
+      "name": "Free local calls",
+      "has_value": false
+    },
+    "2219": {
+      "id": "2219",
+      "name": "Complimentary wine reception",
+      "has_value": false
+    },
+    "2220": {
+      "id": "2220",
+      "name": "Free WiFi",
+      "has_value": false
+    },
+    "2221": {
+      "id": "2221",
+      "name": "Free local shuttle",
+      "has_value": false
+    },
+    "2222": {
+      "id": "2222",
+      "name": "Free local newspaper",
+      "has_value": false
+    },
+    "2223": {
+      "id": "2223",
+      "name": "Includes one free in-room movie",
+      "has_value": false
+    },
+    "2224": {
+      "id": "2224",
+      "name": "Room upgrade upon availability",
+      "has_value": false
+    },
+    "2225": {
+      "id": "2225",
+      "name": "Guaranteed room upgrade",
+      "has_value": false
+    },
+    "2226": {
+      "id": "2226",
+      "name": "Early check-in privilege",
+      "has_value": false
+    },
+    "2227": {
+      "id": "2227",
+      "name": "Late check-out privilege",
+      "has_value": false
+    },
+    "2228": {
+      "id": "2228",
+      "name": "Free bottled water",
+      "has_value": false
+    },
+    "2233": {
+      "id": "2233",
+      "name": "Food and beverage discount",
+      "has_value": false
+    },
+    "2234": {
+      "id": "2234",
+      "name": "Slot play",
+      "has_value": false
+    },
+    "2235": {
+      "id": "2235",
+      "name": "Casino credit",
+      "has_value": false
+    },
+    "2236": {
+      "id": "2236",
+      "name": "Match play",
+      "has_value": false
+    },
+    "1073742551": {
+      "id": "1073742551",
+      "name": "Free welcome drink",
+      "has_value": false
+    },
+    "1073742552": {
+      "id": "1073742552",
+      "name": "Drinks and hors d'oeuvres",
+      "has_value": false
+    },
+    "1073742617": {
+      "id": "1073742617",
+      "name": "Disney park tickets",
+      "has_value": false
+    },
+    "1073742618": {
+      "id": "1073742618",
+      "name": "Spa access",
+      "has_value": false
+    },
+    "1073742620": {
+      "id": "1073742620",
+      "name": "Free train shuttle",
+      "has_value": false
+    },
+    "1073742621": {
+      "id": "1073742621",
+      "name": "Free breakfast for 1 adult",
+      "has_value": false
+    },
+    "1073742622": {
+      "id": "1073742622",
+      "name": "Upgrade to club floor",
+      "has_value": false
+    },
+    "1073742623": {
+      "id": "1073742623",
+      "name": "Upgrade to business floor",
+      "has_value": false
+    },
+    "1073742624": {
+      "id": "1073742624",
+      "name": "Complimentary minibar items",
+      "has_value": false
+    },
+    "1073742625": {
+      "id": "1073742625",
+      "name": "Free dinner",
+      "has_value": false
+    },
+    "1073742626": {
+      "id": "1073742626",
+      "name": "Free dinner for 1 adult",
+      "has_value": false
+    },
+    "1073742627": {
+      "id": "1073742627",
+      "name": "Full kitchen",
+      "has_value": false
+    },
+    "1073742680": {
+      "id": "1073742680",
+      "name": "1000 Choice Privileges points per night",
+      "has_value": false
+    },
+    "1073742681": {
+      "id": "1073742681",
+      "name": "500 Choice Privileges points per night",
+      "has_value": false
+    },
+    "1073742736": {
+      "id": "1073742736",
+      "name": "Evening manager's reception",
+      "has_value": false
+    },
+    "1073742786": {
+      "id": "1073742786",
+      "name": "Free breakfast",
+      "has_value": false
+    },
+    "1073742787": {
+      "id": "1073742787",
+      "name": "Free internet",
+      "has_value": false
+    },
+    "1073742857": {
+      "id": "1073742857",
+      "name": "Breakfast for 1",
+      "has_value": false
+    },
+    "1073742858": {
+      "id": "1073742858",
+      "name": "Complimentary green fees",
+      "has_value": false
+    },
+    "1073742859": {
+      "id": "1073742859",
+      "name": "Free one-way airport transfer",
+      "has_value": false
+    },
+    "1073742860": {
+      "id": "1073742860",
+      "name": "Free round-trip airport transfer",
+      "has_value": false
+    },
+    "1073742861": {
+      "id": "1073742861",
+      "name": "Free water park passes",
+      "has_value": false
+    },
+    "1073742862": {
+      "id": "1073742862",
+      "name": "2 game drives per night",
+      "has_value": false
+    },
+    "1073742863": {
+      "id": "1073742863",
+      "name": "1 game drive per night",
+      "has_value": false
+    },
+    "1073742909": {
+      "id": "1073742909",
+      "name": "City tax included",
+      "has_value": false
+    },
+    "1073743068": {
+      "id": "1073743068",
+      "name": "5000 Choice Privileges points per night",
+      "has_value": false
+    },
+    "1073743074": {
+      "id": "1073743074",
+      "name": "4000 Choice Privileges points per night",
+      "has_value": false
+    },
+    "1073743274": {
+      "id": "1073743274",
+      "name": "Early check-in",
+      "has_value": false
+    },
+    "1073743275": {
+      "id": "1073743275",
+      "name": "Late check-out",
+      "has_value": false
+    },
+    "1073743286": {
+      "id": "1073743286",
+      "name": "Free massage included",
+      "has_value": false
+    },
+    "1073743287": {
+      "id": "1073743287",
+      "name": "Free minibar",
+      "has_value": false
+    },
+    "1073743288": {
+      "id": "1073743288",
+      "name": "Ski pass included",
+      "has_value": false
+    },
+    "1073743367": {
+      "id": "1073743367",
+      "name": "In-room dinner",
+      "has_value": false
+    },
+    "1073743389": {
+      "id": "1073743389",
+      "name": "Resort fee waived",
+      "has_value": false
+    },
+    "1073743391": {
+      "id": "1073743391",
+      "name": "Chain loyalty rate",
+      "has_value": false
+    },
+    "1073743424": {
+      "id": "1073743424",
+      "name": "Fine Hotels and Resorts",
+      "has_value": false
+    },
+    "1073743425": {
+      "id": "1073743425",
+      "name": "The Hotel Collection",
+      "has_value": false
+    },
+    "1073744459": {
+      "id": "1073744459",
+      "name": "Coffee/Pastries Each Morning",
+      "has_value": false
+    },
+    "1073744734": {
+      "id": "1073744734",
+      "name": "Japanese-style breakfast",
+      "has_value": false
+    },
+    "1073744735": {
+      "id": "1073744735",
+      "name": "Taiwanese-style breakfast",
+      "has_value": false
+    },
+    "1073744736": {
+      "id": "1073744736",
+      "name": "Vegetarian dinner",
+      "has_value": false
+    },
+    "1073744737": {
+      "id": "1073744737",
+      "name": "Chinese-style dinner",
+      "has_value": false
+    },
+    "1073744738": {
+      "id": "1073744738",
+      "name": "Kaiseki dinner",
+      "has_value": false
+    },
+    "1073744739": {
+      "id": "1073744739",
+      "name": "Kaiseki seafood dinner",
+      "has_value": false
+    },
+    "1073744750": {
+      "id": "1073744750",
+      "name": "Kaiseki meat dinner",
+      "has_value": false
+    },
+    "1073744751": {
+      "id": "1073744751",
+      "name": "Kaiseki vegetarian dinner",
+      "has_value": false
+    },
+    "1073744752": {
+      "id": "1073744752",
+      "name": "Buffet dinner",
+      "has_value": false
+    },
+    "1073744753": {
+      "id": "1073744753",
+      "name": "Half board (Chinese-style dinner)",
+      "has_value": false
+    },
+    "1073744754": {
+      "id": "1073744754",
+      "name": "Half board (kaiseki dinner)",
+      "has_value": false
+    },
+    "1073744755": {
+      "id": "1073744755",
+      "name": "Half board (buffet dinner)",
+      "has_value": false
+    },
+    "1073745241": {
+      "id": "1073745241",
+      "name": "Amex reserve",
+      "has_value": false
+    },
+    "1073745259": {
+      "id": "1073745259",
+      "name": "1 COVID-19 RT-PCR test per person",
+      "has_value": false
+    },
+    "1073745260": {
+      "id": "1073745260",
+      "name": "2 COVID-19 RT-PCR tests per person",
+      "has_value": false
+    },
+    "1073745419": {
+      "id": "1073745419",
+      "name": "Partner Negotiated Rate",
+      "has_value": false
+    }
+  },
+  "room_views": {
+    "4101": {
+      "id": "4101",
+      "name": "Ocean view"
+    },
+    "4105": {
+      "id": "4105",
+      "name": "Partial ocean view"
+    },
+    "4128": {
+      "id": "4128",
+      "name": "Beach view"
+    },
+    "4134": {
+      "id": "4134",
+      "name": "City view"
+    },
+    "4146": {
+      "id": "4146",
+      "name": "Courtyard view"
+    },
+    "4151": {
+      "id": "4151",
+      "name": "Desert view"
+    },
+    "4185": {
+      "id": "4185",
+      "name": "Garden view"
+    },
+    "4186": {
+      "id": "4186",
+      "name": "Golf view"
+    },
+    "4211": {
+      "id": "4211",
+      "name": "Lake view"
+    },
+    "4219": {
+      "id": "4219",
+      "name": "Mountain view"
+    },
+    "4230": {
+      "id": "4230",
+      "name": "Pool view"
+    },
+    "4306": {
+      "id": "4306",
+      "name": "River view"
+    },
+    "4309": {
+      "id": "4309",
+      "name": "Sea view"
+    },
+    "4340": {
+      "id": "4340",
+      "name": "Water view"
+    },
+    "1073742605": {
+      "id": "1073742605",
+      "name": "Bay view"
+    },
+    "1073742606": {
+      "id": "1073742606",
+      "name": "Canal view"
+    },
+    "1073742607": {
+      "id": "1073742607",
+      "name": "Harbor view"
+    },
+    "1073742608": {
+      "id": "1073742608",
+      "name": "Hill view"
+    },
+    "1073742609": {
+      "id": "1073742609",
+      "name": "Lagoon view"
+    },
+    "1073742610": {
+      "id": "1073742610",
+      "name": "Marina view"
+    },
+    "1073742611": {
+      "id": "1073742611",
+      "name": "Park view"
+    },
+    "1073742612": {
+      "id": "1073742612",
+      "name": "Partial lake view"
+    },
+    "1073742613": {
+      "id": "1073742613",
+      "name": "Partial sea view"
+    },
+    "1073742614": {
+      "id": "1073742614",
+      "name": "Resort view"
+    },
+    "1073742615": {
+      "id": "1073742615",
+      "name": "Valley view"
+    },
+    "1073742616": {
+      "id": "1073742616",
+      "name": "Vineyard view"
+    }
+  },
+  "attributes_pets": {
+    "51": {
+      "id": "51",
+      "name": "Pets allowed",
+      "has_value": false
+    },
+    "2050": {
+      "id": "2050",
+      "name": "Pets not allowed",
+      "has_value": false
+    },
+    "2644": {
+      "id": "2644",
+      "name": "Pet max weight (per pet) in kg is ",
+      "has_value": true
+    },
+    "2646": {
+      "id": "2646",
+      "name": "Pet max weight (per pet) in lb is ",
+      "has_value": true
+    },
+    "2808": {
+      "id": "2808",
+      "name": "Service animals not allowed",
+      "has_value": false
+    },
+    "2809": {
+      "id": "2809",
+      "name": "Only dogs are allowed",
+      "has_value": false
+    },
+    "2810": {
+      "id": "2810",
+      "name": "Only dogs and cats are allowed",
+      "has_value": false
+    },
+    "2811": {
+      "id": "2811",
+      "name": "Maximum number of pets per room ",
+      "has_value": true
+    },
+    "5058": {
+      "id": "5058",
+      "name": "Service animals are allowed",
+      "has_value": false
+    },
+    "5059": {
+      "id": "5059",
+      "name": "Service animals are exempt from fees/restrictions",
+      "has_value": false
+    },
+    "1073742807": {
+      "id": "1073742807",
+      "name": "Pets allowed (no fees)",
+      "has_value": false
+    },
+    "1073744793": {
+      "id": "1073744793",
+      "name": "Only cats are allowed",
+      "has_value": false
+    },
+    "1073744794": {
+      "id": "1073744794",
+      "name": "Pets cannot be left unattended",
+      "has_value": false
+    }
+  },
+  "attributes_general": {
+    "57": {
+      "id": "57",
+      "name": "Caters to women only",
+      "has_value": false
+    },
+    "58": {
+      "id": "58",
+      "name": "Caters to men only",
+      "has_value": false
+    },
+    "2003": {
+      "id": "2003",
+      "name": "Clothing optional (nudity permitted in public areas)",
+      "has_value": false
+    },
+    "2544": {
+      "id": "2544",
+      "name": "No rollaway/extra beds available",
+      "has_value": false
+    },
+    "2545": {
+      "id": "2545",
+      "name": "No cribs (infant beds) available",
+      "has_value": false
+    },
+    "2549": {
+      "id": "2549",
+      "name": "No elevators",
+      "has_value": false
+    },
+    "2554": {
+      "id": "2554",
+      "name": "Parking height restrictions apply",
+      "has_value": false
+    },
+    "2557": {
+      "id": "2557",
+      "name": "Cash deposit required",
+      "has_value": false
+    },
+    "2791": {
+      "id": "2791",
+      "name": "Children not allowed",
+      "has_value": false
+    },
+    "2940": {
+      "id": "2940",
+      "name": "Minimum guest age is ",
+      "has_value": true
+    },
+    "2967": {
+      "id": "2967",
+      "name": "Qualmark Sustainable Tourism Business Award",
+      "has_value": false
+    },
+    "2974": {
+      "id": "2974",
+      "name": "Biosphere",
+      "has_value": false
+    },
+    "2977": {
+      "id": "2977",
+      "name": "Malta Eco-Certified",
+      "has_value": false
+    },
+    "2994": {
+      "id": "2994",
+      "name": "Green Tourism Program",
+      "has_value": false
+    },
+    "2995": {
+      "id": "2995",
+      "name": "Green Key",
+      "has_value": false
+    },
+    "3004": {
+      "id": "3004",
+      "name": "Green Globe",
+      "has_value": false
+    },
+    "3028": {
+      "id": "3028",
+      "name": "Audubon",
+      "has_value": false
+    },
+    "3040": {
+      "id": "3040",
+      "name": "Green Key Eco-Rating Program",
+      "has_value": false
+    },
+    "3266": {
+      "id": "3266",
+      "name": "Noise-free rooms not guaranteed",
+      "has_value": false
+    },
+    "3298": {
+      "id": "3298",
+      "name": "Travelife",
+      "has_value": false
+    },
+    "3299": {
+      "id": "3299",
+      "name": "EarthCheck",
+      "has_value": false
+    },
+    "3357": {
+      "id": "3357",
+      "name": "Caters to adults only",
+      "has_value": false
+    },
+    "3358": {
+      "id": "3358",
+      "name": "Caters to LGBTQ guests",
+      "has_value": false
+    },
+    "4638": {
+      "id": "4638",
+      "name": "No alcohol served onsite",
+      "has_value": false
+    },
+    "4639": {
+      "id": "4639",
+      "name": "No alcohol allowed onsite",
+      "has_value": false
+    },
+    "5052": {
+      "id": "5052",
+      "name": "Please note, some room types at this property are not available when booking a stay with children.",
+      "has_value": false
+    },
+    "5094": {
+      "id": "5094",
+      "name": "Rainforest Alliance Sustainable Tourism Certification",
+      "has_value": false
+    },
+    "1073743073": {
+      "id": "1073743073",
+      "name": "Fair Trade Tourism",
+      "has_value": false
+    },
+    "1073743368": {
+      "id": "1073743368",
+      "name": "Car required",
+      "has_value": false
+    },
+    "1073743369": {
+      "id": "1073743369",
+      "name": "Car recommended",
+      "has_value": false
+    },
+    "1073743878": {
+      "id": "1073743878",
+      "name": "No hot water onsite",
+      "has_value": false
+    },
+    "1073743879": {
+      "id": "1073743879",
+      "name": "Limited hot water onsite",
+      "has_value": false
+    },
+    "1073743916": {
+      "id": "1073743916",
+      "name": "Events/parties allowed",
+      "has_value": false
+    },
+    "1073743917": {
+      "id": "1073743917",
+      "name": "Events/parties not allowed",
+      "has_value": false
+    },
+    "1073744364": {
+      "id": "1073744364",
+      "name": "Unicode Support ",
+      "has_value": true
+    },
+    "1073744692": {
+      "id": "1073744692",
+      "name": "LGBTQ friendly",
+      "has_value": false
+    },
+    "1073744973": {
+      "id": "1073744973",
+      "name": "Essential workers only - YES",
+      "has_value": false
+    },
+    "1073744974": {
+      "id": "1073744974",
+      "name": "Essential workers only - NO",
+      "has_value": false
+    },
+    "1073744990": {
+      "id": "1073744990",
+      "name": "Property uses a professional cleaning service",
+      "has_value": false
+    },
+    "1073744992": {
+      "id": "1073744992",
+      "name": "Property is cleaned with disinfectant",
+      "has_value": false
+    },
+    "1073744994": {
+      "id": "1073744994",
+      "name": "Staff wears personal protective equipment",
+      "has_value": false
+    },
+    "1073744996": {
+      "id": "1073744996",
+      "name": "Protective clothing is available to guests",
+      "has_value": false
+    },
+    "1073744997": {
+      "id": "1073744997",
+      "name": "Masks are available to guests",
+      "has_value": false
+    },
+    "1073744998": {
+      "id": "1073744998",
+      "name": "Gloves are available to guests",
+      "has_value": false
+    },
+    "1073745000": {
+      "id": "1073745000",
+      "name": "Shield between guests and staff in main contact areas",
+      "has_value": false
+    },
+    "1073745002": {
+      "id": "1073745002",
+      "name": "Guests are provided with free hand sanitizer",
+      "has_value": false
+    },
+    "1073745004": {
+      "id": "1073745004",
+      "name": "Social distancing measures are in place",
+      "has_value": false
+    },
+    "1073745006": {
+      "id": "1073745006",
+      "name": "Contactless check-in is available",
+      "has_value": false
+    },
+    "1073745008": {
+      "id": "1073745008",
+      "name": "Property follows regional sanitization guidelines ",
+      "has_value": true
+    },
+    "1073745010": {
+      "id": "1073745010",
+      "name": "Property follows a brand or regulatory agency's sanitization guidelines ",
+      "has_value": true
+    },
+    "1073745012": {
+      "id": "1073745012",
+      "name": "Property is not currently implementing any enhanced cleaning measures",
+      "has_value": false
+    },
+    "1073745013": {
+      "id": "1073745013",
+      "name": "Property confirms they are implementing enhanced cleaning measures",
+      "has_value": false
+    },
+    "1073745015": {
+      "id": "1073745015",
+      "name": "Individually-wrapped food options are available",
+      "has_value": false
+    },
+    "1073745016": {
+      "id": "1073745016",
+      "name": "Individually-wrapped food options are available for breakfast",
+      "has_value": false
+    },
+    "1073745017": {
+      "id": "1073745017",
+      "name": "Individually-wrapped food options are available for lunch",
+      "has_value": false
+    },
+    "1073745018": {
+      "id": "1073745018",
+      "name": "Individually-wrapped food options are available for dinner",
+      "has_value": false
+    },
+    "1073745019": {
+      "id": "1073745019",
+      "name": "Individually-wrapped food options are available through room service",
+      "has_value": false
+    },
+    "1073745021": {
+      "id": "1073745021",
+      "name": "Gap period enforced between guest stays - ",
+      "has_value": true
+    },
+    "1073745045": {
+      "id": "1073745045",
+      "name": "Staff temperature checks are conducted regularly",
+      "has_value": false
+    },
+    "1073745047": {
+      "id": "1073745047",
+      "name": "Temperature checks are available to guests",
+      "has_value": false
+    },
+    "1073745049": {
+      "id": "1073745049",
+      "name": "Bed sheets and towels are washed at a temperature of at least 60°C/140°F",
+      "has_value": false
+    },
+    "1073745051": {
+      "id": "1073745051",
+      "name": "Commonly-touched surfaces are cleaned with disinfectant",
+      "has_value": false
+    },
+    "1073745053": {
+      "id": "1073745053",
+      "name": "Property confirms they are implementing guest safety measures",
+      "has_value": false
+    },
+    "1073745055": {
+      "id": "1073745055",
+      "name": "Contactless check-out is available",
+      "has_value": false
+    },
+    "1073745057": {
+      "id": "1073745057",
+      "name": "Property follows sanitization practices of Sanitary Protocol (UNPLV - France)",
+      "has_value": false
+    },
+    "1073745059": {
+      "id": "1073745059",
+      "name": "Property follows sanitization practices of SafeStay (AHLA - USA)",
+      "has_value": false
+    },
+    "1073745060": {
+      "id": "1073745060",
+      "name": "Property follows guide to reopening vacation rentals (DTV & DFV - Germany)",
+      "has_value": false
+    },
+    "1073745061": {
+      "id": "1073745061",
+      "name": "Property follows sanitization practices of European Holiday Home Association (EHHA - Europe)",
+      "has_value": false
+    },
+    "1073745062": {
+      "id": "1073745062",
+      "name": "Property follows sanitization practices of Intertek Cristal (3rd party expert - Global)",
+      "has_value": false
+    },
+    "1073745063": {
+      "id": "1073745063",
+      "name": "Property follows sanitization practices of Safe Travels (WTTC - Global)",
+      "has_value": false
+    },
+    "1073745064": {
+      "id": "1073745064",
+      "name": "Property follows sanitization practices of Croatian Tourism Association (HUT - Croatia)",
+      "has_value": false
+    },
+    "1073745065": {
+      "id": "1073745065",
+      "name": "Property follows sanitization practices of SafeHome (VRMA & VRHP)",
+      "has_value": false
+    },
+    "1073745102": {
+      "id": "1073745102",
+      "name": "Private host property",
+      "has_value": false
+    },
+    "1073745103": {
+      "id": "1073745103",
+      "name": "Guest accommodation is sealed after cleaning",
+      "has_value": false
+    },
+    "1073745105": {
+      "id": "1073745105",
+      "name": "Electrostatic spray is used for disinfection",
+      "has_value": false
+    },
+    "1073745107": {
+      "id": "1073745107",
+      "name": "Cashless transactions are available",
+      "has_value": false
+    },
+    "1073745109": {
+      "id": "1073745109",
+      "name": "Masks are compulsory at the property",
+      "has_value": false
+    },
+    "1073745113": {
+      "id": "1073745113",
+      "name": "Contactless food service / room service is available",
+      "has_value": false
+    },
+    "1073745115": {
+      "id": "1073745115",
+      "name": "Reservation might be required for some facilities onsite",
+      "has_value": false
+    },
+    "1073745119": {
+      "id": "1073745119",
+      "name": "Property follows sanitization practices of Bureau Veritas (3rd party expert - Global)",
+      "has_value": false
+    },
+    "1073745120": {
+      "id": "1073745120",
+      "name": "Property follows sanitization practices of Ecolab (3rd party expert - Global)",
+      "has_value": false
+    },
+    "1073745121": {
+      "id": "1073745121",
+      "name": "Property follows sanitization practices of Operational Recommendations for Hotels (FHRAI - India)",
+      "has_value": false
+    },
+    "1073745122": {
+      "id": "1073745122",
+      "name": "Property follows sanitization practices of SGS (3rd party expert - Global)",
+      "has_value": false
+    },
+    "1073745123": {
+      "id": "1073745123",
+      "name": "Property follows sanitization practices of Safe, Clean and Legal (Quality in Tourism - UK)",
+      "has_value": false
+    },
+    "1073745124": {
+      "id": "1073745124",
+      "name": "Property follows sanitization practices of Travel in the New Normal (US Travel - USA)",
+      "has_value": false
+    },
+    "1073745126": {
+      "id": "1073745126",
+      "name": "Food service has been amended for enhanced safety",
+      "has_value": false
+    },
+    "1073745142": {
+      "id": "1073745142",
+      "name": "Professional property host/manager",
+      "has_value": false
+    },
+    "1073745161": {
+      "id": "1073745161",
+      "name": "Property follows sanitization practices of COVID-19 Guidelines (CDC)",
+      "has_value": false
+    },
+    "1073745162": {
+      "id": "1073745162",
+      "name": "Property follows sanitization practices of GBAC STAR Facility Accreditation (global expert)",
+      "has_value": false
+    },
+    "1073745163": {
+      "id": "1073745163",
+      "name": "Property follows sanitization practices of CovidClean (Safehotels - global expert)",
+      "has_value": false
+    },
+    "1073745164": {
+      "id": "1073745164",
+      "name": "Property follows sanitization practices of COVID-19 Guidelines (WHO)",
+      "has_value": false
+    },
+    "1073745200": {
+      "id": "1073745200",
+      "name": "Free onsite COVID-19 testing (PCR) is available",
+      "has_value": false
+    },
+    "1073745201": {
+      "id": "1073745201",
+      "name": "Onsite COVID-19 testing (PCR) is available",
+      "has_value": false
+    },
+    "1073745202": {
+      "id": "1073745202",
+      "name": "Free onsite COVID-19 testing (Antigen/Rapid) is available",
+      "has_value": false
+    },
+    "1073745203": {
+      "id": "1073745203",
+      "name": "Onsite COVID-19 testing (Antigen) is available",
+      "has_value": false
+    },
+    "1073745208": {
+      "id": "1073745208",
+      "name": "Reservations are required for onsite COVID-19 testing",
+      "has_value": false
+    },
+    "1073745209": {
+      "id": "1073745209",
+      "name": "Onsite COVID-19 testing (PCR) is required",
+      "has_value": false
+    },
+    "1073745210": {
+      "id": "1073745210",
+      "name": "Onsite COVID-19 testing (Antigen) is required",
+      "has_value": false
+    },
+    "1073745211": {
+      "id": "1073745211",
+      "name": "Masks are compulsory at the property for guests without full COVID-19 vaccination",
+      "has_value": false
+    },
+    "1073745213": {
+      "id": "1073745213",
+      "name": "Minimum age for COVID-19 test requirement: ",
+      "has_value": true
+    },
+    "1073745218": {
+      "id": "1073745218",
+      "name": "Guests must provide health documentation",
+      "has_value": false
+    },
+    "1073745219": {
+      "id": "1073745219",
+      "name": "Guests must provide a negative COVID-19 test result",
+      "has_value": false
+    },
+    "1073745220": {
+      "id": "1073745220",
+      "name": "Guests must provide proof of COVID-19 vaccination",
+      "has_value": false
+    },
+    "1073745222": {
+      "id": "1073745222",
+      "name": "Negative COVID-19 test result must be of specific type(s): ",
+      "has_value": true
+    },
+    "1073745223": {
+      "id": "1073745223",
+      "name": "Negative COVID-19 test result must have been issued within a specific period before check-in: ",
+      "has_value": true
+    },
+    "1073745224": {
+      "id": "1073745224",
+      "name": "Minimum age for negative COVID-19 test result requirement: ",
+      "has_value": true
+    },
+    "1073745226": {
+      "id": "1073745226",
+      "name": "Minimum age for proof of COVID-19 vaccination requirement: ",
+      "has_value": true
+    },
+    "1073745227": {
+      "id": "1073745227",
+      "name": "COVID-19 vaccine must have been received a minimum number of days before check-in: ",
+      "has_value": true
+    },
+    "1073745228": {
+      "id": "1073745228",
+      "name": "Property follows sanitization practices of WELL Health-Safety Rating (IWBI)",
+      "has_value": false
+    },
+    "1073745229": {
+      "id": "1073745229",
+      "name": "Property does not offer onsite COVID-19 testing",
+      "has_value": false
+    },
+    "1073745230": {
+      "id": "1073745230",
+      "name": "Property does not require health documentation at check-in",
+      "has_value": false
+    }
+  },
+  "statistics": {
+    "52": {
+      "id": "52",
+      "name": "Total number of rooms - ",
+      "has_value": true
+    },
+    "54": {
+      "id": "54",
+      "name": "Number of floors - ",
+      "has_value": true
+    },
+    "55": {
+      "id": "55",
+      "name": "Number of buildings/towers - ",
+      "has_value": true
+    },
+    "2515": {
+      "id": "2515",
+      "name": "Year Built - ",
+      "has_value": true
+    },
+    "1073743378": {
+      "id": "1073743378",
+      "name": "Number of bedrooms - ",
+      "has_value": true
+    },
+    "1073743379": {
+      "id": "1073743379",
+      "name": "Number of bathrooms - ",
+      "has_value": true
+    },
+    "1073743380": {
+      "id": "1073743380",
+      "name": "Max occupancy - ",
+      "has_value": true
+    },
+    "1073743537": {
+      "id": "1073743537",
+      "name": "Property floor area (square feet) - ",
+      "has_value": true
+    },
+    "1073743538": {
+      "id": "1073743538",
+      "name": "Property floor area (square meters) - ",
+      "has_value": true
+    }
+  },
+  "themes": {
+    "2325": {
+      "id": "2325",
+      "name": "Beach property"
+    },
+    "2328": {
+      "id": "2328",
+      "name": "Business property"
+    },
+    "2329": {
+      "id": "2329",
+      "name": "Casino property"
+    },
+    "2332": {
+      "id": "2332",
+      "name": "Green/Sustainable property"
+    },
+    "2333": {
+      "id": "2333",
+      "name": "Family property"
+    },
+    "2334": {
+      "id": "2334",
+      "name": "Golf property"
+    },
+    "2337": {
+      "id": "2337",
+      "name": "Luxury property"
+    },
+    "2338": {
+      "id": "2338",
+      "name": "Pet-friendly property"
+    },
+    "2339": {
+      "id": "2339",
+      "name": "Romantic property"
+    },
+    "2341": {
+      "id": "2341",
+      "name": "Spa property"
+    },
+    "4012": {
+      "id": "4012",
+      "name": "Ski property"
+    },
+    "5001": {
+      "id": "5001",
+      "name": "Hot springs property"
+    },
+    "5002": {
+      "id": "5002",
+      "name": "Historic property"
+    },
+    "5018": {
+      "id": "5018",
+      "name": "Shopping property"
+    },
+    "5019": {
+      "id": "5019",
+      "name": "Adventure sport property"
+    },
+    "5020": {
+      "id": "5020",
+      "name": "Winery property"
+    },
+    "5022": {
+      "id": "5022",
+      "name": "Boutique property"
+    },
+    "1073744353": {
+      "id": "1073744353",
+      "name": "Adventure sport"
+    },
+    "1073744354": {
+      "id": "1073744354",
+      "name": "Beach"
+    },
+    "1073744355": {
+      "id": "1073744355",
+      "name": "Business"
+    },
+    "1073744356": {
+      "id": "1073744356",
+      "name": "Casino"
+    },
+    "1073744357": {
+      "id": "1073744357",
+      "name": "Family"
+    },
+    "1073744358": {
+      "id": "1073744358",
+      "name": "Golf"
+    },
+    "1073744359": {
+      "id": "1073744359",
+      "name": "Hot springs"
+    },
+    "1073744360": {
+      "id": "1073744360",
+      "name": "Ski"
+    },
+    "1073744361": {
+      "id": "1073744361",
+      "name": "Spa"
+    },
+    "1073744362": {
+      "id": "1073744362",
+      "name": "Romantic"
+    },
+    "1073744363": {
+      "id": "1073744363",
+      "name": "Winery"
+    },
+    "1073744368": {
+      "id": "1073744368",
+      "name": "City"
+    },
+    "1073744369": {
+      "id": "1073744369",
+      "name": "Natural"
+    },
+    "1073744370": {
+      "id": "1073744370",
+      "name": "Shopping"
+    }
+  },
+  "TEST": {
+    "1423": {
+      "id": "1423",
+      "group": "test_group",
+      "name": "testname",
+      "has_value": true,
+      "description": "This is the description"
+    }
+  },
+  "spoken_languages": {
+    "af": {
+      "id": "af",
+      "name": "Afrikaans"
+    },
+    "ar": {
+      "id": "ar",
+      "name": "Arabic"
+    },
+    "az": {
+      "id": "az",
+      "name": "Azerbaijani"
+    },
+    "be": {
+      "id": "be",
+      "name": "Belarusian"
+    },
+    "bg": {
+      "id": "bg",
+      "name": "Bulgarian"
+    },
+    "bs": {
+      "id": "bs",
+      "name": "Bosnian"
+    },
+    "ca": {
+      "id": "ca",
+      "name": "Catalan"
+    },
+    "cs": {
+      "id": "cs",
+      "name": "Czech"
+    },
+    "cy": {
+      "id": "cy",
+      "name": "Welsh"
+    },
+    "da": {
+      "id": "da",
+      "name": "Danish"
+    },
+    "de": {
+      "id": "de",
+      "name": "German"
+    },
+    "el": {
+      "id": "el",
+      "name": "Greek"
+    },
+    "en": {
+      "id": "en",
+      "name": "English"
+    },
+    "es": {
+      "id": "es",
+      "name": "Spanish"
+    },
+    "et": {
+      "id": "et",
+      "name": "Estonian"
+    },
+    "fa": {
+      "id": "fa",
+      "name": "Farsi"
+    },
+    "fi": {
+      "id": "fi",
+      "name": "Finnish"
+    },
+    "fil": {
+      "id": "fil",
+      "name": "Filipino"
+    },
+    "fr": {
+      "id": "fr",
+      "name": "French"
+    },
+    "ga": {
+      "id": "ga",
+      "name": "Irish"
+    },
+    "ha": {
+      "id": "ha",
+      "name": "Hausa"
+    },
+    "he": {
+      "id": "he",
+      "name": "Hebrew"
+    },
+    "hi": {
+      "id": "hi",
+      "name": "Hindi"
+    },
+    "hr": {
+      "id": "hr",
+      "name": "Croatian"
+    },
+    "hu": {
+      "id": "hu",
+      "name": "Hungarian"
+    },
+    "id": {
+      "id": "id",
+      "name": "Indonesian"
+    },
+    "is": {
+      "id": "is",
+      "name": "Icelandic"
+    },
+    "it": {
+      "id": "it",
+      "name": "Italian"
+    },
+    "ja": {
+      "id": "ja",
+      "name": "Japanese"
+    },
+    "ka": {
+      "id": "ka",
+      "name": "Georgian"
+    },
+    "km": {
+      "id": "km",
+      "name": "Khmer"
+    },
+    "ko": {
+      "id": "ko",
+      "name": "Korean"
+    },
+    "lo": {
+      "id": "lo",
+      "name": "Lao"
+    },
+    "lt": {
+      "id": "lt",
+      "name": "Lithuanian"
+    },
+    "lv": {
+      "id": "lv",
+      "name": "Latvian"
+    },
+    "mk": {
+      "id": "mk",
+      "name": "Macedonian"
+    },
+    "mn": {
+      "id": "mn",
+      "name": "Mongolian"
+    },
+    "ms": {
+      "id": "ms",
+      "name": "Malay"
+    },
+    "mt": {
+      "id": "mt",
+      "name": "Maltese"
+    },
+    "nl": {
+      "id": "nl",
+      "name": "Dutch"
+    },
+    "no": {
+      "id": "no",
+      "name": "Norwegian"
+    },
+    "pl": {
+      "id": "pl",
+      "name": "Polish"
+    },
+    "pt": {
+      "id": "pt",
+      "name": "Portuguese"
+    },
+    "ro": {
+      "id": "ro",
+      "name": "Romanian"
+    },
+    "ru": {
+      "id": "ru",
+      "name": "Russian"
+    },
+    "sk": {
+      "id": "sk",
+      "name": "Slovak"
+    },
+    "sl": {
+      "id": "sl",
+      "name": "Slovenian"
+    },
+    "sr": {
+      "id": "sr",
+      "name": "Serbian"
+    },
+    "sv": {
+      "id": "sv",
+      "name": "Swedish"
+    },
+    "sw": {
+      "id": "sw",
+      "name": "Swahili"
+    },
+    "th": {
+      "id": "th",
+      "name": "Thai"
+    },
+    "tr": {
+      "id": "tr",
+      "name": "Turkish"
+    },
+    "uk": {
+      "id": "uk",
+      "name": "Ukrainian"
+    },
+    "ur": {
+      "id": "ur",
+      "name": "Urdu"
+    },
+    "vi": {
+      "id": "vi",
+      "name": "Vietnamese"
+    },
+    "xh": {
+      "id": "xh",
+      "name": "Xhosa"
+    },
+    "yo": {
+      "id": "yo",
+      "name": "Yoruba"
+    },
+    "zh": {
+      "id": "zh",
+      "name": "Chinese"
+    },
+    "zu": {
+      "id": "zu",
+      "name": "Zulu"
+    }
+  }
+}
