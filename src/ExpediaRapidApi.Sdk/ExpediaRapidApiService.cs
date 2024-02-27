@@ -3,6 +3,7 @@ using ExpediaRapidApi.Sdk.Models;
 using ExpediaRapidApi.Sdk.Models.Bookings;
 using ExpediaRapidApi.Sdk.Models.Properties;
 using ExpediaRapidApi.Sdk.Requests;
+using ExpediaRapidApi.Sdk.Utils;
 using fbognini.Sdk;
 using fbognini.Sdk.Interfaces;
 using Microsoft.Extensions.Logging;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Options;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
+using System.Web;
 
 namespace ExpediaRapidApi.Sdk
 {
@@ -281,6 +283,11 @@ namespace ExpediaRapidApi.Sdk
 
         private async Task<ItineraryDetailResponse> GetBooking(string id, string? token, string? email, string clientIp)
         {
+            if (!string.IsNullOrEmpty(email))
+            {
+                email = UriHelpers.EncodeEmailLocalPart(email);
+            }
+
             AddClientIpHeader(clientIp);
             return await GetApi<ItineraryDetailResponse>(BookingEndpoints.Get(id, token, email));
         }
