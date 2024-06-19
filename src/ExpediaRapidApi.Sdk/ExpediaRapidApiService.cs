@@ -1,4 +1,5 @@
 ﻿using ExpediaRapidApi.Sdk.Endpoints;
+using ExpediaRapidApi.Sdk.Handlers;
 using ExpediaRapidApi.Sdk.Models;
 using ExpediaRapidApi.Sdk.Models.Bookings;
 using ExpediaRapidApi.Sdk.Models.Properties;
@@ -56,6 +57,8 @@ namespace ExpediaRapidApi.Sdk
         Task CancelBookingRoom(string relativeUrl, string clientIp);
         Task<ExpediaPaginationResponse<List<Region>>> GetRegionsByToken(string token);
         Task<LinkHref> GetFilePropertyContent(string language, string supplySource);
+
+        [Obsolete]
         (string Signature, double UnixTime) GetSignature();
     }
 
@@ -66,42 +69,31 @@ namespace ExpediaRapidApi.Sdk
     {
         private readonly ExpediaRapidApiSettings settings;
 
-        public ExpediaRapidApiService(HttpClient client, ILogger<ExpediaRapidApiService> logger, IOptions<ExpediaRapidApiSettings> options)
-            : base(client, logger, null)
+        public ExpediaRapidApiService(HttpClient client, IOptions<ExpediaRapidApiSettings> options)
+            : base(client, null, null)
         {
             this.settings = options.Value;
+
+            DefaultRequestOptions.TryAdd(ExpediaAuthorizationHttpMessageHandler.ApiKeyOptionName, settings.ApiKey);
+            DefaultRequestOptions.TryAdd(ExpediaAuthorizationHttpMessageHandler.ApiSecretOptionName, settings.ApiSecret);
 
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.AcceptEncoding.Clear();
             client.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("gzip"));
 
-
             client.DefaultRequestHeaders.UserAgent.ParseAdd("GHC/2019");
-            client.BaseAddress = new Uri($"{settings.Url}/");
-
-            var header = GetAuthorizationHeader();
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("EAN", header);
+            client.BaseAddress = new Uri(settings.BaseAddress);
         }
 
+        [Obsolete]
         public (string Signature, double UnixTime) GetSignature()
         {
+            var utcNow = DateTime.UtcNow;
+            var unixTimestamp = ExpediaHelpers.GetUnixTimestamp(utcNow);
+            var signature = ExpediaHelpers.GetSignature(settings.ApiKey, settings.ApiSecret, unixTimestamp);
 
-            TimeSpan epochTicks = new TimeSpan(new DateTime(1970, 1, 1).Ticks);
-            TimeSpan unixTicks = new TimeSpan(DateTime.UtcNow.Ticks) - epochTicks;
-            double unixTime = (int)unixTicks.TotalSeconds;
-            var toBeHashed = settings.ApiKey + settings.ApiSecret + unixTime;
-            var bytes = Encoding.UTF8.GetBytes(toBeHashed);
-
-            var hashedInputBytes = System.Security.Cryptography.SHA512.HashData(bytes);
-            var hashedInputStringBuilder = new StringBuilder(128);
-            foreach (var b in hashedInputBytes)
-            {
-                hashedInputStringBuilder.Append(b.ToString("X2"));
-            }
-            var signature = hashedInputStringBuilder.ToString();
-
-            return (signature, unixTime);
+            return (signature, unixTimestamp);
         }
         
         protected async Task<ExpediaPaginationResponse<T>> GetPaginatedApi<T>(string url)
@@ -300,14 +292,6 @@ namespace ExpediaRapidApi.Sdk
             {
                 client.DefaultRequestHeaders.Add("Customer-Ip", clientIp);
             }
-        }
-
-        private string GetAuthorizationHeader()
-        {
-            var (signature, unixTime) = GetSignature();
-            var authHeaderValue = "APIKey=" + settings.ApiKey + ",Signature=" + signature + ",timestamp=" + unixTime;
-
-            return authHeaderValue;
         }
 
         #endregion

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpediaRapidApi.Sdk", "src\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{B6DDA097-83B9-43FE-9E5F-6270663614A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpediaRapidApi.Sdk.Console", "examples\ExpediaRapidApi.Sdk.Console\ExpediaRapidApi.Sdk.Console.csproj", "{D660B601-2460-495B-9163-167A7709D7E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpediaRapidApi.Sdk.Console", "examples\ExpediaRapidApi.Sdk.Console\ExpediaRapidApi.Sdk.Console.csproj", "{D660B601-2460-495B-9163-167A7709D7E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

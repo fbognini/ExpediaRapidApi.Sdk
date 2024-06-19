@@ -7,8 +7,8 @@
 
     internal class ExpediaRapidEnvironment
     {
-        public static ExpediaRapidEnvironment STAGING = new(ExpediaRapidApiEnvironment.STG, "https://test.ean.com");
-        public static ExpediaRapidEnvironment PRODUCTION = new(ExpediaRapidApiEnvironment.PRD, "https://api.ean.com");
+        public static ExpediaRapidEnvironment STAGING = new(ExpediaRapidApiEnvironment.STG, "https://test.ean.com/");
+        public static ExpediaRapidEnvironment PRODUCTION = new(ExpediaRapidApiEnvironment.PRD, "https://api.ean.com/");
 
         public ExpediaRapidApiEnvironment EnvironmentName { get; private set; }
         public string ApiUrl { get; private set; }
@@ -42,7 +42,7 @@
         internal ExpediaRapidEnvironment Environment => ExpediaRapidEnvironment.ParseEnvironment(EnvironmentName);
         public ExpediaRapidApiEnvironment EnvironmentName { get; set; }
 
-        internal string Url => Environment.ApiUrl;
+        internal string BaseAddress => Environment.ApiUrl;
 
         public required string ApiKey { get; set; }
         public required string ApiSecret { get; set; }

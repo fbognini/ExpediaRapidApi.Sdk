@@ -1,4 +1,5 @@
-﻿using fbognini.Sdk.Extensions;
+﻿using ExpediaRapidApi.Sdk.Handlers;
+using fbognini.Sdk.Extensions;
 using fbognini.Sdk.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,12 +15,15 @@ namespace ExpediaRapidApi.Sdk
         {
             services.Configure<ExpediaRapidApiSettings>(configuration.GetSection(nameof(ExpediaRapidApiSettings)));
 
+            services.AddScoped<ExpediaAuthorizationHttpMessageHandler>();
+
             services.AddHttpClient<IExpediaRapidApiService, ExpediaRapidApiService>()
                 .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
                 {
                     //ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; }
                     AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
                 })
+                .AddHttpMessageHandler<ExpediaAuthorizationHttpMessageHandler>()
                 .ThrowApiExceptionIfNotSuccess()
                 .AddLogging();
 
