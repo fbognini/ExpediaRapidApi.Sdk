@@ -56,7 +56,7 @@ namespace ExpediaRapidApi.Sdk
         Task ResumeBooking(string id, string token);
         Task CancelBookingRoom(string relativeUrl, string clientIp);
         Task<ExpediaPaginationResponse<List<Region>>> GetRegionsByToken(string token);
-        Task<LinkHref> GetFilePropertyContent(string language, string supplySource);
+        Task<Link> GetFilePropertyContent(string language, string supplySource);
 
         [Obsolete]
         (string Signature, double UnixTime) GetSignature();
@@ -104,8 +104,8 @@ namespace ExpediaRapidApi.Sdk
             string? nextPageLink = nextPages?.FirstOrDefault();
             if (!string.IsNullOrEmpty(nextPageLink))
             {
-                int from = nextPageLink.IndexOf("<");
-                int to = nextPageLink.LastIndexOf(">");
+                int from = nextPageLink.IndexOf('<');
+                int to = nextPageLink.LastIndexOf('>');
                 nextPageLink = nextPageLink.Substring(from + 1, to - from - 1);
             }
 
@@ -230,9 +230,9 @@ namespace ExpediaRapidApi.Sdk
             return await GetApi<GuestReviewsResponse>(PropertyEndpoints.GuestReviews(propertyId, language));
         }
 
-        public async Task<LinkHref> GetFilePropertyContent(string language, string supplySource)
+        public async Task<Link> GetFilePropertyContent(string language, string supplySource)
         {
-            return await GetApi<LinkHref>(PropertyEndpoints.PropertyContentFile(language, supplySource));
+            return await GetApi<Link>(PropertyEndpoints.PropertyContentFile(language, supplySource));
         }
 
         #endregion

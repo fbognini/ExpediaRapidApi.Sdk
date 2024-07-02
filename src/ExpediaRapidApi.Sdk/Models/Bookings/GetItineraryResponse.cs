@@ -153,17 +153,6 @@ namespace ExpediaRapidApi.Sdk.Models.Bookings
 
             [JsonPropertyName("retrieve")]
             public Link Retrieve { get; set; }
-            //[JsonPropertyName("expires")]
-            //public string Expires { get; set; }
-        }
-
-        public class Link
-        {
-            [JsonPropertyName("method")]
-            public string Method { get; set; }
-
-            [JsonPropertyName("href")]
-            public string Href { get; set; }
         }
 
 

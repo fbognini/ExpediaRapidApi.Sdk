@@ -10,7 +10,7 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/fbognini/ExpediaRapidApi.Sdk</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/fbognini/ExpediaRapidApi.Sdk</RepositoryUrl>
-		<Version>0.3.2</Version>
+		<Version>0.3.3</Version>
 	</PropertyGroup>
 
 

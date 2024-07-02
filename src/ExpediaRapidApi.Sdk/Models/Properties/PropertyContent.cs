@@ -8,10 +8,10 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public long PropertyId { get; set; }
 
         [JsonPropertyName("name")]
-        public required string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [JsonPropertyName("address")]
-        public required Address Address { get; set; }
+        public Address Address { get; set; } = new();
 
         [JsonPropertyName("ratings")]
         public Ratings Ratings { get; set; }
@@ -114,7 +114,6 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public string StateProvinceName { get; set; }
 
         [JsonPropertyName("postal_code")]
-        //[JsonConverter(typeof(ParseStringConverter))]
         public string PostalCode { get; set; }
 
         [JsonPropertyName("country_code")]
@@ -280,7 +279,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class Image
     {
         [JsonPropertyName("caption")]
-        public string Caption { get; set; }
+        public string Caption { get; set; } = string.Empty;
 
         [JsonPropertyName("hero_image")]
         public bool HeroImage { get; set; }
@@ -289,16 +288,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public int Category { get; set; }
 
         [JsonPropertyName("links")]
-        public Dictionary<string, Link> Links { get; set; }
-    }
-
-    public class Link
-    {
-        [JsonPropertyName("method")]
-        public required string Method { get; set; }
-
-        [JsonPropertyName("href")]
-        public required string Href { get; set; }
+        public Dictionary<string, Link> Links { get; set; } = new();
     }
 
     public class Location
@@ -582,19 +572,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class PropertyManagerLinks
     {
         [JsonPropertyName("image")]
-        public PropertiesContentLink Image { get; set; }
-    }
-
-    public class PropertiesContentLink
-    {
-        [JsonPropertyName("method")]
-        public string Method { get; set; }
-
-        [JsonPropertyName("href")]
-        public string Href { get; set; }
-
-        [JsonPropertyName("expires")]
-        public string Expires { get; set; }
+        public Link Image { get; set; }
     }
 
     public class RentalAgreement
@@ -606,7 +584,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class RentalAgreementLinks
     {
         [JsonPropertyName("rental_agreement")]
-        public PropertiesContentLink Link { get; set; }
+        public Link Link { get; set; }
     }
     public class Brand
     {
@@ -616,6 +594,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         [JsonPropertyName("name")]
         public string Name { get; set; }
     }
+    
     public class Chain
     {
         [JsonPropertyName("id")]

@@ -6,7 +6,7 @@ namespace ExpediaRapidApi.Sdk.Models
     public class Region
     {
         [JsonPropertyName("id")]
-        public required string Id { get; set; }
+        public string Id { get; set; } = string.Empty;
 
         [JsonPropertyName("type")]
         public string? Type { get; set; }

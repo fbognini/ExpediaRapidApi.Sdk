@@ -6,7 +6,7 @@ namespace ExpediaRapidApi.Sdk.Models.Bookings
     public partial class BookingResponse
     {
         [JsonPropertyName("itinerary_id")]
-        public required string ItineraryId { get; set; }
+        public string ItineraryId { get; set; } = string.Empty;
 
         [JsonPropertyName("links")]
         public BookingResponseLinks? Links { get; set; }

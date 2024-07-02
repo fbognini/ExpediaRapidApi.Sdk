@@ -5,9 +5,9 @@ namespace ExpediaRapidApi.Sdk.Models.Regions
     public class Ancestor
     {
         [JsonPropertyName("id")]
-        public required string Id { get; set; }
+        public string Id { get; set; } = string.Empty;
 
         [JsonPropertyName("type")]
-        public required string Type { get; set; }
+        public string Type { get; set; } = string.Empty;
     }
 }

@@ -5,17 +5,17 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class Room
     {
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string Id { get; set; } = string.Empty;
         [JsonPropertyName("room_name")]
-        public required string RoomName { get; set; }
+        public string RoomName { get; set; } = string.Empty;
         [JsonPropertyName("rates")]
-        public List<Rate> Rates { get; set; }
+        public List<Rate> Rates { get; set; } = new();
     }
 
     public class Rate
     {
         [JsonPropertyName("id")]
-        public required string Id { get; set; }
+        public string Id { get; set; } = string.Empty;
         [JsonPropertyName("available_rooms")]
         public int AvailableRooms { get; set; }
         [JsonPropertyName("refundable")]
@@ -67,7 +67,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class BedGroupsLinks
     {
         [JsonPropertyName("price_check")]
-        public LinkHref PriceCheck { get; set; }
+        public Link PriceCheck { get; set; }
     }
 
     public class PaymentOptions

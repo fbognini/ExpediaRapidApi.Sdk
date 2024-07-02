@@ -10,6 +10,6 @@ namespace ExpediaRapidApi.Sdk.Models
     internal class References
     {
         [JsonPropertyName("categories")]
-        public required Dictionary<string, Reference> Categories { get; set; }
+        public Dictionary<string, Reference> Categories { get; set; } = new();
     }
 }

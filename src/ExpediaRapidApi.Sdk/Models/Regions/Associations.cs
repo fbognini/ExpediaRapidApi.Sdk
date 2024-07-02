@@ -5,6 +5,6 @@ namespace ExpediaRapidApi.Sdk.Models.Regions
     public class Associations
     {
         [JsonPropertyName("point_of_interest")]
-        public required List<string> PointOfInterests { get; set; }
+        public List<string> PointOfInterests { get; set; } = new();
     }
 }

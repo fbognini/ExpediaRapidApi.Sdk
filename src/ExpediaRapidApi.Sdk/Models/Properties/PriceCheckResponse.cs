@@ -11,7 +11,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public OccupancyPricing? OccupancyPricing { get; set; }
 
         [JsonPropertyName("links")]
-        public required PriceCheckLink Links { get; set; }
+        public PriceCheckLink Links { get; set; } = new();
 
         [JsonPropertyName("card_on_file_limit")]
         public CardOnFileLimit? CardOnFileLimit { get; set; }
@@ -26,16 +26,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class PriceCheckLink
     {
         [JsonPropertyName("book")]
-        public required Book Book { get; set; }
-    }
-
-    public class Book
-    {
-        [JsonPropertyName("method")]
-        public string Method { get; set; }
-
-        [JsonPropertyName("href")]
-        public required string Href { get; set; }
+        public Link Book { get; set; } = new();
     }
 
     public class CardOnFileLimit

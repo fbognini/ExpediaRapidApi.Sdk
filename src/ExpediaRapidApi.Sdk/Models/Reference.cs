@@ -10,8 +10,8 @@ namespace ExpediaRapidApi.Sdk.Models
     public class Reference
     {
         [JsonPropertyName("id")]
-        public required string Id { get; set; }
+        public string Id { get; set; } = string.Empty;
         [JsonPropertyName("name")]
-        public required string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
 }
