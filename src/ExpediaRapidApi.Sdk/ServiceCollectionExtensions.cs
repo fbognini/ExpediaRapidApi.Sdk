@@ -20,7 +20,6 @@ namespace ExpediaRapidApi.Sdk
             services.AddHttpClient<IExpediaRapidApiService, ExpediaRapidApiService>()
                 .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
                 {
-                    //ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; }
                     AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
                 })
                 .AddHttpMessageHandler<ExpediaAuthorizationHttpMessageHandler>()

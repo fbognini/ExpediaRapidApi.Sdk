@@ -98,7 +98,7 @@ namespace ExpediaRapidApi.Sdk
         
         protected async Task<ExpediaPaginationResponse<T>> GetPaginatedApi<T>(string url)
         {
-            var response = await GetApi(url);
+            var response = await GetApiAsync(url);
 
             response.Headers.TryGetValues("Link", out var nextPages);
             string? nextPageLink = nextPages?.FirstOrDefault();
@@ -195,7 +195,7 @@ namespace ExpediaRapidApi.Sdk
             string? platformName,
             List<string>? exclusion)
         {
-            return await GetApi<PropertyAvailabilityResponse>(PropertyEndpoints.GetAvailability(
+            return await GetApiAsync<PropertyAvailabilityResponse>(PropertyEndpoints.GetAvailability(
                 checkin: checkin,
                 checkout: checkout,
                 currency: currency,
@@ -222,17 +222,17 @@ namespace ExpediaRapidApi.Sdk
             string rateId,
             string token)
         {
-            return await GetApi<PriceCheckResponse>(PropertyEndpoints.PriceCheck(propertyId, roomId, rateId, token));
+            return await GetApiAsync<PriceCheckResponse>(PropertyEndpoints.PriceCheck(propertyId, roomId, rateId, token));
         }
 
         public async Task<GuestReviewsResponse> GetPropertyGuestReviews(long propertyId, string language)
         {
-            return await GetApi<GuestReviewsResponse>(PropertyEndpoints.GuestReviews(propertyId, language));
+            return await GetApiAsync<GuestReviewsResponse>(PropertyEndpoints.GuestReviews(propertyId, language));
         }
 
         public async Task<Link> GetFilePropertyContent(string language, string supplySource)
         {
-            return await GetApi<Link>(PropertyEndpoints.PropertyContentFile(language, supplySource));
+            return await GetApiAsync<Link>(PropertyEndpoints.PropertyContentFile(language, supplySource));
         }
 
         #endregion
@@ -243,23 +243,24 @@ namespace ExpediaRapidApi.Sdk
         {
             AddClientIpHeader(clientIp);
 
-            return await PostApi<BookingResponse, CreateBookingRequest>(BookingEndpoints.Create(token), request);
+            return await PostApiAsync<BookingResponse, CreateBookingRequest>(BookingEndpoints.Create(token), request);
         }
 
         public async Task ResumeBooking(string id, string token)
         {
-            await PutApi(BookingEndpoints.Resume(id, token));
+            var request = default(object?);
+            await PutApiAsync(BookingEndpoints.Resume(id, token), request);
         }
 
         public async Task CancelHeldBooking(string id, string token)
         {
-            await DeleteApi(BookingEndpoints.Cancel(id, token));
+            await DeleteApiAsync(BookingEndpoints.Cancel(id, token));
         }
 
         public async Task CancelBookingRoom(string relativeUrl, string clientIp)
         {
             AddClientIpHeader(clientIp);
-            await DeleteApi(relativeUrl);
+            await DeleteApiAsync(relativeUrl);
         }
 
         public async Task<ItineraryDetailResponse> GetBookingFromToken(string id, string token, string clientIp)
@@ -281,7 +282,7 @@ namespace ExpediaRapidApi.Sdk
             }
 
             AddClientIpHeader(clientIp);
-            return await GetApi<ItineraryDetailResponse>(BookingEndpoints.Get(id, token, email));
+            return await GetApiAsync<ItineraryDetailResponse>(BookingEndpoints.Get(id, token, email));
         }
 
         private void AddClientIpHeader(string clientIp)
