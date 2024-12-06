@@ -25,7 +25,7 @@ namespace ExpediaRapidApi.Sdk.Utils
             var atIndex = email.IndexOf('@');
 
             var localPart = email[..atIndex];
-            if (HttpUtility.UrlDecode(localPart) != localPart)
+            if (HttpUtility.UrlDecode(localPart) == localPart)
             {
                 // It's been already encoded
                 return email;
