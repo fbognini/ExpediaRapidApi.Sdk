@@ -12,12 +12,12 @@ namespace ExpediaRapidApi.Sdk;
 
 public class ExpediaRapidApiClient
 {
-    public IExpediaLodgingApiClient Hotels { get; }
+    public IExpediaLodgingApiClient Lodging { get; }
     public IExpediaCarsApiClient Cars { get; }
 
-    public ExpediaRapidApiClient(IExpediaLodgingApiClient hotels, IExpediaCarsApiClient cars)
+    public ExpediaRapidApiClient(IExpediaLodgingApiClient lodging, IExpediaCarsApiClient cars)
     {
-        Hotels = hotels;
+        Lodging = lodging;
         Cars = cars;
     }
 }
@@ -41,6 +41,7 @@ public class ExpediaBaseApiClient : BaseApiService
         Settings = settings.Value;
         QueryStringBuilderFromJsonOptions = new QueryStringBuilderFromJsonOptions()
         {
+            UseIndexForArrays = false,
             JsonSerializerOptions = JsonSerializerOptions
         };
 

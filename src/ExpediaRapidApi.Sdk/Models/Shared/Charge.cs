@@ -15,7 +15,7 @@ public class Charge
 public class CurrencyAmount
 {
     [JsonPropertyName("value")]
-    public string Value { get; set; }
+    public double Value { get; set; }
 
     [JsonPropertyName("currency")]
     public string Currency { get; set; }

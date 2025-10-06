@@ -1,6 +1,4 @@
-﻿using ExpediaRapidApi.Sdk.Cars;
-using ExpediaRapidApi.Sdk.Cars.GetCarDetails;
-using ExpediaRapidApi.Sdk.Lodging;
+﻿using ExpediaRapidApi.Sdk.Lodging;
 using fbognini.Sdk.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

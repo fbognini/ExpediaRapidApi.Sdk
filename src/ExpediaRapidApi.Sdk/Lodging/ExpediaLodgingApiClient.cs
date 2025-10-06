@@ -1,9 +1,9 @@
-﻿using ExpediaRapidApi.Sdk.Lodging.Endpoints;
+﻿using ExpediaRapidApi.Sdk.Lodging.Bookings.CreateLodgingBooking;
+using ExpediaRapidApi.Sdk.Lodging.Endpoints;
 using ExpediaRapidApi.Sdk.Models;
-using ExpediaRapidApi.Sdk.Models.Bookings;
 using ExpediaRapidApi.Sdk.Models.Properties;
-using ExpediaRapidApi.Sdk.Requests;
 using ExpediaRapidApi.Sdk.Utils;
+using fbognini.Sdk.Models;
 using Microsoft.Extensions.Options;
 using System.Net.Http.Json;
 
@@ -11,8 +11,10 @@ namespace ExpediaRapidApi.Sdk.Lodging;
 
 public interface IExpediaLodgingApiClient
 {
+    Task<CreateLodgingBookingResponse> CreateLodgingBooking(string token, CreateLodgingBookingRequest request, CreateLodgingBookingOptions options, CancellationToken cancellationToken = default);
+
+
     Task CancelHeldBooking(string id, string token);
-    Task<BookingResponse> CreateBooking(string token, CreateBookingRequest request, string clientId);
     Task<PropertyItineraryResponse> GetBookingFromToken(string id, string token, string clientIp);
     Task<PropertyItineraryResponse> GetBookingFromEmail(string id, string email, string clientIp);
 
@@ -55,7 +57,7 @@ public interface IExpediaLodgingApiClient
     (string Signature, double UnixTime) GetSignature();
 }
 
-internal class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaLodgingApiClient
+internal partial class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaLodgingApiClient
 {
     public ExpediaLodgingApiClient(HttpClient httpClient, IOptions<ExpediaRapidApiSettings> options) : base(httpClient, options, currentUserService: null) 
     {
@@ -217,13 +219,6 @@ internal class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaLodgingAp
 
     #region Booking
 
-    public async Task<BookingResponse> CreateBooking(string token, CreateBookingRequest request, string clientIp)
-    {
-        AddClientIpHeader(clientIp);
-
-        return await PostApiAsync<BookingResponse, CreateBookingRequest>(BookingEndpoints.Create(token), request);
-    }
-
     public async Task ResumeBooking(string id, string token)
     {
         var request = default(object?);
@@ -271,6 +266,20 @@ internal class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaLodgingAp
         {
             client.DefaultRequestHeaders.Add("Customer-Ip", clientIp);
         }
+    }
+
+    private static RequestOptions GetRequestOptions(object? options)
+    {
+        var _options = new RequestOptions();
+        if (options is not null && options is IHasCustomerHeaderOptions customerOptions && customerOptions.Customer is not null)
+        {
+            _options.Headers.Add("Customer-Ip", customerOptions.Customer.CustomerIp);
+            _options.Headers.UserAgent.Clear();
+            _options.Headers.UserAgent.ParseAdd(customerOptions.Customer.UserAgent);
+            _options.Headers.Add("Customer-Session-Id", customerOptions.Customer.CustomerSessionId);
+        }
+
+        return _options;
     }
 
     #endregion
