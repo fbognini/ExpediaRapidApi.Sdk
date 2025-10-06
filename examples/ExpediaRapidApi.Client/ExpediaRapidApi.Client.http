@@ -1,0 +1,6 @@
+@ExpediaRapidApi.Client_HostAddress = http://localhost:5030
+
+GET {{ExpediaRapidApi.Client_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
