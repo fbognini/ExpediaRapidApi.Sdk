@@ -120,6 +120,9 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public double? Amount { get; set; }
         [JsonPropertyName("currency")]
         public string? Currency { get; set; }
+        /// <summary>
+        /// Percentage of total booking charged for as penalty.A thirty percent penalty would be returned as 30%
+        /// </summary>
         [JsonPropertyName("percent")]
         public string? Percent { get; set; }
     }
@@ -146,16 +149,6 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         [JsonPropertyName("currency")]
         public string Currency { get; set; }
     }
-
-    //public class Stay
-    //{
-    //    [JsonPropertyName("type")]
-    //    public string Type { get; set; }
-    //    [JsonPropertyName("value")]
-    //    public string Value { get; set; }
-    //    [JsonPropertyName("currency")]
-    //    public string Currency { get; set; }
-    //}
 
     public class Fee
     {

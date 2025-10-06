@@ -83,17 +83,6 @@ namespace ExpediaRapidApi.Sdk.Requests
         public string? EnrollmentDate { get; set; }
     }
 
-    public class BillingContact
-    {
-        [JsonPropertyName("given_name")]
-        public required string GivenName { get; set; }
-
-        [JsonPropertyName("family_name")]
-        public required string FamilyName { get; set; }
-
-        [JsonPropertyName("address")]
-        public required CreateBookingPaymentAddressRequest Address { get; set; }
-    }
     public class ThirdPartyAuthRequest
     {
         [JsonPropertyName("cavv")]
@@ -122,41 +111,5 @@ namespace ExpediaRapidApi.Sdk.Requests
 
         [JsonPropertyName("ucaf_indicator")]
         public string? UcafIndicator { get; set; }
-    }
-
-    public class CreateBookingPaymentAddressRequest
-    {
-        [JsonPropertyName("line_1")]
-        public string? Line1 { get; set; }
-
-        [JsonPropertyName("line_2")]
-        public string? Line2 { get; set; }
-
-        [JsonPropertyName("line_3")]
-        public string? Line3 { get; set; }
-
-        [JsonPropertyName("city")]
-        public string? City { get; set; }
-
-        [JsonPropertyName("state_province_code")]
-        public string? StateProvinceCode { get; set; }
-
-        [JsonPropertyName("postal_code")]
-        public string? PostalCode { get; set; }
-
-        [JsonPropertyName("country_code")]
-        public required string CountryCode { get; set; }
-    }
-
-    public class Phone
-    {
-        [JsonPropertyName("country_code")]
-        public required string CountryCode { get; set; }
-
-        [JsonPropertyName("area_code")]
-        public string? AreaCode { get; set; }
-
-        [JsonPropertyName("number")]
-        public required string Number { get; set; }
     }
 }
