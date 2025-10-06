@@ -1,4 +1,4 @@
-﻿namespace ExpediaRapidApi.Sdk.Models
+﻿namespace ExpediaRapidApi.Sdk.Models.Shared
 {
     public class ExpediaPaginationResponse<T>
     {

@@ -4,14 +4,14 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace ExpediaRapidApi.Sdk.Handlers
+namespace ExpediaRapidApi.Sdk.Cars
 {
-    internal class ExpediaAuthorizationHttpMessageHandler : DelegatingHandler
+    internal class ExpediaCarsAuthorizationHttpMessageHandler : DelegatingHandler
     {
         public const string ApiKeyOptionName = "__ExpediaApiKey__";
         public const string ApiSecretOptionName = "__ExpediaApiSecret__";
 
-        public ExpediaAuthorizationHttpMessageHandler()
+        public ExpediaCarsAuthorizationHttpMessageHandler()
         {
         }
 

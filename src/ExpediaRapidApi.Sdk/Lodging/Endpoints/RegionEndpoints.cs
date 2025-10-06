@@ -1,4 +1,4 @@
-﻿namespace ExpediaRapidApi.Sdk.Endpoints
+﻿namespace ExpediaRapidApi.Sdk.Lodging.Endpoints
 {
     public static class RegionInclude
     {

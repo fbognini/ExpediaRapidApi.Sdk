@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+		<TargetFrameworks>net8.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Authors>Francesco Bognini</Authors>
@@ -10,7 +10,7 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/fbognini/ExpediaRapidApi.Sdk</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/fbognini/ExpediaRapidApi.Sdk</RepositoryUrl>
-		<Version>0.5.0</Version>
+		<Version>1.0.0</Version>
 	</PropertyGroup>
 
 
@@ -22,16 +22,6 @@
 		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
-	</ItemGroup>
-
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net7.0' ">
-		<PackageReference Include="fbognini.Sdk" Version="3.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="7.0.11" />
-		<PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
-		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
 	</ItemGroup>
 	
 	<ItemGroup>
