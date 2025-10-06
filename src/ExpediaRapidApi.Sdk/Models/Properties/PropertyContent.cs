@@ -17,7 +17,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public Ratings Ratings { get; set; }
 
         [JsonPropertyName("location")]
-        public Location Location { get; set; }
+        public PropertyLocation Location { get; set; }
 
         [JsonPropertyName("phone")]
         public string Phone { get; set; }
@@ -291,19 +291,10 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public Dictionary<string, Link> Links { get; set; } = new();
     }
 
-    public class Location
+    public class PropertyLocation
     {
         [JsonPropertyName("coordinates")]
-        public PropertyCoordinates Coordinates { get; set; }
-    }
-
-    public class PropertyCoordinates
-    {
-        [JsonPropertyName("latitude")]
-        public double Latitude { get; set; }
-
-        [JsonPropertyName("longitude")]
-        public double Longitude { get; set; }
+        public Coordinates Coordinates { get; set; }
     }
 
     public class OnsitePayments

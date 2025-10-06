@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace ExpediaRapidApi.Sdk.Models;
+namespace ExpediaRapidApi.Sdk.Models.Shared;
 
 public class Link
 {

@@ -108,24 +108,6 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public int Quantity { get; set; }
     }
 
-    public class CancelPenalty
-    {
-        [JsonPropertyName("start")]
-        public DateTimeOffset Start { get; set; }
-        [JsonPropertyName("end")]
-        public DateTimeOffset End { get; set; }
-        [JsonPropertyName("nights")]
-        public string? Nights { get; set; }
-        [JsonPropertyName("amount")]
-        public double? Amount { get; set; }
-        [JsonPropertyName("currency")]
-        public string? Currency { get; set; }
-        /// <summary>
-        /// Percentage of total booking charged for as penalty.A thirty percent penalty would be returned as 30%
-        /// </summary>
-        [JsonPropertyName("percent")]
-        public string? Percent { get; set; }
-    }
 
     public class OccupancyPricing
     {
@@ -153,27 +135,11 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class Fee
     {
         [JsonPropertyName("mandatory_fee")]
-        public Tax MandatoryFee { get; set; }
+        public Charge MandatoryFee { get; set; }
         [JsonPropertyName("resort_fee")]
-        public Tax ResortFee { get; set; }
+        public Charge ResortFee { get; set; }
         [JsonPropertyName("mandatory_tax")]
-        public Tax MandatoryTax { get; set; }
-    }
-
-    public class Tax
-    {
-        [JsonPropertyName("billable_currency")]
-        public Currency BillableCurrency { get; set; }
-        [JsonPropertyName("request_currency")]
-        public Currency RequestCurrency { get; set; }
-    }
-
-    public class Currency
-    {
-        [JsonPropertyName("value")]
-        public double Value { get; set; }
-        [JsonPropertyName("currency")]
-        public string CurrencyCurrency { get; set; }
+        public Charge MandatoryTax { get; set; }
     }
 
     //public class Nightly
@@ -189,25 +155,17 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
     public class Totals
     {
         [JsonPropertyName("inclusive")]
-        public Exclusive Inclusive { get; set; }
+        public Charge Inclusive { get; set; }
         [JsonPropertyName("strikethrough")]
-        public Exclusive Strikethrough { get; set; }
+        public Charge Strikethrough { get; set; }
         [JsonPropertyName("exclusive")]
-        public Exclusive Exclusive { get; set; }
+        public Charge Exclusive { get; set; }
         [JsonPropertyName("marketing_fee")]
-        public Exclusive MarketingFee { get; set; }
+        public Charge MarketingFee { get; set; }
         [JsonPropertyName("gross_profit")]
-        public Exclusive GrossProfit { get; set; }
+        public Charge GrossProfit { get; set; }
         [JsonPropertyName("minimum_selling_price")]
-        public Exclusive MinimumSellingPrice { get; set; }
-    }
-
-    public class Exclusive
-    {
-        [JsonPropertyName("billable_currency")]
-        public Currency BillableCurrency { get; set; }
-        [JsonPropertyName("request_currency")]
-        public Currency RequestCurrency { get; set; }
+        public Charge MinimumSellingPrice { get; set; }
     }
 
     public class Promotions

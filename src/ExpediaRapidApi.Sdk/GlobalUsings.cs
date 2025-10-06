@@ -1,0 +1,1 @@
+﻿global using ExpediaRapidApi.Sdk.Models.Shared;

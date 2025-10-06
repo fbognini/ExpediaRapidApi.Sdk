@@ -20,8 +20,8 @@ namespace ExpediaRapidApi.Sdk
     {
         Task CancelHeldBooking(string id, string token);
         Task<BookingResponse> CreateBooking(string token, CreateBookingRequest request, string clientId);
-        Task<ItineraryDetailResponse> GetBookingFromToken(string id, string token, string clientIp);
-        Task<ItineraryDetailResponse> GetBookingFromEmail(string id, string email, string clientIp);
+        Task<PropertyItineraryResponse> GetBookingFromToken(string id, string token, string clientIp);
+        Task<PropertyItineraryResponse> GetBookingFromEmail(string id, string email, string clientIp);
 
         Task<ExpediaPaginationResponse<Dictionary<string, PropertyContent>>> GetPropertyContent(string language, List<string> categoryIdToExclude, DateTime? dateAddedStart, DateTime? dateUpdatedStart, string supplySource, string? partnerPointOfSale, string? paymentTerms, string? platformName);
         Task<ExpediaPaginationResponse<Dictionary<string, PropertyContent>>> GetPropertyContentByToken(string token);
@@ -263,18 +263,18 @@ namespace ExpediaRapidApi.Sdk
             await DeleteApiAsync(relativeUrl);
         }
 
-        public async Task<ItineraryDetailResponse> GetBookingFromToken(string id, string token, string clientIp)
+        public async Task<PropertyItineraryResponse> GetBookingFromToken(string id, string token, string clientIp)
         {
             return await GetBooking(id, token, null, clientIp);
         }
 
-        public async Task<ItineraryDetailResponse> GetBookingFromEmail(string id, string email, string clientIp)
+        public async Task<PropertyItineraryResponse> GetBookingFromEmail(string id, string email, string clientIp)
         {
             return await GetBooking(id, null, email, clientIp);
         }
 
 
-        private async Task<ItineraryDetailResponse> GetBooking(string id, string? token, string? email, string clientIp)
+        private async Task<PropertyItineraryResponse> GetBooking(string id, string? token, string? email, string clientIp)
         {
             if (!string.IsNullOrEmpty(email))
             {
@@ -282,7 +282,7 @@ namespace ExpediaRapidApi.Sdk
             }
 
             AddClientIpHeader(clientIp);
-            return await GetApiAsync<ItineraryDetailResponse>(BookingEndpoints.Get(id, token, email));
+            return await GetApiAsync<PropertyItineraryResponse>(BookingEndpoints.Get(id, token, email));
         }
 
         private void AddClientIpHeader(string clientIp)

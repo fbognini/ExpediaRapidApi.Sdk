@@ -21,7 +21,7 @@ namespace ExpediaRapidApi.Sdk.Models
         public string CountryCode { get; set; } = string.Empty;
 
         [JsonPropertyName("coordinates")]
-        public Coordinates? Coordinates { get; set; }
+        public CenterCoordinates? Coordinates { get; set; }
 
         [JsonPropertyName("associations")]
         public Associations? Associations { get; set; }
@@ -40,5 +40,14 @@ namespace ExpediaRapidApi.Sdk.Models
 
         [JsonPropertyName("descendants")]
         public Dictionary<string, List<string>>? Descendants { get; set; }
+    }
+
+    public class CenterCoordinates
+    {
+        [JsonPropertyName("center_longitude")]
+        public double CenterLongitude { get; set; }
+
+        [JsonPropertyName("center_latitude")]
+        public double CenterLatitude { get; set; }
     }
 }
