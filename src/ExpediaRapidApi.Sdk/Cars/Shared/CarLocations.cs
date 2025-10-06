@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ExpediaRapidApi.Sdk.Models.Cars;
+namespace ExpediaRapidApi.Sdk.Cars.Shared;
 
 public class CarLocations
 {

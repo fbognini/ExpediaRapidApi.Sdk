@@ -4,6 +4,7 @@ using ExpediaRapidApi.Sdk.Models.Bookings;
 using ExpediaRapidApi.Sdk.Models.Properties;
 using ExpediaRapidApi.Sdk.Requests;
 using ExpediaRapidApi.Sdk.Utils;
+using Microsoft.Extensions.Options;
 using System.Net.Http.Json;
 
 namespace ExpediaRapidApi.Sdk.Lodging;
@@ -53,12 +54,13 @@ public interface IExpediaLodgingApiClient
     [Obsolete]
     (string Signature, double UnixTime) GetSignature();
 }
+
 internal class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaLodgingApiClient
 {
-    public ExpediaLodgingApiClient(HttpClient httpClient, ExpediaRapidApiSettings settings) : base(httpClient, settings) 
+    public ExpediaLodgingApiClient(HttpClient httpClient, IOptions<ExpediaRapidApiSettings> options) : base(httpClient, options, currentUserService: null) 
     {
-        DefaultRequestOptions.TryAdd(ExpediaLodgingAuthorizationHttpMessageHandler.ApiKeyOptionName, settings.ApiKey);
-        DefaultRequestOptions.TryAdd(ExpediaLodgingAuthorizationHttpMessageHandler.ApiSecretOptionName, settings.ApiSecret);
+        DefaultRequestOptions.TryAdd(ExpediaLodgingAuthorizationHttpMessageHandler.ApiKeyOptionName, Settings.ApiKey.ApiKey);
+        DefaultRequestOptions.TryAdd(ExpediaLodgingAuthorizationHttpMessageHandler.ApiSecretOptionName, Settings.ApiKey.ApiSecret);
     }
 
 
@@ -67,7 +69,7 @@ internal class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaLodgingAp
     {
         var utcNow = DateTime.UtcNow;
         var unixTimestamp = ExpediaHelpers.GetUnixTimestamp(utcNow);
-        var signature = ExpediaHelpers.GetSignature(Settings.ApiKey, Settings.ApiSecret, unixTimestamp);
+        var signature = ExpediaHelpers.GetSignature(Settings.ApiKey.ApiKey, Settings.ApiKey.ApiSecret, unixTimestamp);
 
         return (signature, unixTimestamp);
     }

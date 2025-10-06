@@ -1,8 +1,9 @@
-﻿using System.Text.Json.Serialization;
+﻿using ExpediaRapidApi.Sdk.Cars.Shared;
+using System.Text.Json.Serialization;
 
-namespace ExpediaRapidApi.Sdk.Models.Cars;
+namespace ExpediaRapidApi.Sdk.Cars.Bookings.RetrieveCarBooking;
 
-public class CarItineraryResponse
+public class RetrieveCarBookingResponse
 {
     [JsonPropertyName("itinerary_id")]
     public string ItineraryId { get; set; }
@@ -44,40 +45,10 @@ public class CarItineraryResponse
     public string AffiliateMetadata { get; set; }
 
     [JsonPropertyName("links")]
-    public CarItineraryLinks Links { get; set; }
+    public RetrieveCarBookingLinks Links { get; set; }
 }
 
-public class PrimaryDriver
-{
-    [JsonPropertyName("given_name")]
-    public string GivenName { get; set; }
-
-    [JsonPropertyName("middle_name")]
-    public string MiddleName { get; set; }
-
-    [JsonPropertyName("family_name")]
-    public string FamilyName { get; set; }
-
-    [JsonPropertyName("phone")]
-    public Phone Phone { get; set; }
-
-    [JsonPropertyName("email")]
-    public string Email { get; set; }
-
-    [JsonPropertyName("age")]
-    public int? Age { get; set; }
-}
-
-public class FlightDetails
-{
-    [JsonPropertyName("air_carrier_code")]
-    public string AirCarrierCode { get; set; }
-
-    [JsonPropertyName("flight_number")]
-    public int FlightNumber { get; set; }
-}
-
-public class CarItineraryLinks
+public class RetrieveCarBookingLinks
 {
     [JsonPropertyName("cancel")]
     public Link Cancel { get; set; }

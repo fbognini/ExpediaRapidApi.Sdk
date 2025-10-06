@@ -12,25 +12,25 @@
 		<RepositoryUrl>https://github.com/fbognini/ExpediaRapidApi.Sdk</RepositoryUrl>
 		<Version>1.0.0</Version>
 	</PropertyGroup>
-
-
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
-		<PackageReference Include="fbognini.Sdk" Version="3.0.0" />
+	
+	<ItemGroup>
+		<!--<PackageReference Include="fbognini.Sdk" Version="3.0.0" />-->
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
-	</ItemGroup>
-	
-	<ItemGroup>
 		<PackageReference Include="Polly.Contrib.WaitAndRetry" Version="1.1.1" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="..\..\LICENSE" Pack="true" PackagePath="" />
 		<None Include="..\..\README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\fbognini.Sdk\src\fbognini.Sdk\fbognini.Sdk.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

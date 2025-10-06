@@ -1,17 +1,20 @@
-﻿namespace ExpediaRapidApi.Sdk.Cars;
+﻿using ExpediaRapidApi.Sdk.Cars.Bookings.CreateCarBooking;
+using ExpediaRapidApi.Sdk.Cars.Bookings.RetrieveCarBooking;
+using ExpediaRapidApi.Sdk.Cars.GetCarAvailability;
+using Microsoft.Extensions.Options;
+
+namespace ExpediaRapidApi.Sdk.Cars;
 
 public interface IExpediaCarsApiClient
 {
-    Task<int> GetCarsAsync(string pickupLocation, DateTime pickupDate);
+    Task<GetCarAvailabilityResponse> GetCarAvailabilityAsync(GetCarAvailabilityRequest request, CancellationToken cancellationToken = default);
+    Task<CarDetails> GetCarDetailsAsync(string carRentalId, string token, CancellationToken cancellationToken = default);
+    Task<CreateCarBookingResponse> CreateCarBooking(string token, CreateCarBookingRequest request, CancellationToken cancellationToken = default);
+    Task<RetrieveCarBookingResponse> RetrieveBooking(string itineraryId, CancellationToken cancellationToken = default);
+    Task<RetrieveCarBookingResponse> RetrieveBookingByAffiliateReferenceId(string affiliateReferenceId, CancellationToken cancellationToken = default);
+    Task CancelBooking(string itineraryId, CancellationToken cancellationToken = default);
 }
 
-internal class ExpediaCarsApiClient : ExpediaBaseApiClient, IExpediaCarsApiClient
+internal partial class ExpediaCarsApiClient(HttpClient httpClient, IOptions<ExpediaRapidApiSettings> settings, IExpediaCurrentUserService currentUserService) : ExpediaBaseApiClient(httpClient, settings, currentUserService), IExpediaCarsApiClient
 {
-    public ExpediaCarsApiClient(HttpClient httpClient, ExpediaRapidApiSettings settings) : base(httpClient, settings) { }
-
-    public async Task<int> GetCarsAsync(string pickupLocation, DateTime pickupDate)
-    {
-        var url = $"cars/search?pickupLocation={pickupLocation}&pickupDate={pickupDate:yyyy-MM-dd}";
-        return 1;
-    }
 }

@@ -1,13 +1,10 @@
 ﻿using ExpediaRapidApi.Sdk.Cars;
+using ExpediaRapidApi.Sdk.Cars.GetCarDetails;
 using ExpediaRapidApi.Sdk.Lodging;
 using fbognini.Sdk.Extensions;
-using fbognini.Sdk.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using System.Net;
-using System.Net.Http.Headers;
 
 namespace ExpediaRapidApi.Sdk
 {
@@ -17,17 +14,11 @@ namespace ExpediaRapidApi.Sdk
         {
             services.Configure<ExpediaRapidApiSettings>(configuration.GetSection(nameof(ExpediaRapidApiSettings)));
 
-            //services.AddScoped<ExpediaLodgingAuthorizationHttpMessageHandler>();
-
-            //services.AddHttpClient<IExpediaRapidApiService, ExpediaRapidLodgingApiService>()
-            //    .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
-            //    {
-            //        AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
-            //    })
-            //    .AddHttpMessageHandler<ExpediaLodgingAuthorizationHttpMessageHandler>()
-            //    .ThrowApiExceptionIfNotSuccess()
-            //    .AddLogging();
-
+            
+            services
+                .AddSingleton<IExpediaCurrentUserService, ExpediaCurrentUserService>();
+            
+            services.AddScoped<ExpediaLodgingAuthorizationHttpMessageHandler>();
             services.AddHttpClient<IExpediaLodgingApiClient, ExpediaLodgingApiClient>()
                 .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
                 {
@@ -38,11 +29,16 @@ namespace ExpediaRapidApi.Sdk
                 .AddLogging();
 
             services.AddHttpClient<IExpediaCarsApiClient, ExpediaCarsApiClient>()
-                //.ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
-                //{
-                //    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
-                //})
-                .AddHttpMessageHandler<ExpediaCarsAuthorizationHttpMessageHandler>()
+                .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
+                {
+                    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+                })
+                .ThrowApiExceptionIfNotSuccess()
+                .AddAuthenticationPolicy<IExpediaCurrentUserService>()
+                .AddLogging();
+
+
+            services.AddHttpClient<IExpediaAuthenticationApiService, ExpediaAuthenticationService>()
                 .ThrowApiExceptionIfNotSuccess()
                 .AddLogging();
 

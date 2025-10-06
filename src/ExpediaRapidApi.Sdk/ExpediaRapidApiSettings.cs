@@ -44,7 +44,18 @@
 
         internal string BaseAddress => Environment.ApiUrl;
 
+        public ApiKeyAuth ApiKey { get; set; } = default!;
+        public OAuth OAuth { get; set; } = default!;
+    }
+
+    public class ApiKeyAuth
+    {
         public required string ApiKey { get; set; }
         public required string ApiSecret { get; set; }
+    }
+    public class OAuth
+    {
+        public required string ClientId { get; set; }
+        public required string ClientSecret { get; set; }
     }
 }

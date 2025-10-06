@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExpediaRapidApi.Sdk.Models.Properties;
+using ExpediaRapidApi.Sdk.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,4 +19,6 @@ public class Link
 
     [JsonPropertyName("expires")]
     public string? Expires { get; set; }
+
+    public string? GetToken() => ExpediaHelpers.FindQueryParameterInLink(Href, "token");
 }

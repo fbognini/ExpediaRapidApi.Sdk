@@ -1,5 +1,4 @@
 ﻿using System.Web;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace ExpediaRapidApi.Sdk.Utils
 {

@@ -142,16 +142,6 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         public Charge MandatoryTax { get; set; }
     }
 
-    //public class Nightly
-    //{
-    //    [JsonPropertyName("type")]
-    //    public string Type { get; set; }
-    //    [JsonPropertyName("value")]
-    //    public string Value { get; set; }
-    //    [JsonPropertyName("currency")]
-    //    public string Currency { get; set; }
-    //}
-
     public class Totals
     {
         [JsonPropertyName("inclusive")]
