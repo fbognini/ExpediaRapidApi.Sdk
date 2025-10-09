@@ -29,6 +29,7 @@ public class ExpediaBaseApiClient : BaseApiService
     {
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+        NumberHandling = JsonNumberHandling.AllowReadingFromString,
         Converters = { new JsonStringEnumConverter() }
     };
 

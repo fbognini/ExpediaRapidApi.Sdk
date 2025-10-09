@@ -10,9 +10,9 @@ public class GetCarAvailabilityRequest
 
     public string? DropoffArea { get; set; }
 
-    public int? PickupAirport { get; set; }
+    public long? PickupAirport { get; set; }
 
-    public int? DropoffAirport { get; set; }
+    public long? DropoffAirport { get; set; }
 
     public int DriverAge { get; set; }
 

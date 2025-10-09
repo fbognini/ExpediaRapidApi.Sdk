@@ -5,43 +5,50 @@ namespace ExpediaRapidApi.Sdk.Cars.Shared;
 public class CarLocations
 {
     [JsonPropertyName("pickup")]
-    public CarLocation Pickup { get; set; }
+    public CarLocation Pickup { get; set; } = default!;
 
     [JsonPropertyName("dropoff")]
-    public CarLocation Dropoff { get; set; }
+    public CarLocation Dropoff { get; set; } = default!;
 }
-
 
 public class CarLocation
 {
     [JsonPropertyName("name")]
-    public string Name { get; set; }
+    public string Name { get; set; } = default!;
 
     [JsonPropertyName("description")]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
     [JsonPropertyName("address")]
-    public Address Address { get; set; }
+    public Address Address { get; set; } = default!;
 
     [JsonPropertyName("coordinates")]
-    public Coordinates Coordinates { get; set; }
+    public Coordinates Coordinates { get; set; } = default!;
 
+    /// <summary>
+    /// The type of location being offered.
+    /// </summary>
     [JsonPropertyName("type")]
-    public string Type { get; set; }
+    public CarLocationType Type { get; set; }
 
     [JsonPropertyName("airport_code")]
-    public string AirportCode { get; set; }
+    public string? AirportCode { get; set; }
 
     [JsonPropertyName("vendor")]
-    public string Vendor { get; set; }
+    public string? Vendor { get; set; }
 
     [JsonPropertyName("hours_of_operation")]
-    public List<HoursOfOperation> HoursOfOperation { get; set; }
+    public List<HoursOfOperation>? HoursOfOperation { get; set; }
 
     [JsonPropertyName("rating")]
-    public Rating Rating { get; set; }
+    public Rating? Rating { get; set; }
 }
 
+public enum CarLocationType
+{
+    airport,
+    non_airport,
+}
 
 public class Address
 {
@@ -76,9 +83,7 @@ public class HoursOfOperation
 
 public class Rating
 {
-    [JsonPropertyName("count")]
     public double Count { get; set; }
 
-    [JsonPropertyName("overall")]
     public double Overall { get; set; }
 }

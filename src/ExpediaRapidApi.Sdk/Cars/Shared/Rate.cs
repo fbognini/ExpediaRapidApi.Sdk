@@ -5,15 +5,20 @@ namespace ExpediaRapidApi.Sdk.Cars.Shared;
 public class Rate
 {
     [JsonPropertyName("merchant_of_record")]
-    public string MerchantOfRecord { get; set; }
+    public MerchantOfRecord MerchantOfRecord { get; set; }
 
     [JsonPropertyName("sale_scenario")]
-    public SaleScenario SaleScenario { get; set; }
+    public SaleScenario SaleScenario { get; set; } = default!;
 
     [JsonPropertyName("pricing")]
-    public Pricing Pricing { get; set; }
+    public Pricing Pricing { get; set; } = default!;
 }
 
+public enum MerchantOfRecord
+{
+    expedia,
+    vendor
+}
 
 public class SaleScenario
 {
@@ -30,22 +35,22 @@ public class SaleScenario
 public class Pricing
 {
     [JsonPropertyName("daily_rate_strikethrough")]
-    public Charge DailyRateStrikethrough { get; set; }
+    public Charge? DailyRateStrikethrough { get; set; }
 
     /// <summary>
     /// Provides the daily rate of the car, excluding taxes and fees.
     /// </summary>
     [JsonPropertyName("daily_rate")]
-    public Charge DailyRate { get; set; }
+    public Charge DailyRate { get; set; } = default!;
 
     /// <summary>
     /// Provides a list of mandatory taxes and fees that apply to the entire reservation (not divided per day).
     /// </summary>
     [JsonPropertyName("fees")]
-    public List<Fee> Fees { get; set; }
+    public List<Fee>? Fees { get; set; }
 
     [JsonPropertyName("totals")]
-    public PricingTotals Totals { get; set; }
+    public PricingTotals Totals { get; set; } = default!;
 }
 
 public class PricingTotals
@@ -54,19 +59,19 @@ public class PricingTotals
     /// Provides the non-discounted total price including taxes and fees. If present, this value should be displayed with a strikethrough to indicate it represents the original price.
     /// </summary>
     [JsonPropertyName("inclusive_strikethrough")]
-    public Charge InclusiveStrikethrough { get; set; }
+    public Charge? InclusiveStrikethrough { get; set; }
 
     /// <summary>
     /// Provides the total price including taxes and fees
     /// </summary>
     [JsonPropertyName("inclusive")]
-    public Charge Inclusive { get; set; }
+    public Charge Inclusive { get; set; } = default!;
 
     /// <summary>
     /// Provides the total price excluding taxes and fees.
     /// </summary>
     [JsonPropertyName("exclusive")]
-    public Charge Exclusive { get; set; }
+    public Charge Exclusive { get; set; } = default!;
 
     /// <summary>
     /// Provides the total price of taxes and fees.
@@ -78,13 +83,13 @@ public class PricingTotals
     /// Provides a total price of the requested extras (if applicable).
     /// </summary>
     [JsonPropertyName("extras")]
-    public Charge Extras { get; set; }
+    public Charge? Extras { get; set; }
 
     /// <summary>
     /// Provides the total price due at booking.
     /// </summary>
     [JsonPropertyName("due_at_booking")]
-    public Charge DueAtBooking { get; set; }
+    public Charge? DueAtBooking { get; set; }
 }
 
 

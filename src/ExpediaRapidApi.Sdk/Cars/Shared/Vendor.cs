@@ -5,20 +5,26 @@ namespace ExpediaRapidApi.Sdk.Cars.Shared;
 public class Vendor
 {
     [JsonPropertyName("id")]
-    public string Id { get; set; }
+    public string Id { get; set; } = default!;
 
     [JsonPropertyName("name")]
-    public string Name { get; set; }
+    public string Name { get; set; } = default!;
 
     [JsonPropertyName("image")]
-    public VendorImage Image { get; set; }
+    public VendorImage Image { get; set; } = default!;
 }
 
 public class VendorImage
 {
     [JsonPropertyName("caption")]
-    public string Caption { get; set; }
+    public string Caption { get; set; } = default!;
 
     [JsonPropertyName("links")]
-    public Dictionary<string, Link> Links { get; set; }
+    public VendorImageLinks Links { get; set; } = default!;
+}
+
+public class VendorImageLinks
+{
+    [JsonPropertyName("vendor_image")]
+    public Link VendorImage { get; set; } = default!;
 }
