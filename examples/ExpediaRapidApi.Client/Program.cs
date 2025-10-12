@@ -40,23 +40,22 @@ app.MapGet("/weatherforecast", async ([FromServices] ExpediaRapidApiClient clien
     var request = new GetCarAvailabilityRequest()
     {
         Currency = "USD",
-        Language = "en-US",
-        PickupTime = "2025-10-07T08:00:00",
-        DropoffTime = "2025-10-08T08:00:00",
+        Language = "it-IT",
+        PickupTime = "2025-10-10T08:00:00",
+        DropoffTime = "2025-10-11T08:00:00",
         PickupArea = "10,45.464664,9.188540",
         DropoffArea = "10,45.464664,9.188540",
         DriverAge = 18,
-        Limit = 10,
+        Limit = 200,
         SalesChannel = CarsSalesChannel.website,
         SalesEnvironment = CarsSalesEnvironment.car_only,
         CountryCode = "IT",
         Sort = CarsSort.recommended,
     };
-    var availabilitys = await client.Cars.GetCarAvailabilityAsync(request);
-    var availability = availabilitys.First();
 
-    var details = await client.Cars.GetCarDetailsAsync(availability.CarRentalId, availability.Links.Details.GetToken()!);
-    return details;
+    var availabilitys = await client.Cars.GetCarAvailabilityAsync(request);
+    return availabilitys;
+
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
