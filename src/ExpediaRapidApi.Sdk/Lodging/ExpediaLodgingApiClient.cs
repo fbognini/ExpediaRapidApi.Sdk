@@ -1,5 +1,6 @@
 ﻿using ExpediaRapidApi.Sdk.Lodging.Bookings.CreateLodgingBooking;
 using ExpediaRapidApi.Sdk.Lodging.Endpoints;
+using ExpediaRapidApi.Sdk.Lodging.GetPropertyContent;
 using ExpediaRapidApi.Sdk.Models;
 using ExpediaRapidApi.Sdk.Models.Properties;
 using ExpediaRapidApi.Sdk.Utils;
@@ -18,8 +19,8 @@ public interface IExpediaLodgingApiClient
     Task<PropertyItineraryResponse> GetBookingFromToken(string id, string token, string clientIp);
     Task<PropertyItineraryResponse> GetBookingFromEmail(string id, string email, string clientIp);
 
-    Task<ExpediaPaginationResponse<Dictionary<string, PropertyContent>>> GetPropertyContent(string language, List<string> categoryIdToExclude, DateTime? dateAddedStart, DateTime? dateUpdatedStart, string supplySource, string? partnerPointOfSale, string? paymentTerms, string? platformName);
-    Task<ExpediaPaginationResponse<Dictionary<string, PropertyContent>>> GetPropertyContentByToken(string token);
+    Task<ExpediaPaginationResponse<GetPropertyContentResponse>> GetPropertyContent(GetPropertyContentRequest request, CancellationToken cancellationToken = default);
+    Task<ExpediaPaginationResponse<GetPropertyContentResponse>> GetPropertyContentByToken(string token, CancellationToken cancellationToken = default);
 
     /// <summary>
     /// 
@@ -76,23 +77,25 @@ internal partial class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaL
         return (signature, unixTimestamp);
     }
 
-    protected async Task<ExpediaPaginationResponse<T>> GetPaginatedApi<T>(string url)
+    protected async Task<ExpediaPaginationResponse<T>> GetPaginatedApi<T>(string url, CancellationToken cancellationToken = default)
     {
-        var response = await GetApiAsync(url);
+        var response = await GetApiAsync(url, cancellationToken: cancellationToken);
 
-        response.Headers.TryGetValues("Link", out var nextPages);
-        string? nextPageLink = nextPages?.FirstOrDefault();
-        if (!string.IsNullOrEmpty(nextPageLink))
+        string? nextPageLink = null;
+        if (response.Headers.TryGetValues("Link", out var nextLinks) && nextLinks.Any())
         {
-            int from = nextPageLink.IndexOf('<');
-            int to = nextPageLink.LastIndexOf('>');
-            nextPageLink = nextPageLink.Substring(from + 1, to - from - 1);
+            nextPageLink = nextLinks.First();
+            int fromIndex = nextPageLink.IndexOf('<');
+            int toIndex = nextPageLink.LastIndexOf('>');
+            nextPageLink = nextPageLink.Substring(fromIndex + 1, toIndex - fromIndex - 1);
         }
+
+        var json = await response.Content.ReadFromJsonAsync<T>(cancellationToken: cancellationToken);
 
         return new ExpediaPaginationResponse<T>()
         {
             NextPageLink = nextPageLink,
-            Response = (await response.Content.ReadFromJsonAsync<T>())!
+            Response = json!
         };
     }
 
@@ -123,37 +126,6 @@ internal partial class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaL
     #endregion
 
     #region Properties
-
-    public async Task<ExpediaPaginationResponse<Dictionary<string, PropertyContent>>> GetPropertyContent(
-        string language,
-        List<string> categoryIdToExclude,
-        DateTime? dateAddedStart,
-        DateTime? dateUpdatedStart,
-        string supplySource,
-        string? partnerPointOfSale,
-        string? paymentTerms,
-        string? platformName)
-    {
-        string url = PropertyEndpoints.GetContent(
-            language: language,
-            categoryIdToExclude: categoryIdToExclude,
-            dateAddedStart: dateAddedStart,
-            dateUpdatedStart: dateUpdatedStart,
-            supplySource: supplySource,
-            partnerPointOfSale: partnerPointOfSale,
-            paymentTerms: paymentTerms,
-            platformName: platformName
-        );
-
-        return await GetPaginatedApi<Dictionary<string, PropertyContent>>(url);
-    }
-
-    public async Task<ExpediaPaginationResponse<Dictionary<string, PropertyContent>>> GetPropertyContentByToken(string token)
-    {
-        string url = PropertyEndpoints.GetContentByToken(token);
-
-        return await GetPaginatedApi<Dictionary<string, PropertyContent>>(url);
-    }
 
     public async Task<PropertyAvailabilityResponse> GetPropertiesAvailability(
         DateOnly checkin,

@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using ExpediaRapidApi.Sdk.Lodging.GetPropertyContent;
+using System.Text.Json.Serialization;
 
 namespace ExpediaRapidApi.Sdk.Models.Properties
 {

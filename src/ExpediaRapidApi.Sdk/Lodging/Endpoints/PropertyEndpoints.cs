@@ -4,47 +4,7 @@ namespace ExpediaRapidApi.Sdk.Lodging.Endpoints
 {
     public static class PropertyEndpoints
     {
-        public static string GetContent(
-            string language,
-            List<string> categoryIdToExclude,
-            DateTime? dateAddedStart,
-            DateTime? dateUpdatedStart,
-            string supplySource,
-            string? partnerPointOfSale,
-            string? paymentTerms,
-            string? platformName)
-        {
-            var queryparameters = new List<KeyValuePair<string, string>>()
-            {
-                new ("language", language),
-                new ("supply_source", supplySource),
-            };
-
-            if (dateAddedStart is not null)
-                queryparameters.Add(new KeyValuePair<string, string>("date_added_start", dateAddedStart!.Value!.ToString("yyyy-MM-dd")));
-
-            if (dateUpdatedStart is not null)
-                queryparameters.Add(new KeyValuePair<string, string>("date_updated_start", dateUpdatedStart!.Value!.ToString("yyyy-MM-dd")));
-
-            if (paymentTerms is not null)
-                queryparameters.Add(new KeyValuePair<string, string>("payment_terms", paymentTerms!));
-
-            if (partnerPointOfSale is not null)
-                queryparameters.Add(new KeyValuePair<string, string>("partner_point_of_sale", partnerPointOfSale!));
-
-            if (platformName is not null)
-                queryparameters.Add(new KeyValuePair<string, string>("platform_name", platformName!));
-
-            categoryIdToExclude?.ForEach(item => queryparameters.Add(new KeyValuePair<string, string>("category_id_exclude", item)));
-
-            return $"v3/properties/content{UriHelpers.GetQueryParameters(queryparameters)}";
-        }
-
-        public static string GetContentByToken(string token)
-        {
-            return $"v3/properties/content?token={token}";
-        }
-
+       
         public static string GetAvailability(
             DateOnly checkin,
             DateOnly checkout,
