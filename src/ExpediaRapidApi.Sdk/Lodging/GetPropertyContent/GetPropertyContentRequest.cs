@@ -17,7 +17,7 @@ public class GetPropertyContentRequest
     public DateOnly? DateUpdatedEnd { get; set; }
     public DateOnly? DateUpdatedStart { get; set; }
     public List<string>? Include { get; set; }
-    public bool MultiUnit { get; set; }
+    public bool? MultiUnit { get; set; }
     public List<string>? PropertyId { get; set; }
     public List<string>? SpokenLanguageId { get; set; }
     public string? BillingTerms { get; set; }
