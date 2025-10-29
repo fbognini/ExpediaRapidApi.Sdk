@@ -15,6 +15,10 @@ public interface IExpediaCarsApiClient
     Task CancelBooking(string itineraryId, CancellationToken cancellationToken = default);
 }
 
-internal partial class ExpediaCarsApiClient(HttpClient httpClient, IOptions<ExpediaRapidApiSettings> settings, IExpediaCurrentUserService currentUserService) : ExpediaBaseApiClient(httpClient, settings, currentUserService), IExpediaCarsApiClient
+internal partial class ExpediaCarsApiClient : ExpediaBaseApiClient, IExpediaCarsApiClient
 {
+    public ExpediaCarsApiClient(HttpClient httpClient, IOptions<ExpediaRapidApiSettings> settings, IExpediaCurrentUserService? currentUserService) : base(httpClient, settings, currentUserService)
+    {
+        httpClient.BaseAddress = new Uri(Settings.BaseAddress);
+    }
 }

@@ -1,7 +1,4 @@
-﻿using ExpediaRapidApi.Sdk.Cars.Bookings.CreateCarBooking;
-using ExpediaRapidApi.Sdk.Cars.Bookings.RetrieveCarBooking;
-using fbognini.Sdk.Utils;
-
+﻿using ExpediaRapidApi.Sdk.Cars.Bookings.RetrieveCarBooking;
 namespace ExpediaRapidApi.Sdk.Cars;
 
 internal partial class ExpediaCarsApiClient

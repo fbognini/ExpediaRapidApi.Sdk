@@ -1,1 +1,1 @@
-﻿global using ExpediaRapidApi.Sdk.Models.Shared;
+﻿global using ExpediaRapidApi.Sdk.Shared;

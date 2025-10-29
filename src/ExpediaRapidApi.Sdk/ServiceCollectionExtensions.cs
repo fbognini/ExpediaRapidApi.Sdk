@@ -1,4 +1,5 @@
 ﻿using ExpediaRapidApi.Sdk.Lodging;
+using ExpediaRapidApi.Sdk.Pay;
 using fbognini.Sdk.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -35,13 +36,21 @@ namespace ExpediaRapidApi.Sdk
                 .AddAuthenticationPolicy<IExpediaCurrentUserService>()
                 .AddLogging();
 
+            services.AddHttpClient<IExpediaPayApiClient, ExpediaPayApiClient>()
+                .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
+                {
+                    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+                })
+                .ThrowApiExceptionIfNotSuccess()
+                .AddAuthenticationPolicy<IExpediaCurrentUserService>()
+                .AddLogging();
 
             services.AddHttpClient<IExpediaAuthenticationApiService, ExpediaAuthenticationService>()
                 .ThrowApiExceptionIfNotSuccess()
                 .AddLogging();
 
             // Root SDK
-            services.AddTransient<ExpediaRapidApiClient>();
+            services.AddScoped<ExpediaRapidApiClient>();
 
             return services;
         }

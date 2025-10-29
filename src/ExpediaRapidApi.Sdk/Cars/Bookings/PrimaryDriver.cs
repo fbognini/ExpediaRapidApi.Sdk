@@ -8,7 +8,7 @@ public class PrimaryDriver
     public string GivenName { get; set; }
 
     [JsonPropertyName("middle_name")]
-    public string MiddleName { get; set; }
+    public string? MiddleName { get; set; }
 
     [JsonPropertyName("family_name")]
     public string FamilyName { get; set; }

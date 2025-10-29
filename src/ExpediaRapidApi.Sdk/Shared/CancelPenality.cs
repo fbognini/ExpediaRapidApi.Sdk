@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace ExpediaRapidApi.Sdk.Models.Shared;
+namespace ExpediaRapidApi.Sdk.Shared;
 
 public class CancelPenalty
 {

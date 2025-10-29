@@ -39,10 +39,22 @@
 
     public class ExpediaRapidApiSettings
     {
-        internal ExpediaRapidEnvironment Environment => ExpediaRapidEnvironment.ParseEnvironment(EnvironmentName);
+        private readonly Dictionary<ExpediaRapidApiEnvironment, string> RapidUrls = new()
+        {
+            [ExpediaRapidApiEnvironment.STG] = "https://test.ean.com/",
+            [ExpediaRapidApiEnvironment.PRD] = "https://api.ean.com/",
+        };
+
+        private readonly Dictionary<ExpediaRapidApiEnvironment, string> RapidPayUrls = new()
+        {
+            [ExpediaRapidApiEnvironment.STG] = "https://pay-test.ean.com/",
+            [ExpediaRapidApiEnvironment.PRD] = "https://pay.ean.com/",
+        };
+
         public ExpediaRapidApiEnvironment EnvironmentName { get; set; }
 
-        internal string BaseAddress => Environment.ApiUrl;
+        internal string BaseAddress => RapidUrls[EnvironmentName];
+        internal string BasePayAddress => RapidPayUrls[EnvironmentName];
 
         public ApiKeyAuth ApiKey { get; set; } = default!;
         public OAuth OAuth { get; set; } = default!;
