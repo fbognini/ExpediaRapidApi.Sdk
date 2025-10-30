@@ -2,13 +2,6 @@
 
 namespace ExpediaRapidApi.Sdk.Pay.RegisterPayment;
 
-public class RegisterPaymentRequest
-{
-    public string Token { get; set; }
-    public List<PaymentRegistrationRequest> Payments { get; set; } = [];
-}
-
-
 public enum PaymentType
 {
     corporate_card,
@@ -17,7 +10,7 @@ public enum PaymentType
 }
 
 
-public class PaymentRegistrationRequest
+public class RegisterPaymentRequest
 {
     public PaymentType Type { get; set; }
     public string Number { get; set; } = default!;
