@@ -13,7 +13,12 @@ internal interface IHasCustomerHeaderOptions
 
 public class CustomerHeaderOptions
 {
-    public required string CustomerIp { get; set; }
-    public required string UserAgent { get; set; }
+    public CustomerHeaderOptions(string customerIp)
+    {
+        CustomerIp = customerIp;
+    }
+
+    public string CustomerIp { get; set; }
+    public string? UserAgent { get; set; }
     public string? CustomerSessionId { get; set; }
 }
