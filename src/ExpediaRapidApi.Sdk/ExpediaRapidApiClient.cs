@@ -58,7 +58,10 @@ public class ExpediaBaseApiClient : BaseApiService
             _options.Headers.Add("Customer-Ip", customerOptions.Customer.CustomerIp);
             _options.Headers.UserAgent.Clear();
             _options.Headers.UserAgent.ParseAdd(customerOptions.Customer.UserAgent);
-            _options.Headers.Add("Customer-Session-Id", customerOptions.Customer.CustomerSessionId);
+            if (!string.IsNullOrWhiteSpace(customerOptions.Customer.CustomerSessionId))
+            {
+                _options.Headers.Add("Customer-Session-Id", customerOptions.Customer.CustomerSessionId);
+            }
         }
 
         return _options;
