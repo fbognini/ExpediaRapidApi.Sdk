@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using ExpediaRapidApi.Sdk.Lodging.Shared;
+using System.Text.Json.Serialization;
 
 namespace ExpediaRapidApi.Sdk.Models.Properties;
 
@@ -154,7 +155,7 @@ public class PropertyItineraryResponse
         public Promotions Promotions { get; set; }
 
         [JsonPropertyName("cancel_penalties")]
-        public List<CancelPenalty> CancelPenalties { get; set; }
+        public List<LodgingCancelPenality> CancelPenalties { get; set; }
 
         [JsonPropertyName("nonrefundable_date_ranges")]
         public List<NonRefundableDateRange>? NonRefundableDateRanges { get; set; }
@@ -180,27 +181,6 @@ public class PropertyItineraryResponse
         public Totals? Totals { get; set; }
         [JsonPropertyName("fees")]
         public Fee? Fee { get; set; }
-    }
-
-    public class CancelPenalty
-    {
-        [JsonPropertyName("percent")]
-        public string Percent { get; set; }
-
-        [JsonPropertyName("start")]
-        public string Start { get; set; }
-
-        [JsonPropertyName("end")]
-        public string End { get; set; }
-
-        [JsonPropertyName("amount")]
-        public string Amount { get; set; }
-
-        [JsonPropertyName("currency")]
-        public string Currency { get; set; }
-
-        [JsonPropertyName("nights")]
-        public string Nights { get; set; }
     }
 
     public class NonRefundableDateRange

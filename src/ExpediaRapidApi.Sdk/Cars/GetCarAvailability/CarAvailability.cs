@@ -38,7 +38,7 @@ public class CarAvailability
     public Rate Rate { get; set; } = default!;
 
     [JsonPropertyName("cancel_penalties")]
-    public List<CancelPenalty> CancelPenalties { get; set; }
+    public List<CarCancelPenality> CancelPenalties { get; set; }
 
     [JsonPropertyName("links")]
     public CarAvailabilityLinks Links { get; set; } = new();

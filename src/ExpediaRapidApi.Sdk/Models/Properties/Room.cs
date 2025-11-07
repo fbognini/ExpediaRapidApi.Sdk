@@ -1,4 +1,5 @@
 ﻿using ExpediaRapidApi.Sdk.Lodging.GetPropertyContent;
+using ExpediaRapidApi.Sdk.Lodging.Shared;
 using System.Text.Json.Serialization;
 
 namespace ExpediaRapidApi.Sdk.Models.Properties
@@ -40,7 +41,7 @@ namespace ExpediaRapidApi.Sdk.Models.Properties
         [JsonPropertyName("bed_groups")]
         public Dictionary<string, BedGroups> BedGroups { get; set; }
         [JsonPropertyName("cancel_penalties")]
-        public List<CancelPenalty> CancelPenalties { get; set; }
+        public List<LodgingCancelPenality> CancelPenalties { get; set; }
         [JsonPropertyName("occupancy_pricing")]
         public Dictionary<string, OccupancyPricing> OccupancyPricing { get; set; }
         [JsonPropertyName("promotions")]
