@@ -55,8 +55,7 @@ public class CarDetails
     [JsonPropertyName("rate")]
     public Rate Rate { get; set; }
 
-    [JsonPropertyName("cancel_penalties")]
-    public List<CarCancelPenality> CancelPenalties { get; set; }
+    public List<CarCancelPenality>? CancelPenalties { get; set; }
 
     [JsonPropertyName("links")]
     public CarDetailsLinks Links { get; set; }

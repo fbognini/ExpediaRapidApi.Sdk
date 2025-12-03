@@ -17,7 +17,7 @@ public class LodgingCancelPenality
     /// End date and time of cancellation penalty in extended ISO 8601 format, with ±hh:mm timezone offset
     /// </summary>
     public DateTimeOffset End { get; set; }
-    public string? Nights { get; set; }
+    public int? Nights { get; set; }
     public double? Amount { get; set; }
     public string? Currency { get; set; }
     /// <summary>

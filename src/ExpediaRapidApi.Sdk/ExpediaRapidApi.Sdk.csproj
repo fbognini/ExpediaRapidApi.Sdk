@@ -10,7 +10,7 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/fbognini/ExpediaRapidApi.Sdk</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/fbognini/ExpediaRapidApi.Sdk</RepositoryUrl>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<Description>An unofficial Expedia Rapid API .NET SDK, supporting .NET 8.0+</Description>
 	</PropertyGroup>
 	

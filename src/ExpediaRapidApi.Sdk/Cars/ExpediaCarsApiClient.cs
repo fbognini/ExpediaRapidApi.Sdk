@@ -10,8 +10,8 @@ public interface IExpediaCarsApiClient
     Task<GetCarAvailabilityResponse> GetCarAvailabilityAsync(GetCarAvailabilityRequest request, CancellationToken cancellationToken = default);
     Task<CarDetails> GetCarDetailsAsync(string carRentalId, string token, CancellationToken cancellationToken = default);
     Task<CreateCarBookingResponse> CreateCarBooking(string token, CreateCarBookingRequest request, CreateCarBookingOptions options, CancellationToken cancellationToken = default);
-    Task<RetrieveCarBookingResponse> RetrieveBooking(string itineraryId, CancellationToken cancellationToken = default);
-    Task<RetrieveCarBookingResponse> RetrieveBookingByAffiliateReferenceId(string affiliateReferenceId, CancellationToken cancellationToken = default);
+    Task<RetrieveCarBookingResponse> RetrieveBooking(string itineraryId, RetrieveCarBookingOptions options, CancellationToken cancellationToken = default);
+    Task<RetrieveCarBookingResponse> RetrieveBookingByAffiliateReferenceId(string affiliateReferenceId, RetrieveCarBookingOptions options, CancellationToken cancellationToken = default);
     Task CancelBooking(string itineraryId, CancellationToken cancellationToken = default);
 }
 
