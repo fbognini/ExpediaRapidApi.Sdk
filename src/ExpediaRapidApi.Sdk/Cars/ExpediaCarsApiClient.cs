@@ -1,4 +1,5 @@
-﻿using ExpediaRapidApi.Sdk.Cars.Bookings.CreateCarBooking;
+﻿using ExpediaRapidApi.Sdk.Cars.Bookings.CancelCarBooking;
+using ExpediaRapidApi.Sdk.Cars.Bookings.CreateCarBooking;
 using ExpediaRapidApi.Sdk.Cars.Bookings.RetrieveCarBooking;
 using ExpediaRapidApi.Sdk.Cars.GetCarAvailability;
 using Microsoft.Extensions.Options;
@@ -12,7 +13,7 @@ public interface IExpediaCarsApiClient
     Task<CreateCarBookingResponse> CreateCarBooking(string token, CreateCarBookingRequest request, CreateCarBookingOptions options, CancellationToken cancellationToken = default);
     Task<RetrieveCarBookingResponse> RetrieveBooking(string itineraryId, RetrieveCarBookingOptions options, CancellationToken cancellationToken = default);
     Task<RetrieveCarBookingResponse> RetrieveBookingByAffiliateReferenceId(string affiliateReferenceId, RetrieveCarBookingOptions options, CancellationToken cancellationToken = default);
-    Task CancelBooking(string itineraryId, CancellationToken cancellationToken = default);
+    Task CancelBooking(string itineraryId, CancelCarBookingOptions options, CancellationToken cancellationToken = default);
 }
 
 internal partial class ExpediaCarsApiClient : ExpediaBaseApiClient, IExpediaCarsApiClient
