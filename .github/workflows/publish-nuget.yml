@@ -17,8 +17,6 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: |
-          6.0.x
-          7.0.404
           8.0.x
 
     - name: Extract and process release version
