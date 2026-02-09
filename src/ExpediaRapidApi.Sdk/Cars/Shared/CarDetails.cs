@@ -47,7 +47,10 @@ public class CarDetails
     public CarDetailsImage Image { get; set; }
 
     [JsonPropertyName("policies")]
-    public List<Policy> Policies { get; set; }
+    public List<Policy> Policies { get; set; } = [];
+
+    [JsonPropertyName("rules_and_restrictions")]
+    public List<RuleAndRestriction> RulesAndRestrictions { get; set; } = [];
 
     [JsonPropertyName("optional_extras")]
     public List<OptionalExtra> OptionalExtras { get; set; }
@@ -83,6 +86,14 @@ public class PolicyStatement
 
     [JsonPropertyName("statement_condition")]
     public string StatementCondition { get; set; }
+}
+
+public class RuleAndRestriction
+{
+    [JsonPropertyName("title")]
+    public string Title { get; set; } = string.Empty;
+    [JsonPropertyName("statement")]
+    public string Statement { get; set; } = string.Empty;
 }
 
 public class OptionalExtra
