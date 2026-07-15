@@ -39,6 +39,8 @@
 
     public class ExpediaRapidApiSettings
     {
+        private const string DefaultAuthAddress = "https://api.ean.com/";
+
         private readonly Dictionary<ExpediaRapidApiEnvironment, string> RapidUrls = new()
         {
             [ExpediaRapidApiEnvironment.STG] = "https://test.ean.com/",
@@ -56,8 +58,36 @@
         internal string BaseAddress => RapidUrls[EnvironmentName];
         internal string BasePayAddress => RapidPayUrls[EnvironmentName];
 
+        /// <summary>
+        /// Host of the OAuth2 token endpoint. Expedia issues a single token that carries both the test and the
+        /// production scopes, so this does not follow <see cref="EnvironmentName"/> and defaults to the production
+        /// host for every environment. Override it only if Expedia splits the identity service per environment.
+        /// </summary>
+        public string? AuthAddress { get; set; }
+
+        internal string BaseAuthAddress => string.IsNullOrWhiteSpace(AuthAddress) ? DefaultAuthAddress : AuthAddress;
+
+        /// <summary>
+        /// Value applied to the Rapid <c>Test</c> header when a request does not set one of its own.
+        /// Set it to <c>standard</c> in staging: the Activities price check answers 500 when the header is missing,
+        /// despite the documentation claiming the test server fills it in for you. Leave it unset in production.
+        /// </summary>
+        public string? TestHeader { get; set; }
+
         public ApiKeyAuth ApiKey { get; set; } = default!;
+
+        /// <summary>
+        /// OAuth2 credentials used by the Cars and Pay APIs.
+        /// </summary>
         public OAuth OAuth { get; set; } = default!;
+
+        /// <summary>
+        /// OAuth2 credentials used by the Activities API. Expedia issues a dedicated client for activities;
+        /// when left unset, <see cref="OAuth"/> is used instead.
+        /// </summary>
+        public OAuth? ActivitiesOAuth { get; set; }
+
+        internal OAuth ActivitiesOAuthOrDefault => ActivitiesOAuth ?? OAuth;
     }
 
     public class ApiKeyAuth

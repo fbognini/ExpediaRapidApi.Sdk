@@ -16,11 +16,21 @@ namespace ExpediaRapidApi.Sdk
 
     public interface IExpediaAuthenticationApiService
     {
+        /// <summary>
+        /// Requests an access token for the Cars and Pay APIs.
+        /// </summary>
         Task<OAuth2Token> Login();
+
+        /// <summary>
+        /// Requests an access token for the given OAuth2 client.
+        /// </summary>
+        Task<OAuth2Token> Login(OAuth oauth);
     }
 
     public class ExpediaAuthenticationService : BaseApiService, IExpediaAuthenticationApiService
     {
+        private const string TokenEndpoint = "identity/oauth2/v3/token";
+
         private readonly ExpediaRapidApiSettings _settings;
 
         public ExpediaAuthenticationService(HttpClient client, IOptions<ExpediaRapidApiSettings> settings)
@@ -29,16 +39,18 @@ namespace ExpediaRapidApi.Sdk
             _settings = settings.Value;
         }
 
-        public async Task<OAuth2Token> Login()
+        public Task<OAuth2Token> Login() => Login(_settings.OAuth);
+
+        public async Task<OAuth2Token> Login(OAuth oauth)
         {
             var content = new FormUrlEncodedContent(
             [
                 new KeyValuePair<string, string>("grant_type", "client_credentials"),
-                new KeyValuePair<string, string>("client_id", _settings.OAuth.ClientId),
-                new KeyValuePair<string, string>("client_secret", _settings.OAuth.ClientSecret),
+                new KeyValuePair<string, string>("client_id", oauth.ClientId),
+                new KeyValuePair<string, string>("client_secret", oauth.ClientSecret),
             ]);
 
-            return await PostApiAsync<OAuth2Token>("https://api.ean.com/identity/oauth2/v3/token", content);
+            return await PostApiAsync<OAuth2Token>(new Uri(new Uri(_settings.BaseAuthAddress), TokenEndpoint).ToString(), content);
         }
     }
 }

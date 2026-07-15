@@ -1,4 +1,5 @@
-﻿using ExpediaRapidApi.Sdk.Lodging;
+﻿using ExpediaRapidApi.Sdk.Activities;
+using ExpediaRapidApi.Sdk.Lodging;
 using ExpediaRapidApi.Sdk.Pay;
 using fbognini.Sdk.Extensions;
 using Microsoft.Extensions.Configuration;
@@ -13,10 +14,11 @@ namespace ExpediaRapidApi.Sdk
         {
             services.Configure<ExpediaRapidApiSettings>(configuration.GetSection(nameof(ExpediaRapidApiSettings)));
 
-            
+            // One token cache per OAuth2 client: Activities is authorized by a different client than Cars and Pay.
             services
-                .AddSingleton<IExpediaCurrentUserService, ExpediaCurrentUserService>();
-            
+                .AddSingleton<IExpediaCurrentUserService, ExpediaCurrentUserService>()
+                .AddSingleton<IExpediaActivitiesCurrentUserService, ExpediaActivitiesCurrentUserService>();
+
             services.AddScoped<ExpediaLodgingAuthorizationHttpMessageHandler>();
             services.AddHttpClient<IExpediaLodgingApiClient, ExpediaLodgingApiClient>()
                 .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
@@ -43,6 +45,15 @@ namespace ExpediaRapidApi.Sdk
                 })
                 .ThrowApiExceptionIfNotSuccess()
                 .AddAuthenticationPolicy<IExpediaCurrentUserService>()
+                .AddLogging();
+
+            services.AddHttpClient<IExpediaActivitiesApiClient, ExpediaActivitiesApiClient>()
+                .ConfigurePrimaryHttpMessageHandler(_ => new HttpClientHandler
+                {
+                    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+                })
+                .ThrowApiExceptionIfNotSuccess()
+                .AddAuthenticationPolicy<IExpediaActivitiesCurrentUserService>()
                 .AddLogging();
 
             services.AddHttpClient<IExpediaAuthenticationApiService, ExpediaAuthenticationService>()

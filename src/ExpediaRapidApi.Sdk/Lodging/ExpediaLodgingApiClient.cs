@@ -79,28 +79,6 @@ internal partial class ExpediaLodgingApiClient : ExpediaBaseApiClient, IExpediaL
         return (signature, unixTimestamp);
     }
 
-    protected async Task<ExpediaPaginationResponse<T>> GetPaginatedApi<T>(string url, CancellationToken cancellationToken = default)
-    {
-        var response = await GetApiAsync(url, cancellationToken: cancellationToken);
-
-        string? nextPageLink = null;
-        if (response.Headers.TryGetValues("Link", out var nextLinks) && nextLinks.Any())
-        {
-            nextPageLink = nextLinks.First();
-            int fromIndex = nextPageLink.IndexOf('<');
-            int toIndex = nextPageLink.LastIndexOf('>');
-            nextPageLink = nextPageLink.Substring(fromIndex + 1, toIndex - fromIndex - 1);
-        }
-
-        var json = await response.Content.ReadFromJsonAsync<T>(cancellationToken: cancellationToken);
-
-        return new ExpediaPaginationResponse<T>()
-        {
-            NextPageLink = nextPageLink,
-            Response = json!
-        };
-    }
-
     #region Regions
 
     public async Task<ExpediaPaginationResponse<List<Region>>> GetRegions(
