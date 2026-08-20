@@ -14,4 +14,12 @@ public class GetRegionActivitiesRequest : ActivityFilterRequest
     /// </summary>
     [JsonIgnore]
     public string RegionId { get; set; } = default!;
+
+    /// <summary>
+    /// How many ids to return per page, between 1 and 100.
+    /// Rapid is making pagination mandatory on the geography endpoints; the pages themselves are followed through the Link header as before.
+    /// </summary>
+    public int PaginationSize { get; set; } = MaxPaginationSize;
+
+    public const int MaxPaginationSize = 100;
 }

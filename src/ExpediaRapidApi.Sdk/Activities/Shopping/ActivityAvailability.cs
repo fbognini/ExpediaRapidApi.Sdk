@@ -114,11 +114,9 @@ public class ActivityPriceCheck
     public string? TermsAndConditions { get; set; }
 
     /// <summary>
-    /// Which traveller fields this specific activity requires, keyed by field name (passport, date_of_birth, height,
-    /// weight, language, address, nationality, dietary_preference, pickup, dropoff, ...). It varies per activity, so
-    /// the booking form has to be built from it at runtime rather than hardcoded.
+    /// What this specific activity needs to know before it can be booked. It varies activity by activity, so the booking form has to be built from it at runtime rather than hardcoded — see <see cref="BookingQuestion"/>.
     /// </summary>
-    public Dictionary<string, RequiredBookingField> RequiredBookingFields { get; set; } = [];
+    public List<BookingQuestion> BookingQuestions { get; set; } = [];
 
     public ActivityPriceCheckLinks? Links { get; set; }
 }
@@ -133,20 +131,6 @@ public enum ActivityPriceCheckStatus
     price_changed,
 
     sold_out
-}
-
-public class RequiredBookingField
-{
-    /// <summary>
-    /// What is accepted for this field. For pickup and dropoff, which transit types are supported
-    /// (flight, rail, bus, ship, hotel).
-    /// </summary>
-    public List<string> PermittedOptions { get; set; } = [];
-
-    /// <summary>
-    /// True when every traveller must provide it, false when only the primary one must.
-    /// </summary>
-    public bool AppliesToAllTravelers { get; set; }
 }
 
 public class ActivityPriceCheckLinks

@@ -180,7 +180,7 @@ public class BookedTraveler
     /// <summary>
     /// The ticket type this traveller was booked under.
     /// </summary>
-    public string? TravelerType { get; set; }
+    public string? TicketId { get; set; }
 }
 
 public class RetrieveActivityBookingOptions : IHasCustomerHeaderOptions, IHasTestHeaderOptions

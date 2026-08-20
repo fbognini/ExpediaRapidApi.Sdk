@@ -61,6 +61,12 @@ public class ActivityContent
     public ActivityCancellationPolicy? CancellationPolicy { get; set; }
 
     public List<ActivitySupplier> Suppliers { get; set; } = [];
+
+    /// <summary>
+    /// The booking question data types this activity may ask for at booking time.
+    /// A subset of what we declared in supported_booking_data_types, since that is what the content call filters on.
+    /// </summary>
+    public List<string> BookingQuestionTypes { get; set; } = [];
 }
 
 public class ActivityRatings
@@ -234,6 +240,11 @@ public class ActivityGroupContent
     /// The activities in this group.
     /// </summary>
     public List<string> ActivityIds { get; set; } = [];
+
+    /// <summary>
+    /// The booking question data types the activities of this group may ask for at booking time.
+    /// </summary>
+    public List<string> BookingQuestionTypes { get; set; } = [];
 }
 
 /// <summary>
@@ -262,4 +273,9 @@ public class ExperienceContent
     public List<string> ActivityIds { get; set; } = [];
 
     public List<string> ActivityGroupIds { get; set; } = [];
+
+    /// <summary>
+    /// The booking question data types the activities of this experience may ask for at booking time.
+    /// </summary>
+    public List<string> BookingQuestionTypes { get; set; } = [];
 }

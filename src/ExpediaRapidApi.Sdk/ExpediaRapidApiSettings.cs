@@ -69,10 +69,21 @@
 
         /// <summary>
         /// Value applied to the Rapid <c>Test</c> header when a request does not set one of its own.
-        /// Set it to <c>standard</c> in staging: the Activities price check answers 500 when the header is missing,
-        /// despite the documentation claiming the test server fills it in for you. Leave it unset in production.
         /// </summary>
+        // ⚠️ Leave it unset unless you are exercising an error path.
+        // The header is what makes the test server answer with canned data: with standard the Activities price check returns the example printed in the manual — the manual's tickets, in the manual's currency, with the manual's payment token, which the Pay API then rejects.
+        // Without it, staging prices the real activity and hands back a token the Pay API accepts.
+        // It once had to be set to standard in staging, because the price check answered 500 without it.
+        // That stopped being true: measured 2026-08-05.
+        // Use it deliberately, per call, to reach sold_out, price_mismatch and the other scripted responses — not as an ambient setting.
         public string? TestHeader { get; set; }
+
+        /// <summary>
+        /// Value sent as the traffic_profile query parameter on every Activities call, for example Activities_GHC.
+        /// It identifies the traffic against the commercial agreement and is what makes Rapid return the marketing fee.
+        /// Rapid is making it mandatory: left unset, the parameter is simply not sent.
+        /// </summary>
+        public string? TrafficProfile { get; set; }
 
         public ApiKeyAuth ApiKey { get; set; } = default!;
 

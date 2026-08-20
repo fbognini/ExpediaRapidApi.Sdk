@@ -7,31 +7,31 @@ internal partial class ExpediaActivitiesApiClient
 {
     public async Task<List<ActivityContent>> GetActivitiesContent(GetActivitiesContentRequest request, CancellationToken cancellationToken = default)
     {
-        var url = request.ToQueryString("v2/experiences/activities/content", QueryStringBuilderFromJsonOptions);
+        var url = WithTrafficProfile(request.ToQueryString("v2/experiences/activities/content", QueryStringBuilderFromJsonOptions));
         return await GetApiAsync<List<ActivityContent>>(url, cancellationToken: cancellationToken);
     }
 
     public async Task<List<ActivityGroupContent>> GetActivityGroupsContent(GetActivityGroupsContentRequest request, CancellationToken cancellationToken = default)
     {
-        var url = request.ToQueryString("v2/experiences/activity-groups/content", QueryStringBuilderFromJsonOptions);
+        var url = WithTrafficProfile(request.ToQueryString("v2/experiences/activity-groups/content", QueryStringBuilderFromJsonOptions));
         return await GetApiAsync<List<ActivityGroupContent>>(url, cancellationToken: cancellationToken);
     }
 
     public async Task<List<ExperienceContent>> GetExperiencesContent(GetExperiencesContentRequest request, CancellationToken cancellationToken = default)
     {
-        var url = request.ToQueryString("v2/experiences/content", QueryStringBuilderFromJsonOptions);
+        var url = WithTrafficProfile(request.ToQueryString("v2/experiences/content", QueryStringBuilderFromJsonOptions));
         return await GetApiAsync<List<ExperienceContent>>(url, cancellationToken: cancellationToken);
     }
 
     public async Task<List<ActivityOperatingHours>> GetActivityOperatingHours(GetActivityOperatingHoursRequest request, CancellationToken cancellationToken = default)
     {
-        var url = request.ToQueryString($"v2/experiences/activities/{request.ActivityId}/operating-hours", QueryStringBuilderFromJsonOptions);
+        var url = WithTrafficProfile(request.ToQueryString($"v2/experiences/activities/{request.ActivityId}/operating-hours", QueryStringBuilderFromJsonOptions));
         return await GetApiAsync<List<ActivityOperatingHours>>(url, cancellationToken: cancellationToken);
     }
 
     public async Task<List<GuestReview>> GetGuestReviews(GetGuestReviewsRequest request, CancellationToken cancellationToken = default)
     {
-        var url = request.ToQueryString($"v2/experiences/activities/{request.ActivityId}/guest-reviews", QueryStringBuilderFromJsonOptions);
+        var url = WithTrafficProfile(request.ToQueryString($"v2/experiences/activities/{request.ActivityId}/guest-reviews", QueryStringBuilderFromJsonOptions));
         return await GetApiAsync<List<GuestReview>>(url, cancellationToken: cancellationToken);
     }
 
@@ -54,7 +54,7 @@ internal partial class ExpediaActivitiesApiClient
 
     private async Task<ExpediaPaginationResponse<List<ActivityReference>>> GetReferences(GetReferencesRequest request, string path, CancellationToken cancellationToken)
     {
-        var url = request.ToQueryString(path, QueryStringBuilderFromJsonOptions);
+        var url = WithTrafficProfile(request.ToQueryString(path, QueryStringBuilderFromJsonOptions));
         return await GetPaginatedApi<List<ActivityReference>>(url, cancellationToken: cancellationToken);
     }
 }

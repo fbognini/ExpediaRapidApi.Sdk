@@ -29,6 +29,13 @@ public class GetAvailabilityRequest
     /// </summary>
     public string CountryCode { get; set; } = default!;
 
+    /// <summary>
+    /// The booking question data types we are able to ask the traveller.
+    /// Required: Rapid rejects the call without at least one value.
+    /// See ActivityBookingDataTypes.
+    /// </summary>
+    public List<string> SupportedBookingDataTypes { get; set; } = [];
+
     public const int MaxIdsPerRequest = 20;
     public const int MaxDays = 14;
 }
@@ -83,6 +90,62 @@ public static class ActivityTickets
 
     public static List<string> Format(IEnumerable<KeyValuePair<string, int>> tickets)
         => tickets.Where(x => x.Value > 0).Select(x => Format(x.Key, x.Value)).ToList();
+}
+
+/// <summary>
+/// The booking question data types, as they appear in supported_booking_data_types and in Type.
+/// </summary>
+// ⚠️ supported_booking_data_types is a promise, not a filter for convenience: it tells Rapid which questions we can put to a traveller, and Rapid answers with only the activities we could actually book.
+// Declaring a type the booking form cannot render means showing an activity that will fail at the last step, after the card has been charged.
+// Keep this list and what the form renders in step.
+// The authoritative catalogue is the data types endpoint — see GetBookingQuestionDataTypes.
+// These constants are the types documented at the time of writing.
+public static class ActivityBookingDataTypes
+{
+    public const string Text = "text";
+    public const string Date = "date";
+    public const string DateTime = "datetime";
+    public const string Time = "time";
+    public const string Email = "email";
+    public const string Phone = "phone";
+    public const string Boolean = "boolean";
+    public const string Integer = "integer";
+    public const string Selection = "selection";
+    public const string Measurement = "measurement";
+    public const string Address = "address";
+    public const string TravelDocument = "travel_document";
+
+    /// <summary>
+    /// Every type, handled.
+    /// Only send it if the booking form really can cope with a question type it has never seen.
+    /// </summary>
+    public const string Wildcard = "*";
+
+    /// <summary>
+    /// Only activities that ask nothing at all.
+    /// </summary>
+    public const string None = "none";
+
+    /// <summary>
+    /// The documented types, wildcard and "none" excluded.
+    /// </summary>
+    public static readonly IReadOnlyList<string> All =
+    [
+        Text, Date, DateTime, Time, Email, Phone, Boolean, Integer, Selection, Measurement, Address, TravelDocument
+    ];
+}
+
+/// <summary>
+/// Request for the data type catalogue.
+/// </summary>
+public class GetBookingQuestionDataTypesRequest
+{
+    /// <summary>
+    /// Only return the types whose date_added is on or after this UTC date.
+    /// Left null, the whole catalogue comes back.
+    /// The validation rules come back whole either way.
+    /// </summary>
+    public DateOnly? DateUpdatedStart { get; set; }
 }
 
 public class PriceCheckOptions : IHasCustomerHeaderOptions, IHasTestHeaderOptions

@@ -14,7 +14,21 @@ public abstract class ActivityFilterRequest
     public List<string>? AttributeIdExclude { get; set; }
 }
 
-public class GetActivitiesContentRequest : ActivityFilterRequest
+/// <summary>
+/// Filters shared by the three content endpoints.
+/// Deliberately not merged into ActivityFilterRequest: the geography endpoints derive from that one and do not take supported_booking_data_types.
+/// </summary>
+public abstract class ActivityContentRequest : ActivityFilterRequest
+{
+    /// <summary>
+    /// The booking question data types we are able to ask the traveller.
+    /// Required: Rapid rejects the call without at least one value, and answers with only the activities whose questions we could handle.
+    /// See ActivityBookingDataTypes.
+    /// </summary>
+    public List<string> SupportedBookingDataTypes { get; set; } = [];
+}
+
+public class GetActivitiesContentRequest : ActivityContentRequest
 {
     /// <summary>
     /// The activities to fetch. Between 1 and <see cref="MaxIdsPerRequest"/>.
@@ -35,7 +49,7 @@ public class GetActivitiesContentRequest : ActivityFilterRequest
     public const int MaxIdsPerRequest = 20;
 }
 
-public class GetActivityGroupsContentRequest : ActivityFilterRequest
+public class GetActivityGroupsContentRequest : ActivityContentRequest
 {
     /// <summary>
     /// The activity groups to fetch. Between 1 and <see cref="MaxIdsPerRequest"/>.
@@ -49,7 +63,7 @@ public class GetActivityGroupsContentRequest : ActivityFilterRequest
     public const int MaxIdsPerRequest = 25;
 }
 
-public class GetExperiencesContentRequest : ActivityFilterRequest
+public class GetExperiencesContentRequest : ActivityContentRequest
 {
     /// <summary>
     /// The experiences to fetch. Between 1 and <see cref="MaxIdsPerRequest"/>.
@@ -98,13 +112,13 @@ public class GetGuestReviewsRequest
     /// </summary>
     public int Limit { get; set; } = 10;
 
-    public GuestReviewsSort Sort { get; set; } = GuestReviewsSort.relevancy;
+    public GuestReviewsSort Sort { get; set; } = GuestReviewsSort.relevance;
 }
 
 public enum GuestReviewsSort
 {
     date,
-    relevancy,
+    relevance,
     rating
 }
 
