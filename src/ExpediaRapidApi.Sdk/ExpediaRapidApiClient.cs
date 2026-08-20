@@ -46,7 +46,7 @@ public class ExpediaBaseApiClient : BaseApiService
         Settings = settings.Value;
         QueryStringBuilderFromJsonOptions = new QueryStringBuilderFromJsonOptions()
         {
-            UseIndexForArrays = false,
+            ArrayFormatterType = ArrayFormatterType.None,
             JsonSerializerOptions = JsonSerializerOptions
         };
 
