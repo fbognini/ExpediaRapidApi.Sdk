@@ -118,6 +118,11 @@ public class ActivityPriceCheck
     /// </summary>
     public List<BookingQuestion> BookingQuestions { get; set; } = [];
 
+    /// <summary>
+    /// Whether the supplier will not issue the voucher without the name and contacts of every traveller, and not just of the one booking.
+    /// </summary>
+    public bool CustomerDetailsRequired { get; set; }
+
     public ActivityPriceCheckLinks? Links { get; set; }
 }
 

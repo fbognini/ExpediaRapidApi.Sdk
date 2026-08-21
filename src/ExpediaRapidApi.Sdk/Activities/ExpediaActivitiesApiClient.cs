@@ -45,7 +45,7 @@ public interface IExpediaActivitiesApiClient
     Task<List<ActivityContent>> GetActivitiesContent(GetActivitiesContentRequest request, CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Content of up to 25 activity groups.
+    /// Content of up to 20 activity groups.
     /// </summary>
     Task<List<ActivityGroupContent>> GetActivityGroupsContent(GetActivityGroupsContentRequest request, CancellationToken cancellationToken = default);
 

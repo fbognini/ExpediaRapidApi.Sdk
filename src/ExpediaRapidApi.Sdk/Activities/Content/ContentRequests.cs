@@ -1,4 +1,4 @@
-namespace ExpediaRapidApi.Sdk.Activities.Content;
+﻿namespace ExpediaRapidApi.Sdk.Activities.Content;
 
 /// <summary>
 /// Filters shared by every content and geography endpoint. All four accept 1 to 20 values.
@@ -60,7 +60,8 @@ public class GetActivityGroupsContentRequest : ActivityContentRequest
 
     public DateOnly? DateUpdatedStart { get; set; }
 
-    public const int MaxIdsPerRequest = 25;
+    // La documentazione dice 25, ma un batch di 25 id torna 400: misurato il 21 agosto 2026 su test.ean.com. Non rialzarlo senza riprovare.
+    public const int MaxIdsPerRequest = 20;
 }
 
 public class GetExperiencesContentRequest : ActivityContentRequest
